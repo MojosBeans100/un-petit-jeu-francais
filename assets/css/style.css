@@ -1,12 +1,12 @@
 
-body {
+/* General styling  */
 
-}
+body {}
+html {}
+#main-div {}
 
-html {
-
-}
-
-#main-div {
-    
-}
+/* Intro Screen Styling */
+#intro-screen-div{}
+#intro-screen-title{}
+#intro-screen-game-des{}
+#intro-screen-btn{}
