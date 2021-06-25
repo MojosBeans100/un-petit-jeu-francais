@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded",introScreen);
 // Intro screen function
 function introScreen() {
 
-    // Create intro screen elements and append to relevant divs
+    // Create introScreen HTML elements and append to relevant divs
     let introScreenDiv = createElement("div","intro-screen-div");
     mainDiv.appendChild(introScreenDiv);
 
@@ -38,9 +38,32 @@ function introScreen() {
 // Input name screen
 function inputName() {
 
-}
-// Choose game options screen
+    // Remove introScreen HTML
+    let introScreenDiv = document.getElementById("intro-screen-div");
+    introScreenDiv.remove();
 
+    // Create inputName HTML elements and append to relevant divs
+    let inputNameDiv = createElement("diV","input-name-div");
+    mainDiv.appendChild(inputNameDiv);
+
+    let inputNameText = createElement("h1","input-name-text");
+    inputNameDiv.appendChild(inputNameText);
+
+    let inputNameInput = createElement("input","input-name-input");
+    inputNameDiv.appendChild(inputNameInput);
+
+    let inputNameBtn = createElement("button","input-name-btn");
+    inputNameDiv.appendChild(inputNameBtn);
+    inputNameBtn.addEventListener("click",gameOptions);
+
+    // Create the text for the elements
+    inputNameText.innerHTML = "First, let's start with your name";
+    inputNameBtn.innerHTML = "Ok";
+
+}
+
+// Choose game options screen
+function gameOptions() {}
 // Open game area screen
  
 // Generate question
