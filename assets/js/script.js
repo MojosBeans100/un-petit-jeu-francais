@@ -63,7 +63,61 @@ function inputName() {
 }
 
 // Choose game options screen
-function gameOptions() {}
+function gameOptions() {
+
+    // Get the user's name input value
+    let userName = document.getElementById("input-name-input").value;
+
+    // Create gameOptions HTML elements and append to relevant divs
+    let gameOptionsDiv = createElement("div","game-options-div");
+    mainDiv.appendChild(gameOptionsDiv);
+
+    let gameOptionsWelcomeName = createElement("h1","game-options-welcome-name");
+    gameOptionsDiv.appendChild(gameOptionsWelcomeName);
+
+    let gameOptionsText = createElement("h2","game-options-text");
+    gameOptionsDiv.appendChild(gameOptionsText);
+
+    let gameOptionsDifficultyForm = createElement("form","game-difficulty-form");
+    gameOptionsDiv.appendChild(gameOptionsDifficultyForm);
+
+    let gameOptionsDifficultyText = createElement("h3","game-options-difficulty-text");
+    gameOptionsDifficultyForm.appendChild(gameOptionsDifficultyText);
+
+    // Create difficulty radio options
+    let gameDifficultyOptions = ["Easy","Medium","Hard"];
+    let gameDifficultyOptionsID = [];
+
+    for (let i = 0; i < gameDifficultyOptions.length; i++) {
+
+        // Create radio buttons
+        var diffRadio = createElement("input",`${gameDifficultyOptions[i]}`);
+        diffRadio.type = "radio";
+        diffRadio.name = "diffRadioName";
+        diffRadio.checked = false;
+        diffRadio.required = true;
+
+        // Create radio button labels
+        var diffLabel = document.createElement("label");
+        diffLabel.innerHTML = gameDifficultyOptions[i];
+
+        // Append radios and labels to form
+        gameOptionsDifficultyForm.appendChild(diffRadio);
+        gameOptionsDifficultyForm.appendChild(diffLabel);
+
+        gameDifficultyOptionsID.push(diffRadio.id);
+
+    }
+
+
+    
+
+    // Create the text for the elements
+    gameOptionsWelcomeName.innerHTML = "";
+    gameOptionsText.innerHTML = "";
+    gameOptionsDifficultyText.innerHTML = "";
+
+}
 // Open game area screen
  
 // Generate question
