@@ -9,8 +9,10 @@ function  createElement(elementType, id) {
     return newElement;
 }
 
+document.addEventListener("DOMContentLoaded",introScreen);
+
 // Intro screen function
-function introScreen {
+function introScreen() {
 
     // Create intro screen elements and append to relevant divs
     let introScreenDiv = createElement("div","intro-screen-div");
@@ -24,6 +26,7 @@ function introScreen {
 
     let introScreenBtn = createElement("button","intro-screen-btn");
     introScreenDiv.appendChild(introScreenBtn);
+    introScreenBtn.addEventListener("click",inputName);
 
     // Create the text for the elements
     introScreenTitle.innerHTML = "Welcome to Un Petit Jeu Francais!";
@@ -33,7 +36,9 @@ function introScreen {
 }
 
 // Input name screen
+function inputName() {
 
+}
 // Choose game options screen
 
 // Open game area screen
