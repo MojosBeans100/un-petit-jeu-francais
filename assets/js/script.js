@@ -68,6 +68,9 @@ function gameOptions() {
     // Get the user's name input value
     let userName = document.getElementById("input-name-input").value;
 
+    // Remove previous screen
+    document.getElementById("input-name-div").remove();
+
     // Create gameOptions HTML elements and append to relevant divs
     let gameOptionsDiv = createElement("div","game-options-div");
     mainDiv.appendChild(gameOptionsDiv);
@@ -137,12 +140,18 @@ function gameOptions() {
     Easy.checked = true;
     gameLength10.checked = true;
 
-
+    let gameOptionsBtn = createElement("button","game-options-btn");
+    gameOptionsBtn.addEventListener("click",function() {
+        alert("HELLO");
+    });
+    gameOptionsDiv.appendChild(gameOptionsBtn);
+    
     // Create the text for the elements
-    gameOptionsWelcomeName.innerHTML = "";
-    gameOptionsText.innerHTML = "";
-    gameOptionsDifficultyText.innerHTML = "";
-    gameOptionsLengthText.innerHTML = "";
+    gameOptionsWelcomeName.innerHTML = (`Welcome ${userName}!`);
+    gameOptionsText.innerHTML = "Now choose some game options:";
+    gameOptionsDifficultyText.innerHTML = "Please choose a game difficulty";
+    gameOptionsLengthText.innerHTML = "Now choose how many questions you'd like to answer";
+    gameOptionsBtn.innerHTML = "Play game!";
 
 }
 // Open game area screen
