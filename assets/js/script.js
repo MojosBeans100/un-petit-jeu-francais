@@ -78,11 +78,11 @@ function gameOptions() {
     let gameOptionsText = createElement("h2","game-options-text");
     gameOptionsDiv.appendChild(gameOptionsText);
 
-    let gameOptionsDifficultyForm = createElement("form","game-difficulty-form");
-    gameOptionsDiv.appendChild(gameOptionsDifficultyForm);
+    let gameOptionsForm = createElement("form","game-difficulty-form");
+    gameOptionsDiv.appendChild(gameOptionsForm);
 
     let gameOptionsDifficultyText = createElement("h3","game-options-difficulty-text");
-    gameOptionsDifficultyForm.appendChild(gameOptionsDifficultyText);
+    gameOptionsForm.appendChild(gameOptionsDifficultyText);
 
     // Create difficulty radio options
     let gameDifficultyOptions = ["Easy","Medium","Hard"];
@@ -102,20 +102,47 @@ function gameOptions() {
         diffLabel.innerHTML = gameDifficultyOptions[i];
 
         // Append radios and labels to form
-        gameOptionsDifficultyForm.appendChild(diffRadio);
-        gameOptionsDifficultyForm.appendChild(diffLabel);
+        gameOptionsForm.appendChild(diffRadio);
+        gameOptionsForm.appendChild(diffLabel);
 
         gameDifficultyOptionsID.push(diffRadio.id);
-
     }
 
+    let gameOptionsLengthText = createElement("h3","game-options-length-text");
+    gameOptionsForm.appendChild(gameOptionsLengthText);
 
-    
+    // Create game length options
+    let gameLengthOptions = ["10","20","30","40"];
+
+    for (let i = 0; i < gameLengthOptions.length; i++) {
+
+        // Create radio buttons
+        var lengthRadio = createElement("input",`${gameLengthOptions[i]}`);
+        lengthRadio.type = "radio";
+        lengthRadio.name = "lengthRadioName";
+        lengthRadio.checked = false;
+        lengthRadio.required = true;
+
+        // Create radio button labels
+        var lengthLabel = document.createElement("label");
+        lengthLabel.innerHTML = gameLengthOptions[i];
+        lengthLabel.id = (`gameLength${gameLengthOptions[i]}`);
+
+        // Append radios and labels to form
+        gameOptionsForm.appendChild(lengthRadio);
+        gameOptionsForm.appendChild(lengthLabel);
+    }
+
+    // Set default options 
+    Easy.checked = true;
+    gameLength10.checked = true;
+
 
     // Create the text for the elements
     gameOptionsWelcomeName.innerHTML = "";
     gameOptionsText.innerHTML = "";
     gameOptionsDifficultyText.innerHTML = "";
+    gameOptionsLengthText.innerHTML = "";
 
 }
 // Open game area screen
