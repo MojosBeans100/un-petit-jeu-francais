@@ -353,13 +353,17 @@ function generateQuestion() {
 // Skip question
 function skipQuestion() {
 
+    // Increase questions answered tally
     questionsAnswered++;
 
+    // Remove current question and multiple choice form
     document.getElementsByTagName("h1")[0].remove();
     document.getElementsByTagName("form")[0].remove();
 
+    // Generate another question
     generateQuestion();
 
+    // Increase the skip tally
     let oldSkipTally = parseInt(document.getElementById("skip-tally-num").innerText);
     document.getElementById("skip-tally-num").innerText = ++oldSkipTally; 
     
