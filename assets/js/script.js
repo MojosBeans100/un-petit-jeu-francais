@@ -178,7 +178,29 @@ function createGameArea() {
     let gameAreaRight1 = createElement("div","game-area-right-1");
     let gameAreaRight2 = createElement("div","game-area-right-2");
 
+    gameAreaDiv.appendChild(gameAreaLeft);
+    gameAreaDiv.appendChild(gameAreaRight);
 
+    gameAreaLeft.appendChild(gameAreaLeft1);
+    gameAreaLeft.appendChild(gameAreaLeft2);
+    gameAreaLeft.appendChild(gameAreaLeft3);
+
+    gameAreaRight.appendChild(gameAreaRight1);
+    gameAreaRight.appendChild(gameAreaRight2);
+
+    let homeButton = createElement("button","game-home-btn");
+    homeButton.innerHTML = "Return to Home";
+    homeButton.addEventListener("click",function() {
+        alert("Return to home?");
+    });
+
+    let skipButton = createElement("button","skip-question-btn");
+    skipButton.innerHTML = "Skip question";
+    // skipButton.addEventListener("click", skipQuestion);
+
+    let nextQuestionButton = createElement("button","next-question-btn");
+    nextQuestionButton.innerHTML = "Next question";
+    // nextQuestionButton.addEventListener("click", checkAnswer);
 
 } 
 
