@@ -161,10 +161,31 @@ function gameOptions() {
 }
 
 // Open game area screen
- 
+function createGameArea() {
+
+    // Create the main game area div
+    let gameAreaDiv = createElement("div","game-area-div");
+    mainDiv.appendChild(gameAreaDiv);
+
+    // Create the div with question, multiple choice and buttons
+    let gameAreaLeft = createElement("div","game-area-left");
+    let gameAreaLeft1 = createElement("div","game-area-left-1");
+    let gameAreaLeft2 = createElement("div","game-area-left-2");
+    let gameAreaLeft3 = createElement("div","game-area-left-3");
+
+    // Create the div with progress tally and scores (------and timer)
+    let gameAreaRight = createElement("div","game-area-right");
+    let gameAreaRight1 = createElement("div","game-area-right-1");
+    let gameAreaRight2 = createElement("div","game-area-right-2");
+
+
+
+} 
+
 // Generate question
 function generateQuestion() {
 
+    // get user's answers
 
     let mcRandomNums = [];
     let mcQuestions = [];
@@ -196,9 +217,17 @@ function generateQuestion() {
     mcQuestion.id = "mc-question";
     trueQuestions.push(mcQuestion);
 
-    
+    // Create the question
+    let questionText = createElement("h1","question-text");
+    questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
+    // append to HTML
+
+    // Create the multiple choice radio buttons
+
 
 }
+
+
 // Check answer
 
 // Show answers screen

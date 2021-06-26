@@ -25,3 +25,16 @@ html {}
 #game-options-difficulty-text{}
 #game-options-length-text{}
 #game-options-btn{}
+
+/* Open Game Area Styling */
+#game-area-left{}
+#game-area-left-1{}
+#game-area-left-2{}
+#game-area-left-3{}
+#game-area-right{}
+#game-area-right-1{}
+#game-area-right-2{}
+
+/* Generate Questions Styling */
+#mc-question{}
+#mc-answer{}
