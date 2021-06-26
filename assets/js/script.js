@@ -4,6 +4,7 @@ let mainDiv = document.getElementById("main-div");
 
 let gameDifficulty;
 let numOfQuestions;
+let gameLength;
 let questionsAnswered = 0;
 let trueAnswers = [];
 let trueQuestions = [];
@@ -227,13 +228,13 @@ function createGameArea() {
         alert("Return to home?");
     });
 
-    let skipButton = createElement("button", "skip-question-btn");
-    skipButton.innerHTML = "Skip question";
-    skipButton.addEventListener("click", skipQuestion);
-
     let nextQuestionButton = createElement("button", "next-question-btn");
     nextQuestionButton.innerHTML = "Next question";
     // nextQuestionButton.addEventListener("click", checkAnswer);
+
+    let skipButton = createElement("button", "skip-question-btn");
+    skipButton.innerHTML = "Skip question";
+    skipButton.addEventListener("click", skipQuestion);
 
     gameAreaLeft3.appendChild(homeButton);
     gameAreaLeft3.appendChild(skipButton);
@@ -367,13 +368,23 @@ function skipQuestion() {
     // Increase the skip tally
     let oldSkipTally = parseInt(document.getElementById("skip-tally-num").innerText);
     document.getElementById("skip-tally-num").innerText = ++oldSkipTally; 
+
+    console.log(gameLength);
+    console.log(questionsAnswered);
+
+    // End game if questions have all been answered
+    if (questionsAnswered === parseInt(gameLength)) {
+        endGame();
+    }
     
 }
 
 // Show answers screen
 
 // End game screen
-
+function endGame() {
+    alert("Game ended!");
+}
 // Pop-ups : 
 // Game difficult info pop-up
 // Choose an answer pop-up
