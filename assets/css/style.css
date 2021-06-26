@@ -16,3 +16,12 @@ html {}
 #input-name-text{}
 #input-name-input{}
 #input-name-btn{}
+
+/* Game Options Screen Styling */
+#game-options-div{}
+#game-options-welcome-name{}
+#game-options-text{}
+#game-difficulty-form{}
+#game-options-difficulty-text{}
+#game-options-length-text{}
+#game-options-btn{}

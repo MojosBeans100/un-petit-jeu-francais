@@ -2,6 +2,9 @@
 // define the main div as a global variable as this will be used in lots of functions - saves having to "get" it each time
 let mainDiv = document.getElementById("main-div");
 
+let gameDifficulty;
+let numOfQuestions;
+
 // Create elements function
 function  createElement(elementType, id) {
     let newElement = document.createElement(elementType);
@@ -120,7 +123,7 @@ function gameOptions() {
     for (let i = 0; i < gameLengthOptions.length; i++) {
 
         // Create radio buttons
-        var lengthRadio = createElement("input",`${gameLengthOptions[i]}`);
+        var lengthRadio = createElement("input",`gameLength${gameLengthOptions[i]}`);
         lengthRadio.type = "radio";
         lengthRadio.name = "lengthRadioName";
         lengthRadio.checked = false;
@@ -129,8 +132,7 @@ function gameOptions() {
         // Create radio button labels
         var lengthLabel = document.createElement("label");
         lengthLabel.innerHTML = gameLengthOptions[i];
-        lengthLabel.id = (`gameLength${gameLengthOptions[i]}`);
-
+        
         // Append radios and labels to form
         gameOptionsForm.appendChild(lengthRadio);
         gameOptionsForm.appendChild(lengthLabel);
@@ -154,10 +156,35 @@ function gameOptions() {
     gameOptionsBtn.innerHTML = "Play game!";
 
 }
+
 // Open game area screen
  
 // Generate question
+function generateQuestion() {
 
+
+
+    let mcRandomNums = [];
+    let mcQuestions = [];
+    let mcAnswers = [];
+
+    for (i = 0; i < numOfQuestions; i ++) {
+
+        // Create 4 random numbers between 1 and max length of language array
+        mcRandomNums[i] = Math.floor(Math.random() * options[questionLanguage][gameDifficulty].length);
+
+        // Index words from language arrays using these random numbers
+        mcQuestions[i] = options[questionLanguage][gameDifficulty][mcRandomNums[i]];
+        mcAnswers[i] = options[answerLanguage][gameDifficulty][mcRandomNums[i]];
+
+        // Remove the chosen words in each language to prevent them being repeated
+        options[questionLanguage][gameDifficulty].splice(mcRandomNums[i]), 1);
+        options[answerLanguage][gameDifficulty].splice(mcRandomNums[i]), 1);
+
+    }
+
+
+}
 // Check answer
 
 // Show answers screen
