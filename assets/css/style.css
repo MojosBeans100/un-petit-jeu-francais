@@ -35,6 +35,10 @@ html {}
 #game-area-right-1{}
 #game-area-right-2{}
 
+#game-home-btn
+#skip-question-btn
+#next-question-btn
+
 /* Generate Questions Styling */
 #mc-question{}
 #mc-answer{}
