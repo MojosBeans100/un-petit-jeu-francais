@@ -28,11 +28,21 @@ html {}
 
 /* Open Game Area Styling */
 #game-area-div{}
-#game-area-left{}
+
+#game-area-left{
+    width: 70%;
+    float: left;
+}
+
 #game-area-left-1{}
 #game-area-left-2{}
 #game-area-left-3{}
-#game-area-right{}
+
+#game-area-right{
+    width: 30%;
+    float: right;
+}
+
 #game-area-right-1{}
 #game-area-right-2{}
 
@@ -53,3 +63,4 @@ html {}
 /* Generate Questions Styling */
 #mc-question{}
 #mc-answer{}
+#mc-form

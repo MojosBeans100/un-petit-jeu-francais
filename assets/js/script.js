@@ -292,13 +292,31 @@ function generateQuestion() {
     questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
     // append to HTML
 
-    // Create the multiple choice radio buttons
+    // Create form for the multiple choice radio buttons
+    let mcForm = createElement("form","mc-form");
+    gameAreaLeft2.appendChild(mcForm);
 
+    // Create the multiple choice radio buttons
+    for (let i = 0; i < mcRandomNums.length; i++){
+
+        var mcRadios = document.createElement("input");
+        mcRadios.type = "radio";
+        mcRadios.name = "mcRadios";
+
+        var mcLabels = document.createElement("label");
+        mcLabels.innerHTML = mcQuestions[i];
+
+        mcForm.appendChild(mcRadios);
+        mcForm.appendChild(mcLabels);
+        
+    }
 
 }
 
 
 // Check answer
+
+// Skip question
 
 // Show answers screen
 
