@@ -27,6 +27,7 @@ html {}
 #game-options-btn{}
 
 /* Open Game Area Styling */
+#game-area-div{}
 #game-area-left{}
 #game-area-left-1{}
 #game-area-left-2{}
@@ -35,9 +36,19 @@ html {}
 #game-area-right-1{}
 #game-area-right-2{}
 
+/* buttons */
 #game-home-btn
 #skip-question-btn
 #next-question-btn
+
+/* tallies  */
+#game-progress
+#correct-tally-num
+#correct-tally-label
+#incorrect-tally-num
+#incorrect-tally-label
+#skip-tally-num
+#skip-tally-label
 
 /* Generate Questions Styling */
 #mc-question{}

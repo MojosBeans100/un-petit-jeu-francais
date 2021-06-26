@@ -4,7 +4,7 @@ let mainDiv = document.getElementById("main-div");
 
 let gameDifficulty;
 let numOfQuestions;
-
+let questionsAnswered = 0;
 let trueAnswers;
 let trueQuestions;
 
@@ -167,7 +167,6 @@ function createGameArea() {
     for (i = 0; i < 3; i++) {
         if (document.getElementsByTagName("input")[i].checked) {
             gameDifficulty = document.getElementsByTagName("label")[i].innerHTML;
-            console.log(gameDifficulty);
         }
     }
 
@@ -175,10 +174,11 @@ function createGameArea() {
     for (i = 3; i < 7; i++) {
         if (document.getElementsByTagName("input")[i].checked) {
             gameLength = document.getElementsByTagName("label")[i].innerHTML;
-            console.log(gameLength);
         }
     }
 
+    // Remove previous screen
+    document.getElementById("game-options-div").remove();
 
     // Create the main game area div
     let gameAreaDiv = createElement("div", "game-area-div");
@@ -224,52 +224,78 @@ function createGameArea() {
     gameAreaLeft3.appendChild(skipButton);
     gameAreaLeft3.appendChild(nextQuestionButton);
 
+    // Create progress tallies and scores
+    let gameProgress = createElement("p","game-progress");
+    gameProgress.innerHTML = (`Question ${questionsAnswered + 1} of ${gameLength}`);
+
+    let correctTally = createElement("p","correct-tally-num");
+    correctTally.innerHTML = 0;
+    let correctTallyLabel = createElement("p","correct-tally-label");
+    correctTallyLabel.innerHTML = "correct";
+
+    let incorrectTally = createElement("p","incorrect-tally-num");
+    incorrectTally.innerHTML = 0;
+    let incorrectTallyLabel = createElement("p","incorrect-tally-label");
+    incorrectTallyLabel.innerHTML = "incorrect";
+
+    let skipTally = createElement("p","skip-tally-num");
+    skipTally.innerHTML = 0;
+    let skipTallyLabel = createElement("p","skip-tally-label");
+    skipTallyLabel.innerHTML = "skipped";
+
+    gameAreaRight2.appendChild(correctTally);
+    gameAreaRight2.appendChild(correctTallyLabel);
+    gameAreaRight2.appendChild(incorrectTally);
+    gameAreaRight2.appendChild(incorrectTallyLabel);
+    gameAreaRight2.appendChild(skipTally);
+    gameAreaRight2.appendChild(skipTallyLabel);
+
 }
 
-// // Generate question
-// function generateQuestion() {
+// Generate question
+function generateQuestion() {
 
-//     // get user's answers
+    // get user's answers
 
-//     let mcRandomNums = [];
-//     let mcQuestions = [];
-//     let mcAnswers = [];
+    let mcRandomNums = [];
+    let mcQuestions = [];
+    let mcAnswers = [];
 
-//     for (i = 0; i < numOfQuestions; i ++) {
+    for (i = 0; i < numOfQuestions; i ++) {
 
-//         // Create random numbers between 1 and max length of language array
-//         mcRandomNums[i] = Math.floor(Math.random() * options[questionLanguage][gameDifficulty].length);
+        // Create random numbers between 1 and max length of language array
+        mcRandomNums[i] = Math.floor(Math.random() * options[questionLanguage][gameDifficulty].length);
 
-//         // Index words from language arrays using these random numbers
-//         mcQuestions[i] = options[questionLanguage][gameDifficulty][mcRandomNums[i]];
-//         mcAnswers[i] = options[answerLanguage][gameDifficulty][mcRandomNums[i]];
+        // Index words from language arrays using these random numbers
+        mcQuestions[i] = options[questionLanguage][gameDifficulty][mcRandomNums[i]];
+        mcAnswers[i] = options[answerLanguage][gameDifficulty][mcRandomNums[i]];
 
-//         // Remove the chosen words in each language to prevent them being repeated
-//         options[questionLanguage][gameDifficulty].splice(mcRandomNums[i]), 1);
-//         options[answerLanguage][gameDifficulty].splice(mcRandomNums[i]), 1);
-//     }
+        // Remove the chosen words in each language to prevent them being repeated
+        options[questionLanguage][gameDifficulty].splice(mcRandomNums[i], 1);
+        options[answerLanguage][gameDifficulty].splice(mcRandomNums[i], 1);
+    }
 
-//     // Pick a value between 1 and 4 (5 for med, 6 for hard) to be the "chosen" question and answer word
-//     let chosenRandomNum = Math.floor(Math.random()* (numOfQuestions - 1)) + 1;
+    // Pick a value between 1 and 4 (5 for med, 6 for hard) to be the "chosen" question and answer word
+    let chosenRandomNum = Math.floor(Math.random()* (numOfQuestions - 1)) + 1;
 
-//     // Index the chosen question and answer from multiple choice
-//     mcAnswer = mcAnswers[chosenRandomNum];
-//     mcAnswer.id = "mc-answer";
-//     trueAnswers.push(mcAnswer);
+    // Index the chosen question and answer from multiple choice
+    mcAnswer = mcAnswers[chosenRandomNum];
+    mcAnswer.id = "mc-answer";
+    trueAnswers.push(mcAnswer);
 
-//     mcQuestion = mcQuestions[chosenRandomNum];
-//     mcQuestion.id = "mc-question";
-//     trueQuestions.push(mcQuestion);
+    mcQuestion = mcQuestions[chosenRandomNum];
+    mcQuestion.id = "mc-question";
+    trueQuestions.push(mcQuestion);
 
-//     // Create the question
-//     let questionText = createElement("h1","question-text");
-//     questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
-//     // append to HTML
+    // Create the question
+    let questionText = createElement("h1","question-text");
+    questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
+    // append to HTML
 
-//     // Create the multiple choice radio buttons
+    // Create the multiple choice radio buttons
 
 
-// }
+}
 
 
 // Check answer
