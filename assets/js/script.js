@@ -239,10 +239,7 @@ function createGameArea() {
     gameAreaLeft3.appendChild(skipButton);
     gameAreaLeft3.appendChild(nextQuestionButton);
 
-    // Create progress tallies and scores
-    let gameProgress = createElement("p","game-progress");
-    gameProgress.innerHTML = (`Question ${questionsAnswered + 1} of ${gameLength}`);
-
+    // Create tallies and scores
     let correctTally = createElement("p","correct-tally-num");
     correctTally.innerHTML = 0;
     let correctTallyLabel = createElement("p","correct-tally-label");
@@ -258,7 +255,6 @@ function createGameArea() {
     let skipTallyLabel = createElement("p","skip-tally-label");
     skipTallyLabel.innerHTML = "skipped";
 
-    gameAreaRight1.appendChild(gameProgress);
     gameAreaRight2.appendChild(correctTally);
     gameAreaRight2.appendChild(correctTallyLabel);
     gameAreaRight2.appendChild(incorrectTally);
@@ -276,6 +272,7 @@ function generateQuestion() {
     let questionLanguage;
     let answerLanguage;
 
+    // Assign values dependent on difficulty chosen
     if (gameDifficulty === "easy") {
         numOfQuestions = 4;
         questionLanguage = "French";
@@ -320,16 +317,19 @@ function generateQuestion() {
     mcQuestion.id = "mc-question";
     trueQuestions.push(mcQuestion);
 
+    // Create progress tally - updated when next question or skip question is clicked
+    let gameProgress = createElement("p","game-progress");
+    gameProgress.innerHTML = (`Question ${questionsAnswered + 1} of ${gameLength}`);
+    document.getElementById("game-area-right-1").appendChild(gameProgress);
+
     // Create the question
     let questionText = createElement("h1","question-text");
     questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
-    let gameAreaLeft1 = document.getElementById("game-area-left-1");
-    gameAreaLeft1.appendChild(questionText);
+    document.getElementById("game-area-left-1").appendChild(questionText);
 
     // Create form for the multiple choice radio buttons
     let mcForm = createElement("form","mc-form");
-    let gameAreaLeft2 = document.getElementById("game-area-left-2");
-    gameAreaLeft2.appendChild(mcForm);
+    document.getElementById("game-area-left-2").appendChild(mcForm);
 
     // Create the multiple choice radio buttons
     for (let i = 0; i < mcRandomNums.length; i++){
@@ -359,6 +359,7 @@ function skipQuestion() {
     // Remove current question and multiple choice form
     document.getElementsByTagName("h1")[0].remove();
     document.getElementsByTagName("form")[0].remove();
+    document.getElementsByTagName("p")[0].remove();
 
     // Generate another question
     generateQuestion();
