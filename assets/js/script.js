@@ -5,8 +5,8 @@ let mainDiv = document.getElementById("main-div");
 let gameDifficulty;
 let numOfQuestions;
 let questionsAnswered = 0;
-let trueAnswers;
-let trueQuestions;
+let trueAnswers = [];
+let trueQuestions = [];
 
 // Define language arrays
 const options = {
@@ -181,7 +181,7 @@ function createGameArea() {
     // Get user's chosen difficulty
     for (i = 0; i < 3; i++) {
         if (document.getElementsByTagName("input")[i].checked) {
-            gameDifficulty = document.getElementsByTagName("label")[i].innerHTML;
+            gameDifficulty = document.getElementsByTagName("label")[i].innerHTML.toLowerCase();
         }
     }
 
@@ -229,7 +229,7 @@ function createGameArea() {
 
     let skipButton = createElement("button", "skip-question-btn");
     skipButton.innerHTML = "Skip question";
-    // skipButton.addEventListener("click", skipQuestion);
+    skipButton.addEventListener("click", skipQuestion);
 
     let nextQuestionButton = createElement("button", "next-question-btn");
     nextQuestionButton.innerHTML = "Next question";
@@ -258,6 +258,7 @@ function createGameArea() {
     let skipTallyLabel = createElement("p","skip-tally-label");
     skipTallyLabel.innerHTML = "skipped";
 
+    gameAreaRight1.appendChild(gameProgress);
     gameAreaRight2.appendChild(correctTally);
     gameAreaRight2.appendChild(correctTallyLabel);
     gameAreaRight2.appendChild(incorrectTally);
@@ -265,12 +266,29 @@ function createGameArea() {
     gameAreaRight2.appendChild(skipTally);
     gameAreaRight2.appendChild(skipTallyLabel);
 
+    generateQuestion();
+
 }
 
 // Generate question
 function generateQuestion() {
 
-    // get user's answers
+    let questionLanguage;
+    let answerLanguage;
+
+    if (gameDifficulty === "easy") {
+        numOfQuestions = 4;
+        questionLanguage = "French";
+        answerLanguage = "English";
+    } else if (gameDifficulty === "medium") {
+        numOfQuestions = 5;
+        questionLanguage = "English";
+        answerLanguage = "French";
+    } else {
+        numOfQuestions = 6;
+        questionLanguage = "English";
+        answerLanguage = "French";
+    };
 
     let mcRandomNums = [];
     let mcQuestions = [];
@@ -280,7 +298,7 @@ function generateQuestion() {
 
         // Create random numbers between 1 and max length of language array
         mcRandomNums[i] = Math.floor(Math.random() * options[questionLanguage][gameDifficulty].length);
-
+        
         // Index words from language arrays using these random numbers
         mcQuestions[i] = options[questionLanguage][gameDifficulty][mcRandomNums[i]];
         mcAnswers[i] = options[answerLanguage][gameDifficulty][mcRandomNums[i]];
@@ -292,23 +310,25 @@ function generateQuestion() {
 
     // Pick a value between 1 and 4 (5 for med, 6 for hard) to be the "chosen" question and answer word
     let chosenRandomNum = Math.floor(Math.random()* (numOfQuestions - 1)) + 1;
-
+    
     // Index the chosen question and answer from multiple choice
-    mcAnswer = mcAnswers[chosenRandomNum];
+    let mcAnswer = mcAnswers[chosenRandomNum];
     mcAnswer.id = "mc-answer";
     trueAnswers.push(mcAnswer);
 
-    mcQuestion = mcQuestions[chosenRandomNum];
+    let mcQuestion = mcQuestions[chosenRandomNum];
     mcQuestion.id = "mc-question";
     trueQuestions.push(mcQuestion);
 
     // Create the question
     let questionText = createElement("h1","question-text");
     questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
-    // append to HTML
+    let gameAreaLeft1 = document.getElementById("game-area-left-1");
+    gameAreaLeft1.appendChild(questionText);
 
     // Create form for the multiple choice radio buttons
     let mcForm = createElement("form","mc-form");
+    let gameAreaLeft2 = document.getElementById("game-area-left-2");
     gameAreaLeft2.appendChild(mcForm);
 
     // Create the multiple choice radio buttons
@@ -322,9 +342,8 @@ function generateQuestion() {
         mcLabels.innerHTML = mcQuestions[i];
 
         mcForm.appendChild(mcRadios);
-        mcForm.appendChild(mcLabels);
-        
-    }
+        mcForm.appendChild(mcLabels);   
+    } 
 
 }
 
@@ -332,6 +351,19 @@ function generateQuestion() {
 // Check answer
 
 // Skip question
+function skipQuestion() {
+
+    questionsAnswered++;
+
+    document.getElementsByTagName("h1")[0].remove();
+    document.getElementsByTagName("form")[0].remove();
+
+    generateQuestion();
+
+    let oldSkipTally = parseInt(document.getElementById("skip-tally-num").innerText);
+    document.getElementById("skip-tally-num").innerText = ++oldSkipTally; 
+    
+}
 
 // Show answers screen
 
