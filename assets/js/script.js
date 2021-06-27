@@ -1,3 +1,5 @@
+// jshint esversion: 6
+
 // Global variables
 // define the main div as a global variable as this will be used in lots of functions - saves having to "get" it each time
 let mainDiv = document.getElementById("main-div");
@@ -11,6 +13,7 @@ let trueQuestions = [];
 let userAnswers = [];
 let mcQuestion;
 let mcAnswer;
+var i;
 
 // Define language arrays
 const options = {
@@ -161,8 +164,8 @@ function gameOptions() {
     }
 
     // Set default options 
-    Easy.checked = true;
-    gameLength10.checked = true;
+    gameOptionsForm[0].checked = true;
+    gameOptionsForm[3].checked = true;
 
     let gameOptionsBtn = createElement("button", "game-options-btn");
     gameOptionsBtn.addEventListener("click", function () {
@@ -289,7 +292,7 @@ function generateQuestion() {
         numOfQuestions = 6;
         questionLanguage = "English";
         answerLanguage = "French";
-    };
+    }
 
     let mcRandomNums = [];
     let mcQuestions = [];
@@ -490,7 +493,26 @@ function showAnswers() {
 
 // End game screen
 function endGame() {
-    alert("Game ended!");
+    
+    // get score
+    let finalCorrect = document.getElementById("correct-tally-num");
+
+    // create endGame HTML & append
+    let endGameDiv = createElement("div","end-game-div");
+    mainDiv.appendChild(endGameDiv);
+
+    let congratsMessage = createElement("h1","congrats-message");
+    endGameDiv.appendChild(congratsMessage);
+
+    let endScoreMessage = createElement("h2","end-score-message");
+    endScoreMessage.innerHTML = (`You scored ${finalCorrect} / ${gameLength}!`);
+    endGameDiv.appendChild(endScoreMessage);
+
+    let motivationMessage = createElement("p","motivation-message");
+    endGameDiv.appendChild(motivationMessage);
+
+    
+
 }
 // Pop-ups : 
 // Game difficulty info pop-up
