@@ -351,7 +351,6 @@ function generateQuestion() {
 
 }
 
-
 // Check answer
 function checkAnswer() {
 
@@ -435,18 +434,21 @@ function skipQuestion() {
 function showAnswers() {
 
     // create HTML for this function - title and lists
+    let showAnswersDiv = createElement("div","show-answers-div");
+    mainDiv.appendChild(showAnswersDiv);
+
     let showAnswersTitle = createElement("h1", "show-answers-title");
     showAnswersTitle.innerHTML = "Here's how you did:";
-    mainDiv.appendChild(showAnswersTitle);
+    showAnswersDiv.appendChild(showAnswersTitle);
 
     let answersList = createElement("ul", "answers-list");
-    mainDiv.appendChild(answersList);
+    showAnswersDiv.appendChild(answersList);
 
     let userAnswersList = createElement("ul", "user-answers-list");
-    mainDiv.appendChild(userAnswersList);
+    showAnswersDiv.appendChild(userAnswersList);
 
     let trueAnswersList = createElement("ul", "true-answers-list");
-    mainDiv.appendChild(trueAnswersList);
+    showAnswersDiv.appendChild(trueAnswersList);
 
     // create list items and append to above unordered lists
     for (i = 0; i < gameLength; i++) {
@@ -476,6 +478,13 @@ function showAnswers() {
 
     // remove last screen
     document.getElementById("game-area-div").remove();
+
+    // button to link to next screen
+    let showAnswersBtn = createElement("button","show-answers-button");
+    showAnswersBtn.innerHTML = "OK";
+    showAnswersDiv.appendChild(showAnswersBtn);
+    showAnswersBtn.addEventListener("click",endGame);
+
 
 }
 
