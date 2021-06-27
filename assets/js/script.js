@@ -8,6 +8,8 @@ let gameLength;
 let questionsAnswered = 0;
 let trueAnswers = [];
 let trueQuestions = [];
+let mcQuestion;
+let mcAnswer;
 
 // Define language arrays
 const options = {
@@ -230,7 +232,7 @@ function createGameArea() {
 
     let nextQuestionButton = createElement("button", "next-question-btn");
     nextQuestionButton.innerHTML = "Next question";
-    // nextQuestionButton.addEventListener("click", checkAnswer);
+    nextQuestionButton.addEventListener("click", checkAnswer);
 
     let skipButton = createElement("button", "skip-question-btn");
     skipButton.innerHTML = "Skip question";
@@ -241,19 +243,19 @@ function createGameArea() {
     gameAreaLeft3.appendChild(nextQuestionButton);
 
     // Create tallies and scores
-    let correctTally = createElement("p","correct-tally-num");
+    let correctTally = createElement("p", "correct-tally-num");
     correctTally.innerHTML = 0;
-    let correctTallyLabel = createElement("p","correct-tally-label");
+    let correctTallyLabel = createElement("p", "correct-tally-label");
     correctTallyLabel.innerHTML = "correct";
 
-    let incorrectTally = createElement("p","incorrect-tally-num");
+    let incorrectTally = createElement("p", "incorrect-tally-num");
     incorrectTally.innerHTML = 0;
-    let incorrectTallyLabel = createElement("p","incorrect-tally-label");
+    let incorrectTallyLabel = createElement("p", "incorrect-tally-label");
     incorrectTallyLabel.innerHTML = "incorrect";
 
-    let skipTally = createElement("p","skip-tally-num");
+    let skipTally = createElement("p", "skip-tally-num");
     skipTally.innerHTML = 0;
-    let skipTallyLabel = createElement("p","skip-tally-label");
+    let skipTallyLabel = createElement("p", "skip-tally-label");
     skipTallyLabel.innerHTML = "skipped";
 
     gameAreaRight2.appendChild(correctTally);
@@ -292,11 +294,11 @@ function generateQuestion() {
     let mcQuestions = [];
     let mcAnswers = [];
 
-    for (i = 0; i < numOfQuestions; i ++) {
+    for (i = 0; i < numOfQuestions; i++) {
 
         // Create random numbers between 1 and max length of language array
         mcRandomNums[i] = Math.floor(Math.random() * options[questionLanguage][gameDifficulty].length);
-        
+
         // Index words from language arrays using these random numbers
         mcQuestions[i] = options[questionLanguage][gameDifficulty][mcRandomNums[i]];
         mcAnswers[i] = options[answerLanguage][gameDifficulty][mcRandomNums[i]];
@@ -307,33 +309,33 @@ function generateQuestion() {
     }
 
     // Pick a value between 1 and 4 (5 for med, 6 for hard) to be the "chosen" question and answer word
-    let chosenRandomNum = Math.floor(Math.random()* (numOfQuestions - 1)) + 1;
-    
+    let chosenRandomNum = Math.floor(Math.random() * (numOfQuestions - 1)) + 1;
+
     // Index the chosen question and answer from multiple choice
-    let mcAnswer = mcAnswers[chosenRandomNum];
+    mcAnswer = mcAnswers[chosenRandomNum];
     mcAnswer.id = "mc-answer";
     trueAnswers.push(mcAnswer);
 
-    let mcQuestion = mcQuestions[chosenRandomNum];
+    mcQuestion = mcQuestions[chosenRandomNum];
     mcQuestion.id = "mc-question";
     trueQuestions.push(mcQuestion);
 
     // Create progress tally - updated when next question or skip question is clicked
-    let gameProgress = createElement("p","game-progress");
+    let gameProgress = createElement("p", "game-progress");
     gameProgress.innerHTML = (`Question ${questionsAnswered + 1} of ${gameLength}`);
     document.getElementById("game-area-right-1").appendChild(gameProgress);
 
     // Create the question
-    let questionText = createElement("h1","question-text");
+    let questionText = createElement("h1", "question-text");
     questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
     document.getElementById("game-area-left-1").appendChild(questionText);
 
     // Create form for the multiple choice radio buttons
-    let mcForm = createElement("form","mc-form");
+    let mcForm = createElement("form", "mc-form");
     document.getElementById("game-area-left-2").appendChild(mcForm);
 
-    // Create the multiple choice radio buttons
-    for (let i = 0; i < mcRandomNums.length; i++){
+    // Create the multiple choice radio buttons & labels
+    for (let i = 0; i < mcRandomNums.length; i++) {
 
         var mcRadios = document.createElement("input");
         mcRadios.type = "radio";
@@ -343,8 +345,8 @@ function generateQuestion() {
         mcLabels.innerHTML = mcQuestions[i];
 
         mcForm.appendChild(mcRadios);
-        mcForm.appendChild(mcLabels);   
-    } 
+        mcForm.appendChild(mcLabels);
+    }
 
 }
 
@@ -353,14 +355,17 @@ function generateQuestion() {
 function checkAnswer() {
 
     // get length of radio buttons form - changes dependent on quiz difficulty
-    let numOfRadios = document.getElementById("mcForm").length;
+    let numOfRadios = document.getElementById("mc-form").length;
 
     // get scores
     let oldCorrectTally = parseInt((document.getElementById("correct-tally-num").innerText));
     let oldIncorrectTally = parseInt((document.getElementById("incorrect-tally-num").innerText));
 
+    // create matrix to record user answers for feedback
+    let userAnswers = [];
+
     // Check status of radio buttons
-    for (i = 0; i < numOfRadios; i++ ){
+    for (i = 0; i < numOfRadios; i++) {
 
         // if a radio button is picked
         if (document.getElementsByTagName("input")[i].checked) {
@@ -377,14 +382,26 @@ function checkAnswer() {
 
             // increment progress tally, remove old question and answers, and regenerate question
             questionsAnswered++;
+            document.getElementsByTagName("p")[0].remove();
             document.getElementsByTagName("h1")[0].remove();
             document.getElementsByTagName("form")[0].remove();
             generateQuestion();
-
+            break;
+        } else {
+            if (i === numOfRadios - 1) {
+                alert("Please choose an answer, or skip the question");
+            }
+            continue;
         }
-
     }
 
+    // add user answer to array for feedback later
+    userAnswers.push(pickedAnswer);
+
+    // end game if questions answered = game length
+    if (questionsAnswered === gameLength) {
+        alert("end game");
+    }
 
 }
 
@@ -404,16 +421,13 @@ function skipQuestion() {
 
     // Increase the skip tally
     let oldSkipTally = parseInt(document.getElementById("skip-tally-num").innerText);
-    document.getElementById("skip-tally-num").innerText = ++oldSkipTally; 
-
-    console.log(gameLength);
-    console.log(questionsAnswered);
+    document.getElementById("skip-tally-num").innerText = ++oldSkipTally;
 
     // End game if questions have all been answered
     if (questionsAnswered === parseInt(gameLength)) {
         endGame();
     }
-    
+
 }
 
 // Show answers screen
@@ -423,6 +437,6 @@ function endGame() {
     alert("Game ended!");
 }
 // Pop-ups : 
-// Game difficult info pop-up
+// Game difficulty info pop-up
 // Choose an answer pop-up
 // You will lose progress pop-up 
