@@ -8,6 +8,7 @@ let gameLength;
 let questionsAnswered = 0;
 let trueAnswers = [];
 let trueQuestions = [];
+let userAnswers = [];
 let mcQuestion;
 let mcAnswer;
 
@@ -361,9 +362,8 @@ function checkAnswer() {
     let oldCorrectTally = parseInt((document.getElementById("correct-tally-num").innerText));
     let oldIncorrectTally = parseInt((document.getElementById("incorrect-tally-num").innerText));
 
-    // create matrix to record user answers for feedback
-    let userAnswers = [];
-
+    let pickedAnswer;
+    
     // Check status of radio buttons
     for (i = 0; i < numOfRadios; i++) {
 
@@ -371,7 +371,7 @@ function checkAnswer() {
         if (document.getElementsByTagName("input")[i].checked) {
 
             // get the user's answer
-            let pickedAnswer = document.getElementsByTagName("label")[i].innerText;
+            pickedAnswer = document.getElementsByTagName("label")[i].innerText;
 
             // if user answer is correct, increment correct tally - if not, increment incorrect tally
             if (pickedAnswer === mcQuestion) {
@@ -387,6 +387,7 @@ function checkAnswer() {
             document.getElementsByTagName("form")[0].remove();
             generateQuestion();
             break;
+
         } else {
             if (i === numOfRadios - 1) {
                 alert("Please choose an answer, or skip the question");
@@ -399,8 +400,8 @@ function checkAnswer() {
     userAnswers.push(pickedAnswer);
 
     // end game if questions answered = game length
-    if (questionsAnswered === gameLength) {
-        alert("end game");
+    if (questionsAnswered === parseInt(gameLength)) {
+        showAnswers();
     }
 
 }
@@ -425,12 +426,58 @@ function skipQuestion() {
 
     // End game if questions have all been answered
     if (questionsAnswered === parseInt(gameLength)) {
-        endGame();
+        showAnswers();
     }
 
 }
 
 // Show answers screen
+function showAnswers() {
+
+    // create HTML for this function - title and lists
+    let showAnswersTitle = createElement("h1", "show-answers-title");
+    showAnswersTitle.innerHTML = "Here's how you did:";
+    mainDiv.appendChild(showAnswersTitle);
+
+    let answersList = createElement("ul", "answers-list");
+    mainDiv.appendChild(answersList);
+
+    let userAnswersList = createElement("ul", "user-answers-list");
+    mainDiv.appendChild(userAnswersList);
+
+    let trueAnswersList = createElement("ul", "true-answers-list");
+    mainDiv.appendChild(trueAnswersList);
+
+    // create list items and append to above unordered lists
+    for (i = 0; i < gameLength; i++) {
+
+        let answerA = document.createElement("li");
+        answerA.innerHTML = (`${trueAnswers[i]}`);
+        answersList.appendChild(answerA);
+
+        let answerB = document.createElement("li");
+        answerB.innerHTML = (`${userAnswers[i]}`);
+        userAnswersList.appendChild(answerB);
+
+        let answerC = document.createElement("li");
+        answerC.innerHTML = (`${trueQuestions[i]}`);
+        trueAnswersList.appendChild(answerC);
+        answerC.classList.add("white-text");
+
+        // if answer is correct, font color is green, otherwise red and correct answer appears beside
+        if (trueQuestions[i] === userAnswers[i]) {
+            answerB.classList.add("correct-words");
+        } else {
+            answerB.classList.add("incorrect-words");
+            answerC.classList.remove("white-text");
+            answerC.classList.add("correct-words");
+        }
+    }
+
+    // remove last screen
+    document.getElementById("game-area-div").remove();
+
+}
 
 // End game screen
 function endGame() {

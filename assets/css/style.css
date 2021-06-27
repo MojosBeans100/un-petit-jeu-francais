@@ -64,3 +64,11 @@ html {}
 #mc-question{}
 #mc-answer{}
 #mc-form
+
+/* Show Answers */
+#show-answers-title{}
+#answers-list{}
+#user-answers-list{}
+#true-answers-list{}
+
+.white-text{}
