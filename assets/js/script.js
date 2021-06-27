@@ -350,6 +350,43 @@ function generateQuestion() {
 
 
 // Check answer
+function checkAnswer() {
+
+    // get length of radio buttons form - changes dependent on quiz difficulty
+    let numOfRadios = document.getElementById("mcForm").length;
+
+    // get scores
+    let oldCorrectTally = parseInt((document.getElementById("correct-tally-num").innerText));
+    let oldIncorrectTally = parseInt((document.getElementById("incorrect-tally-num").innerText));
+
+    // Check status of radio buttons
+    for (i = 0; i < numOfRadios; i++ ){
+
+        // if a radio button is picked
+        if (document.getElementsByTagName("input")[i].checked) {
+
+            // get the user's answer
+            let pickedAnswer = document.getElementsByTagName("label")[i].innerText;
+
+            // if user answer is correct, increment correct tally - if not, increment incorrect tally
+            if (pickedAnswer === mcQuestion) {
+                document.getElementById("correct-tally-num").innerText = ++oldCorrectTally;
+            } else {
+                document.getElementById("incorrect-tally-num").innerText = ++oldIncorrectTally;
+            }
+
+            // increment progress tally, remove old question and answers, and regenerate question
+            questionsAnswered++;
+            document.getElementsByTagName("h1")[0].remove();
+            document.getElementsByTagName("form")[0].remove();
+            generateQuestion();
+
+        }
+
+    }
+
+
+}
 
 // Skip question
 function skipQuestion() {
