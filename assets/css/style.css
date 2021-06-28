@@ -75,4 +75,10 @@ html {}
 .correct-words{}
 .incorrect-words{}
 
-#show-answers-button
+#show-answers-button{}
+
+/* End Game */
+#end-game-div{}
+#congrats-message{}
+#end-score-message{}
+#motivation-message{}

@@ -511,7 +511,21 @@ function endGame() {
     let motivationMessage = createElement("p","motivation-message");
     endGameDiv.appendChild(motivationMessage);
 
-    
+    // if GOOD score ( >= 80%)
+    if (finalCorrect / questionsAnswered >= 0.8) {
+        congratsMessage.innerHTML = "Félicitations!";
+        motivationMessage.innerHTML = "Wow, great score!  Why don't you try a harder level?";
+
+    // if OK score (40% - 80%)
+    } else if (finalCorrect / questionsAnswered < 0.8 && finalCorrect / questionsAnswered >= 0.4) {
+        congratsMessage.innerHTML = "Great!";
+        motivationMessage.innerHTML = "Well done!  Keep practicing!";
+
+    // if BAD score ( <= 40%)
+    } else {
+        congratsMessage.innerHTML = "Oh dear..";
+        motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested learning resource pages";
+    }
 
 }
 // Pop-ups : 
