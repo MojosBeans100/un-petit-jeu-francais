@@ -13,6 +13,7 @@ let trueQuestions = [];
 let userAnswers = [];
 let mcQuestion;
 let mcAnswer;
+let userName;
 var i;
 
 // Define language arrays
@@ -93,11 +94,24 @@ function inputName() {
 // Choose game options screen
 function gameOptions() {
 
-    // Get the user's name input value
-    let userName = document.getElementById("input-name-input").value;
+    // Get the user's name input value if the game is being replayed
+    if (questionsAnswered !== 0) {
 
-    // Remove previous screen
-    document.getElementById("input-name-div").remove();
+        // re-use userName
+        userName;
+        document.getElementById("end-game-div").remove();
+
+        // reset variables
+        trueAnswers = [];
+        trueQuestions = [];
+        userAnswers = [];
+        questionsAnswered = 0;
+
+    // get the user's name if it is the first game
+    } else {
+        userName = document.getElementById("input-name-input").value;
+        document.getElementById("input-name-div").remove();
+    } 
 
     // Create gameOptions HTML elements and append to relevant divs
     let gameOptionsDiv = createElement("div", "game-options-div");
@@ -497,6 +511,9 @@ function endGame() {
     // get score
     let finalCorrect = document.getElementById("correct-tally-num");
 
+    // remove previous screen
+    document.getElementById("show-answers-div").remove();
+
     // create endGame HTML & append
     let endGameDiv = createElement("div","end-game-div");
     mainDiv.appendChild(endGameDiv);
@@ -527,7 +544,15 @@ function endGame() {
         motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested learning resource pages";
     }
 
+    let playAgainBtn = createElement("button","play-again-btn");
+    playAgainBtn.innerHTML = "Play again";
+    endGameDiv.appendChild(playAgainBtn);
+    playAgainBtn.addEventListener("click",gameOptions);
+
 }
+
+
+
 // Pop-ups : 
 // Game difficulty info pop-up
 // Choose an answer pop-up
