@@ -615,10 +615,22 @@ function loseProgressPopUp() {
     loseProgressPopUpDiv.appendChild(yesLoseProgressBtn);
     yesLoseProgressBtn.addEventListener("click", function() {
         loseProgressPopUpDiv.remove();
+        document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
+        document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
         document.getElementById("game-area-div").remove();
         introScreen();
         clearAll();
     })
+
+    let noContinueGameBtn = createElement("button","no-continue-game-btn");
+    noContinueGameBtn.innerHTML = "No, keep playing";
+    loseProgressPopUpDiv.appendChild(noContinueGameBtn);
+    noContinueGameBtn.addEventListener("click", function() {
+        loseProgressPopUpDiv.remove();
+        document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
+        document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
+    })
+
 
 }
 
