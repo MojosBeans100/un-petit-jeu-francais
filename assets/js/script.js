@@ -38,6 +38,13 @@ function createElement(elementType, id) {
     return newElement;
 }
 
+function clearAll() {
+    questionsAnswered = 0;
+    trueAnswers = [];
+    trueQuestions = [];
+    userAnswers = [];
+}
+
 document.addEventListener("DOMContentLoaded", introScreen);
 
 // Intro screen function
@@ -96,16 +103,10 @@ function gameOptions() {
 
     // Get the user's name input value if the game is being replayed
     if (questionsAnswered !== 0) {
-
         // re-use userName
         userName;
         document.getElementById("end-game-div").remove();
-
-        // reset variables
-        trueAnswers = [];
-        trueQuestions = [];
-        userAnswers = [];
-        questionsAnswered = 0;
+        clearAll();       
 
     // get the user's name if it is the first game
     } else {
@@ -553,9 +554,13 @@ function endGame() {
     // add Home Button to link to intro screen
     let returnHomeBtn = createElement("button","return-home-btn");
     returnHomeBtn.innerHTML = "Return home";
-    returnHomeBtn.addEventListener();
+    returnHomeBtn.addEventListener("click",function() {
+        endGameDiv.remove();
+        introScreen();
+        clearAll();
+    });
     endGameDiv.appendChild(returnHomeBtn);
-    
+
 }
 
 
