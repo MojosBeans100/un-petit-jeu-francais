@@ -407,7 +407,7 @@ function checkAnswer() {
 
         } else {
             if (i === numOfRadios - 1) {
-                alert("Please choose an answer, or skip the question");
+                chooseAnswerPopUp();
             }
             continue;
         }
@@ -563,9 +563,38 @@ function endGame() {
 
 }
 
+// function difficultyPopUp() {
+//     alert("")
+// }
 
+function chooseAnswerPopUp() {
 
-// Pop-ups : 
-// Game difficulty info pop-up
-// Choose an answer pop-up
-// You will lose progress pop-up 
+    // create the pop up screen
+    let chooseAnswerPopUpDiv = createElement("div","choose-answer-div");
+    mainDiv.appendChild(chooseAnswerPopUpDiv);
+
+    // get the transparent div and add some colour to it to fade out the rest of the screen
+    document.getElementsByClassName("fade-div")[0].classList.add("fade-out-div");
+    document.getElementsByClassName("fade-div")[0].classList.remove("fade-div");
+
+    // create the prompt HTML
+    let chooseAnswerPrompt = createElement("p","choose-answer-prompt");
+    chooseAnswerPrompt.innerHTML = "Please choose an answer, or skip the question";
+    chooseAnswerPopUpDiv.appendChild(chooseAnswerPrompt);
+
+    // create the button HTML
+    let chooseAnswerBtn = createElement("button","choose-answer-btn");
+    chooseAnswerBtn.innerHTML = "Ok, got it";
+    chooseAnswerPopUpDiv.appendChild(chooseAnswerBtn);
+    chooseAnswerBtn.addEventListener("click", function() {
+        document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
+        document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
+        chooseAnswerPopUpDiv.remove();
+    })
+
+}
+
+function loseProgressPopUp() {
+
+}
+
