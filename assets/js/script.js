@@ -544,11 +544,18 @@ function endGame() {
         motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested learning resource pages";
     }
 
+    // add Play Again button to link back to gameOptions function
     let playAgainBtn = createElement("button","play-again-btn");
     playAgainBtn.innerHTML = "Play again";
     endGameDiv.appendChild(playAgainBtn);
     playAgainBtn.addEventListener("click",gameOptions);
 
+    // add Home Button to link to intro screen
+    let returnHomeBtn = createElement("button","return-home-btn");
+    returnHomeBtn.innerHTML = "Return home";
+    returnHomeBtn.addEventListener();
+    endGameDiv.appendChild(returnHomeBtn);
+    
 }
 
 
