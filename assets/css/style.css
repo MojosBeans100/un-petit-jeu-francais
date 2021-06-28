@@ -93,3 +93,11 @@ html {}
 .fade-out-div {
     opacity: 0.7;
 }
+
+/* Choose answer pop up */
+#choose-answer-div{}
+#choose-answer-btn{}
+
+/* Lose progress pop up */
+#lose-progress-div{}
+#lose-progress-prompt{}

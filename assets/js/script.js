@@ -246,7 +246,7 @@ function createGameArea() {
     let homeButton = createElement("button", "game-home-btn");
     homeButton.innerHTML = "Return to Home";
     homeButton.addEventListener("click", function () {
-        alert("Return to home?");
+        loseProgressPopUp();
     });
 
     let nextQuestionButton = createElement("button", "next-question-btn");
@@ -595,6 +595,30 @@ function chooseAnswerPopUp() {
 }
 
 function loseProgressPopUp() {
+
+    // create the pop up screen
+    let loseProgressPopUpDiv = createElement("div","lose-progress-div");
+    mainDiv.appendChild(loseProgressPopUpDiv);
+
+    // get the transparent div and add some colour to it to fade out the rest of the screen
+    document.getElementsByClassName("fade-div")[0].classList.add("fade-out-div");
+    document.getElementsByClassName("fade-div")[0].classList.remove("fade-div");
+
+    // create the prompt HTML
+    let loseProgressPrompt = createElement("p","lose-progress-prompt");
+    loseProgressPrompt.innerHTML = "Are you sure you want to leave?  You will lose all progress!";
+    loseProgressPopUpDiv.appendChild(loseProgressPrompt);
+
+    // create buttons
+    let yesLoseProgressBtn = createElement("button","yes-lose-progress-btn");
+    yesLoseProgressBtn.innerHTML = "Yes, quit game";
+    loseProgressPopUpDiv.appendChild(yesLoseProgressBtn);
+    yesLoseProgressBtn.addEventListener("click", function() {
+        loseProgressPopUpDiv.remove();
+        document.getElementById("game-area-div").remove();
+        introScreen();
+        clearAll();
+    })
 
 }
 
