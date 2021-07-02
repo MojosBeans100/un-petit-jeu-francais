@@ -64,10 +64,11 @@ function introScreen() {
     let introScreenBtn = createElement("button", "intro-screen-btn");
     introScreenDiv.appendChild(introScreenBtn);
     introScreenBtn.addEventListener("click", inputName);
+    introScreenBtn.classList.add("buttons");
 
     // Create the text for the elements
-    introScreenTitle.innerHTML = "Welcome to Un Petit Jeu Francais!";
-    introScreenGameDescr.innerHTML = "This website allows you to play a short, fun quiz to practice your level in French!";
+    introScreenTitle.innerHTML = "Welcome to <br> <span id='un-petit-jeu-span'>Un Petit Jeu Francais!</span>";
+    introScreenGameDescr.innerHTML = "This website allows you to play a short,<br> fun quiz to practice your level in French!";
     introScreenBtn.innerHTML = "Play quiz";
 
 }
@@ -92,6 +93,7 @@ function inputName() {
     let inputNameBtn = createElement("button", "input-name-btn");
     inputNameDiv.appendChild(inputNameBtn);
     inputNameBtn.addEventListener("click", gameOptions);
+    inputNameBtn.classList.add("buttons");
 
     // Create the text for the elements
     inputNameText.innerHTML = "First, let's start with your name";
@@ -184,6 +186,7 @@ function gameOptions() {
     gameOptionsForm[3].checked = true;
 
     let gameOptionsBtn = createElement("button", "game-options-btn");
+    gameOptionsBtn.classList.add("buttons");
     gameOptionsBtn.addEventListener("click", function () {
         createGameArea();
     });
@@ -245,6 +248,7 @@ function createGameArea() {
 
     // Create buttons
     let homeButton = createElement("button", "game-home-btn");
+    homeButton.classList.add("buttons");
     homeButton.innerHTML = "Return to Home";
     homeButton.addEventListener("click", function () {
         loseProgressPopUp();
@@ -252,10 +256,12 @@ function createGameArea() {
 
     let nextQuestionButton = createElement("button", "next-question-btn");
     nextQuestionButton.innerHTML = "Next question";
+    nextQuestionButton.classList.add("buttons");
     nextQuestionButton.addEventListener("click", checkAnswer);
 
     let skipButton = createElement("button", "skip-question-btn");
     skipButton.innerHTML = "Skip question";
+    skipButton.classList.add("buttons");
     skipButton.addEventListener("click", skipQuestion);
 
     gameAreaLeft3.appendChild(homeButton);
@@ -512,6 +518,7 @@ function showAnswers() {
     // button to link to next screen
     let showAnswersBtn = createElement("button", "show-answers-button");
     showAnswersBtn.innerHTML = "OK";
+    showAnswersBtn.classList.add("buttons");
     showAnswersDiv.appendChild(showAnswersBtn);
     showAnswersBtn.addEventListener("click", endGame);
 }
@@ -555,18 +562,21 @@ function endGame() {
     // add back to answers button
     let backToAnswersBtn = createElement("button","back-to-answers-btn");
     backToAnswersBtn.innerHTML = "Back to answers";
+    backToAnswersBtn.classList.add("buttons");
     endGameDiv.appendChild(backToAnswersBtn);
     backToAnswersBtn.addEventListener("click",showAnswers);
 
     // add Play Again button to link back to gameOptions function
     let playAgainBtn = createElement("button", "play-again-btn");
     playAgainBtn.innerHTML = "Play again";
+    playAgainBtn.classList.add("buttons");
     endGameDiv.appendChild(playAgainBtn);
     playAgainBtn.addEventListener("click", gameOptions);
 
     // add Home Button to link to intro screen
     let returnHomeBtn = createElement("button", "return-home-btn");
     returnHomeBtn.innerHTML = "Return home";
+    returnHomeBtn.classList.add("buttons");
     returnHomeBtn.addEventListener("click", function () {
         endGameDiv.remove();
         introScreen();
@@ -619,6 +629,7 @@ function difficultyPopUp() {
     let difficultyPopUpBtn = createElement("button", "difficulty-pop-up-btn");
     difficultyPopUpBtn.innerHTML = "Ok, got it";
     difficultyPopUpDiv.appendChild(difficultyPopUpBtn);
+    difficultyPopUpDiv.classList.add("buttons");
     difficultyPopUpBtn.addEventListener("click", function () {
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
@@ -647,6 +658,7 @@ function chooseAnswerPopUp() {
     // create the button HTML
     let chooseAnswerBtn = createElement("button", "choose-answer-btn");
     chooseAnswerBtn.innerHTML = "Ok, got it";
+    chooseAnswerBtn.classList.add("buttons");
     chooseAnswerPopUpDiv.appendChild(chooseAnswerBtn);
     chooseAnswerBtn.addEventListener("click", function () {
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
@@ -674,6 +686,7 @@ function loseProgressPopUp() {
     // create buttons
     let yesLoseProgressBtn = createElement("button", "yes-lose-progress-btn");
     yesLoseProgressBtn.innerHTML = "Yes, quit game";
+    yesLoseProgressBtn.classList.add("buttons");
     loseProgressPopUpDiv.appendChild(yesLoseProgressBtn);
     yesLoseProgressBtn.addEventListener("click", function () {
         loseProgressPopUpDiv.remove();
@@ -686,6 +699,7 @@ function loseProgressPopUp() {
 
     let noContinueGameBtn = createElement("button", "no-continue-game-btn");
     noContinueGameBtn.innerHTML = "No, keep playing";
+    noContinueGameBtn.classList.add("buttons");
     loseProgressPopUpDiv.appendChild(noContinueGameBtn);
     noContinueGameBtn.addEventListener("click", function () {
         loseProgressPopUpDiv.remove();
