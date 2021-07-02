@@ -307,6 +307,7 @@ function generateQuestion() {
         numOfQuestions = 6;
         questionLanguage = "English";
         answerLanguage = "French";
+        document.getElementById("skip-question-btn").disabled = true;
     }
 
     let mcRandomNums = [];
