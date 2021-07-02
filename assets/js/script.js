@@ -192,7 +192,7 @@ function gameOptions() {
     // Create the text for the elements
     gameOptionsWelcomeName.innerHTML = (`Welcome ${userName}!`);
     gameOptionsText.innerHTML = "Now choose some game options:";
-    gameOptionsDifficultyText.innerHTML = "Please choose a game difficulty";
+    gameOptionsDifficultyText.innerHTML = 'Please choose a game difficulty <a onclick="difficultyPopUp()"><i class="fa fa-question-circle"></i></a>';
     gameOptionsLengthText.innerHTML = "Now choose how many questions you'd like to answer";
     gameOptionsBtn.innerHTML = "Play game!";
 
@@ -594,6 +594,26 @@ function difficultyPopUp() {
     let easyPopUp = createElement("h2","easy-pop-up");
     easyPopUp.innerHTML = "Easy";
     difficultyPopUpDiv.appendChild(easyPopUp);
+
+    let easyList = createElement("p","easy-list");
+    difficultyPopUpDiv.appendChild(easyList);
+    easyList.innerHTML = "Easier vocabulary <br> Ability to skip <br> Translate French to English";
+
+    let mediumPopUp = createElement("h2","med-pop-up");
+    mediumPopUp.innerHTML = "Medium";
+    difficultyPopUpDiv.appendChild(mediumPopUp);
+
+    let mediumList = createElement("p","medium-list");
+    difficultyPopUpDiv.appendChild(mediumList);
+    mediumList.innerHTML = "Intermediate vocabulary <br> Ability to skip <br> Translate English to French";
+
+    let hardPopUp = createElement("h2","hard-pop-up");
+    hardPopUp.innerHTML = "Hard";
+    difficultyPopUpDiv.appendChild(hardPopUp);
+
+    let hardList = createElement("p","hard-list");
+    difficultyPopUpDiv.appendChild(hardList);
+    hardList.innerHTML = "Difficult vocabulary <br> No skip option <br> Translate English to French";
 
     // create the button HTML
     let difficultyPopUpBtn = createElement("button", "difficulty-pop-up-btn");
