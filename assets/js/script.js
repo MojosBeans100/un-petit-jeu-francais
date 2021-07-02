@@ -106,13 +106,13 @@ function gameOptions() {
         // re-use userName
         userName;
         document.getElementById("end-game-div").remove();
-        clearAll();       
+        clearAll();
 
-    // get the user's name if it is the first game
+        // get the user's name if it is the first game
     } else {
         userName = document.getElementById("input-name-input").value;
         document.getElementById("input-name-div").remove();
-    } 
+    }
 
     // Create gameOptions HTML elements and append to relevant divs
     let gameOptionsDiv = createElement("div", "game-options-div");
@@ -380,7 +380,7 @@ function checkAnswer() {
     let oldIncorrectTally = parseInt((document.getElementById("incorrect-tally-num").innerText));
 
     let pickedAnswer;
-    
+
     // Check status of radio buttons
     for (i = 0; i < numOfRadios; i++) {
 
@@ -429,6 +429,9 @@ function skipQuestion() {
     // Increase questions answered tally
     questionsAnswered++;
 
+    // 
+    userAnswers.push("skipped");
+
     // Remove current question and multiple choice form
     document.getElementsByTagName("h1")[0].remove();
     document.getElementsByTagName("form")[0].remove();
@@ -452,7 +455,7 @@ function skipQuestion() {
 function showAnswers() {
 
     // create HTML for this function - title and lists
-    let showAnswersDiv = createElement("div","show-answers-div");
+    let showAnswersDiv = createElement("div", "show-answers-div");
     mainDiv.appendChild(showAnswersDiv);
 
     let showAnswersTitle = createElement("h1", "show-answers-title");
@@ -498,35 +501,31 @@ function showAnswers() {
     document.getElementById("game-area-div").remove();
 
     // button to link to next screen
-    let showAnswersBtn = createElement("button","show-answers-button");
+    let showAnswersBtn = createElement("button", "show-answers-button");
     showAnswersBtn.innerHTML = "OK";
     showAnswersDiv.appendChild(showAnswersBtn);
-    showAnswersBtn.addEventListener("click",endGame);
-
-
+    showAnswersBtn.addEventListener("click", endGame);
 }
 
 // End game screen
 function endGame() {
-    
+
     // get score
     let finalCorrect = document.getElementById("correct-tally-num");
-
-    // remove previous screen
-    document.getElementById("show-answers-div").remove();
+    console.log(`Final correct = ${finalCorrect}`);
 
     // create endGame HTML & append
-    let endGameDiv = createElement("div","end-game-div");
+    let endGameDiv = createElement("div", "end-game-div");
     mainDiv.appendChild(endGameDiv);
 
-    let congratsMessage = createElement("h1","congrats-message");
+    let congratsMessage = createElement("h1", "congrats-message");
     endGameDiv.appendChild(congratsMessage);
 
-    let endScoreMessage = createElement("h2","end-score-message");
+    let endScoreMessage = createElement("h2", "end-score-message");
     endScoreMessage.innerHTML = (`You scored ${finalCorrect} / ${gameLength}!`);
     endGameDiv.appendChild(endScoreMessage);
 
-    let motivationMessage = createElement("p","motivation-message");
+    let motivationMessage = createElement("p", "motivation-message");
     endGameDiv.appendChild(motivationMessage);
 
     // if GOOD score ( >= 80%)
@@ -534,27 +533,30 @@ function endGame() {
         congratsMessage.innerHTML = "Félicitations!";
         motivationMessage.innerHTML = "Wow, great score!  Why don't you try a harder level?";
 
-    // if OK score (40% - 80%)
+        // if OK score (40% - 80%)
     } else if (finalCorrect / questionsAnswered < 0.8 && finalCorrect / questionsAnswered >= 0.4) {
         congratsMessage.innerHTML = "Great!";
         motivationMessage.innerHTML = "Well done!  Keep practicing!";
 
-    // if BAD score ( <= 40%)
+        // if BAD score ( <= 40%)
     } else {
         congratsMessage.innerHTML = "Oh dear..";
         motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested learning resource pages";
     }
 
+    // remove previous screen
+    document.getElementById("show-answers-div").remove();
+
     // add Play Again button to link back to gameOptions function
-    let playAgainBtn = createElement("button","play-again-btn");
+    let playAgainBtn = createElement("button", "play-again-btn");
     playAgainBtn.innerHTML = "Play again";
     endGameDiv.appendChild(playAgainBtn);
-    playAgainBtn.addEventListener("click",gameOptions);
+    playAgainBtn.addEventListener("click", gameOptions);
 
     // add Home Button to link to intro screen
-    let returnHomeBtn = createElement("button","return-home-btn");
+    let returnHomeBtn = createElement("button", "return-home-btn");
     returnHomeBtn.innerHTML = "Return home";
-    returnHomeBtn.addEventListener("click",function() {
+    returnHomeBtn.addEventListener("click", function () {
         endGameDiv.remove();
         introScreen();
         clearAll();
@@ -570,7 +572,7 @@ function endGame() {
 function chooseAnswerPopUp() {
 
     // create the pop up screen
-    let chooseAnswerPopUpDiv = createElement("div","choose-answer-div");
+    let chooseAnswerPopUpDiv = createElement("div", "choose-answer-div");
     mainDiv.appendChild(chooseAnswerPopUpDiv);
 
     // get the transparent div and add some colour to it to fade out the rest of the screen
@@ -578,15 +580,15 @@ function chooseAnswerPopUp() {
     document.getElementsByClassName("fade-div")[0].classList.remove("fade-div");
 
     // create the prompt HTML
-    let chooseAnswerPrompt = createElement("p","choose-answer-prompt");
+    let chooseAnswerPrompt = createElement("p", "choose-answer-prompt");
     chooseAnswerPrompt.innerHTML = "Please choose an answer, or skip the question";
     chooseAnswerPopUpDiv.appendChild(chooseAnswerPrompt);
 
     // create the button HTML
-    let chooseAnswerBtn = createElement("button","choose-answer-btn");
+    let chooseAnswerBtn = createElement("button", "choose-answer-btn");
     chooseAnswerBtn.innerHTML = "Ok, got it";
     chooseAnswerPopUpDiv.appendChild(chooseAnswerBtn);
-    chooseAnswerBtn.addEventListener("click", function() {
+    chooseAnswerBtn.addEventListener("click", function () {
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
         chooseAnswerPopUpDiv.remove();
@@ -597,7 +599,7 @@ function chooseAnswerPopUp() {
 function loseProgressPopUp() {
 
     // create the pop up screen
-    let loseProgressPopUpDiv = createElement("div","lose-progress-div");
+    let loseProgressPopUpDiv = createElement("div", "lose-progress-div");
     mainDiv.appendChild(loseProgressPopUpDiv);
 
     // get the transparent div and add some colour to it to fade out the rest of the screen
@@ -605,15 +607,15 @@ function loseProgressPopUp() {
     document.getElementsByClassName("fade-div")[0].classList.remove("fade-div");
 
     // create the prompt HTML
-    let loseProgressPrompt = createElement("p","lose-progress-prompt");
+    let loseProgressPrompt = createElement("p", "lose-progress-prompt");
     loseProgressPrompt.innerHTML = "Are you sure you want to leave?  You will lose all progress!";
     loseProgressPopUpDiv.appendChild(loseProgressPrompt);
 
     // create buttons
-    let yesLoseProgressBtn = createElement("button","yes-lose-progress-btn");
+    let yesLoseProgressBtn = createElement("button", "yes-lose-progress-btn");
     yesLoseProgressBtn.innerHTML = "Yes, quit game";
     loseProgressPopUpDiv.appendChild(yesLoseProgressBtn);
-    yesLoseProgressBtn.addEventListener("click", function() {
+    yesLoseProgressBtn.addEventListener("click", function () {
         loseProgressPopUpDiv.remove();
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
@@ -622,10 +624,10 @@ function loseProgressPopUp() {
         clearAll();
     })
 
-    let noContinueGameBtn = createElement("button","no-continue-game-btn");
+    let noContinueGameBtn = createElement("button", "no-continue-game-btn");
     noContinueGameBtn.innerHTML = "No, keep playing";
     loseProgressPopUpDiv.appendChild(noContinueGameBtn);
-    noContinueGameBtn.addEventListener("click", function() {
+    noContinueGameBtn.addEventListener("click", function () {
         loseProgressPopUpDiv.remove();
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
@@ -633,4 +635,3 @@ function loseProgressPopUp() {
 
 
 }
-
