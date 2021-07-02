@@ -1,89 +1,126 @@
-
 /* General styling  */
 
-body {}
-html {}
-#main-div {}
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
 
+body {
+    
+}
+
+#main-div {
+    width: 60%;
+    height: 70%;
+    border: solid black;
+    background-color: white;
+    box-shadow: 5px 10px 8px 10px #888888;
+    margin: auto;
+    top: 15%;
+    position: relative;
+}
+
+/* Main screens */
+#intro-screen-div,
+#input-name-div,
+#game-options-div,
+#game-area-div,
+#show-answers-div,
+#end-game-div
 /* Intro Screen Styling */
-#intro-screen-div{}
-#intro-screen-title{}
-#intro-screen-game-des{}
-#intro-screen-btn{}
+
+#intro-screen-title {}
+
+#intro-screen-game-des {}
+
+#intro-screen-btn {}
 
 /* Input Name Screen Styling */
-#input-name-div{}
-#input-name-text{}
-#input-name-input{}
-#input-name-btn{}
+
+#input-name-text {}
+
+#input-name-input {}
+
+#input-name-btn {}
 
 /* Game Options Screen Styling */
-#game-options-div{}
-#game-options-welcome-name{}
-#game-options-text{}
-#game-difficulty-form{}
-#game-options-difficulty-text{}
-#game-options-length-text{}
-#game-options-btn{}
+
+#game-options-welcome-name {}
+
+#game-options-text {}
+
+#game-difficulty-form {}
+
+#game-options-difficulty-text {}
+
+#game-options-length-text {}
+
+#game-options-btn {}
 
 /* Open Game Area Styling */
-#game-area-div{}
 
-#game-area-left{
+
+#game-area-left {
     width: 70%;
     float: left;
 }
 
-#game-area-left-1{}
-#game-area-left-2{}
-#game-area-left-3{}
+#game-area-left-1 {}
 
-#game-area-right{
+#game-area-left-2 {}
+
+#game-area-left-3 {}
+
+#game-area-right {
     width: 30%;
     float: right;
 }
 
-#game-area-right-1{}
-#game-area-right-2{}
+#game-area-right-1 {}
+
+#game-area-right-2 {}
 
 /* buttons */
-#game-home-btn
-#skip-question-btn
-#next-question-btn
-
+#game-home-btn #skip-question-btn #next-question-btn
 /* tallies  */
-#game-progress
-#correct-tally-num
-#correct-tally-label
-#incorrect-tally-num
-#incorrect-tally-label
-#skip-tally-num
-#skip-tally-label
+#game-progress #correct-tally-num #correct-tally-label #incorrect-tally-num #incorrect-tally-label #skip-tally-num #skip-tally-label
 
 /* Generate Questions Styling */
-#mc-question{}
-#mc-answer{}
+#mc-question {}
+
+#mc-answer {}
+
 #mc-form
 
 /* Show Answers */
-#show-answers-title{}
-#answers-list{}
-#user-answers-list{}
-#true-answers-list{}
+#show-answers-title {}
 
-.white-text{}
-.correct-words{}
-.incorrect-words{}
+#answers-list {}
 
-#show-answers-button{}
+#user-answers-list {}
+
+#true-answers-list {}
+
+.white-text {}
+
+.correct-words {}
+
+.incorrect-words {}
+
+#show-answers-button {}
 
 /* End Game */
-#end-game-div{}
-#congrats-message{}
-#end-score-message{}
-#motivation-message{}
-#play-again-btn{}
-#return-home-btn{}
+#end-game-div {}
+
+#congrats-message {}
+
+#end-score-message {}
+
+#motivation-message {}
+
+#play-again-btn {}
+
+#return-home-btn {}
 
 /* Pop Ups */
 .fade-div {
@@ -95,14 +132,32 @@ html {}
 }
 
 /* Choose answer pop up */
-#choose-answer-div{}
-#choose-answer-btn{}
+#choose-answer-div {}
+
+#choose-answer-btn {}
 
 /* Lose progress pop up */
-#lose-progress-div{}
-#lose-progress-prompt{}
-#yes-lose-progress-btn{}
+#lose-progress-div {}
+
+#lose-progress-prompt {}
+
+#yes-lose-progress-btn {}
 
 /* Difficulty pop up */
-#difficulty-pop-up-div{}
-#difficulty-pop-up-title{}
+#difficulty-pop-up-div {}
+
+#difficulty-pop-up-title {}
+
+#easy-pop-up {}
+
+#easy-list {}
+
+#med-pop-up {}
+
+#medium-list {}
+
+#hard-pop-up {}
+
+#hard-list {}
+
+#difficulty-pop-up-btn {}
