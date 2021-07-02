@@ -497,8 +497,13 @@ function showAnswers() {
         }
     }
 
-    // remove last screen
-    document.getElementById("game-area-div").remove();
+    // remove previous screen (either game div or end game div)
+    if (document.body.contains(document.getElementById("game-area-div"))) {
+        document.getElementById("game-area-div").remove();
+    } else {
+        document.getElementById("end-game-div").remove();
+    }
+    
 
     // button to link to next screen
     let showAnswersBtn = createElement("button", "show-answers-button");
@@ -546,6 +551,12 @@ function endGame() {
 
     // remove previous screen
     document.getElementById("show-answers-div").remove();
+
+    // add back to answers button
+    let backToAnswersBtn = createElement("button","back-to-answers-btn");
+    backToAnswersBtn.innerHTML = "Back to answers";
+    endGameDiv.appendChild(backToAnswersBtn);
+    backToAnswersBtn.addEventListener("click",showAnswers);
 
     // add Play Again button to link back to gameOptions function
     let playAgainBtn = createElement("button", "play-again-btn");
