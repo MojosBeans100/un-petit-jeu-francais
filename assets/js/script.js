@@ -14,6 +14,7 @@ let userAnswers = [];
 let mcQuestion;
 let mcAnswer;
 let userName;
+let finalCorrect;
 var i;
 
 // Define language arrays
@@ -227,7 +228,7 @@ function createGameArea() {
     let gameAreaLeft2 = createElement("div", "game-area-left-2");
     let gameAreaLeft3 = createElement("div", "game-area-left-3");
 
-    // Create the div with progress tally and scores (------and timer)
+    // Create the div with progress tally and scores
     let gameAreaRight = createElement("div", "game-area-right");
     let gameAreaRight1 = createElement("div", "game-area-right-1");
     let gameAreaRight2 = createElement("div", "game-area-right-2");
@@ -417,11 +418,13 @@ function checkAnswer() {
     // add user answer to array for feedback later
     userAnswers.push(pickedAnswer);
 
+    // get score
+    finalCorrect = parseInt((document.getElementById("correct-tally-num").innerText));
+    
     // end game if questions answered = game length
     if (questionsAnswered === parseInt(gameLength)) {
         showAnswers();
     }
-
 }
 
 // Skip question
@@ -516,10 +519,6 @@ function showAnswers() {
 // End game screen
 function endGame() {
 
-    // get score
-    let finalCorrect = document.getElementById("correct-tally-num");
-    console.log(`Final correct = ${finalCorrect}`);
-
     // create endGame HTML & append
     let endGameDiv = createElement("div", "end-game-div");
     mainDiv.appendChild(endGameDiv);
@@ -539,12 +538,12 @@ function endGame() {
         congratsMessage.innerHTML = "Félicitations!";
         motivationMessage.innerHTML = "Wow, great score!  Why don't you try a harder level?";
 
-        // if OK score (40% - 80%)
+    // if OK score (40% - 80%)
     } else if (finalCorrect / questionsAnswered < 0.8 && finalCorrect / questionsAnswered >= 0.4) {
         congratsMessage.innerHTML = "Great!";
         motivationMessage.innerHTML = "Well done!  Keep practicing!";
 
-        // if BAD score ( <= 40%)
+    // if BAD score ( <= 40%)
     } else {
         congratsMessage.innerHTML = "Oh dear..";
         motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested learning resource pages";
@@ -577,9 +576,38 @@ function endGame() {
 
 }
 
-// function difficultyPopUp() {
-//     alert("")
-// }
+function difficultyPopUp() {
+
+    // create the pop up screen
+    let difficultyPopUpDiv = createElement("div", "difficulty-pop-up-div");
+    mainDiv.appendChild(difficultyPopUpDiv);
+
+    // get the transparent div and add some colour to it to fade out the rest of the screen
+    document.getElementsByClassName("fade-div")[0].classList.add("fade-out-div");
+    document.getElementsByClassName("fade-div")[0].classList.remove("fade-div");
+
+    // create the prompt HTML
+    let difficultyPopUpTitle = createElement("h1","difficulty-pop-up-title");
+    difficultyPopUpTitle.innerHTML = "See below for information on difficulty options";
+    difficultyPopUpDiv.appendChild(difficultyPopUpTitle);
+
+    let easyPopUp = createElement("h2","easy-pop-up");
+    easyPopUp.innerHTML = "Easy";
+    difficultyPopUpDiv.appendChild(easyPopUp);
+
+    // create the button HTML
+    let difficultyPopUpBtn = createElement("button", "difficulty-pop-up-btn");
+    difficultyPopUpBtn.innerHTML = "Ok, got it";
+    difficultyPopUpDiv.appendChild(difficultyPopUpBtn);
+    difficultyPopUpBtn.addEventListener("click", function () {
+        document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
+        document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
+        difficultyPopUpDiv.remove();
+    })
+    
+    
+
+}
 
 function chooseAnswerPopUp() {
 
