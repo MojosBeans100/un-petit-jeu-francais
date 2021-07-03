@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 /* General styling  */
 
 body,
 html {
     height: 100vh;
     width: 100vw;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
@@ -13,15 +16,27 @@ body {
     background-size: cover;
 }
 
+@font-face{
+    font-family: 'customFont';
+    src: url('../fonts/Peignot.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .buttons {
     background-color: #2F4F4F;
     color: white;
-    font-size: 20px;
-    padding: 16px 30px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+
+    font-size: 20px;
+    padding: 16px 30px;    
+}
+
+.buttons:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
 }
 
 #main-div {
@@ -33,6 +48,10 @@ body {
     margin: auto;
     top: 15%;
     position: relative;
+    /* background-image: url("../images/WoodSignBlank.jpg");
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
 
 /* Main screens */
@@ -58,7 +77,14 @@ body {
 }
 
 #un-petit-jeu-span {
-    font-size: 4vw;
+    font-size: 5vw;
+    font-family: 'Niconne', cursive;
+    letter-spacing: 3px;
+    color: rgb(192, 0, 0);
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
 }
 
 
@@ -68,22 +94,42 @@ body {
 }
 
 #intro-screen-btn {
-   
-}
-
-#intro-screen-btn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+   margin-top: 5%;
+   width: 200px;
+   height: 50px;
 }
 
 /* Input Name Screen Styling */
 
-#input-name-text {}
+#input-name-text {
+    margin-top: 20%;
+    text-align: center;
+}
 
-#input-name-input {}
+#input-name-input {
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: calc(50% - 150px);
+    margin-top: 3%;
+}
 
-#input-name-btn {}
+#input-name-btn {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 100px;
+    left: -250px;
+}
 
 /* Game Options Screen Styling */
+
+#game-options-div {
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
 
 #game-options-welcome-name {}
 

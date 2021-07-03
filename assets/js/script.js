@@ -706,6 +706,4 @@ function loseProgressPopUp() {
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
     })
-
-
 }
