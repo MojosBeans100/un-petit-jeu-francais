@@ -81,7 +81,7 @@ function inputName() {
     introScreenDiv.remove();
 
     // Create inputName HTML elements and append to relevant divs
-    let inputNameDiv = createElement("diV", "input-name-div");
+    let inputNameDiv = createElement("div", "input-name-div");
     mainDiv.appendChild(inputNameDiv);
 
     let inputNameText = createElement("h1", "input-name-text");
@@ -472,14 +472,17 @@ function showAnswers() {
     showAnswersTitle.innerHTML = "Here's how you did:";
     showAnswersDiv.appendChild(showAnswersTitle);
 
+    let showAnswersListsDiv = createElement("div", "show-answers-lists-div");
+    showAnswersDiv.appendChild(showAnswersListsDiv);
+
     let answersList = createElement("ul", "answers-list");
-    showAnswersDiv.appendChild(answersList);
+    showAnswersListsDiv.appendChild(answersList);
 
     let userAnswersList = createElement("ul", "user-answers-list");
-    showAnswersDiv.appendChild(userAnswersList);
+    showAnswersListsDiv.appendChild(userAnswersList);
 
     let trueAnswersList = createElement("ul", "true-answers-list");
-    showAnswersDiv.appendChild(trueAnswersList);
+    showAnswersListsDiv.appendChild(trueAnswersList);
 
     // create list items and append to above unordered lists
     for (i = 0; i < gameLength; i++) {
