@@ -496,7 +496,7 @@ function showAnswers() {
         userAnswersList.appendChild(answerB);
 
         let answerC = document.createElement("li");
-        answerC.innerHTML = (`${trueQuestions[i]}`);
+        answerC.innerHTML = (`${trueQuestions[i]} <i class="fas fa-check"></i>`);
         trueAnswersList.appendChild(answerC);
         answerC.classList.add("white-text");
 
