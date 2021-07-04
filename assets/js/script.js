@@ -357,15 +357,20 @@ function generateQuestion() {
 
     // Create the question
     let questionText = createElement("h1", "question-text");
-    questionText.innerHTML = (`What is ${mcAnswer} in ${questionLanguage}?`);
+    questionText.innerHTML = (`What is &nbsp;<span id="question-span">${mcAnswer}</span>&nbsp; in ${questionLanguage}?`);
     document.getElementById("game-area-left-1").appendChild(questionText);
 
     // Create form for the multiple choice radio buttons
     let mcForm = createElement("form", "mc-form");
     document.getElementById("game-area-left-2").appendChild(mcForm);
 
+    let mcRadioList = createElement("ul","mc-radios-list");
+    mcForm.appendChild(mcRadioList);
+
     // Create the multiple choice radio buttons & labels
     for (let i = 0; i < mcRandomNums.length; i++) {
+
+        var mcRadiosLi = document.createElement("li");
 
         var mcRadios = document.createElement("input");
         mcRadios.type = "radio";
@@ -374,8 +379,9 @@ function generateQuestion() {
         var mcLabels = document.createElement("label");
         mcLabels.innerHTML = mcQuestions[i];
 
-        mcForm.appendChild(mcRadios);
-        mcForm.appendChild(mcLabels);
+        mcRadioList.appendChild(mcRadiosLi);
+        mcRadiosLi.appendChild(mcRadios);
+        mcRadiosLi.appendChild(mcLabels);
     }
 
 }

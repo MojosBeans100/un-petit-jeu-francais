@@ -187,6 +187,10 @@ body {
     height: 15%;
 }
 
+#question-span {
+    color: orange;
+}
+
 #game-area-left-2 {
     border: solid red;
     height: 70%;
@@ -194,14 +198,16 @@ body {
     justify-content: space-between;
 }
 
+#mc-radios-list {
+    border: solid yellow;
+    width: 100%;
+}
+
 #game-area-left-2 input {
-    margin-top: 15%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 10%;
 }
 
 #game-area-left-2 label {
-    /* margin-right: 25%; */
     font-size: 25px;
 }
 
@@ -241,7 +247,7 @@ body {
 #game-home-btn,
 #skip-question-btn, 
 #next-question-btn {
-    height: 50%;
+    height: 60%;
     font-size: 15px;
     letter-spacing: 2px;
     width: 25%;
