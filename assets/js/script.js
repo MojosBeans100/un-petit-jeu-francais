@@ -271,16 +271,19 @@ function createGameArea() {
     // Create tallies and scores
     let correctTally = createElement("p", "correct-tally-num");
     correctTally.innerHTML = 0;
+    correctTally.classList.add("tally-nums");
     let correctTallyLabel = createElement("p", "correct-tally-label");
     correctTallyLabel.innerHTML = "correct";
 
     let incorrectTally = createElement("p", "incorrect-tally-num");
     incorrectTally.innerHTML = 0;
+    incorrectTally.classList.add("tally-nums");
     let incorrectTallyLabel = createElement("p", "incorrect-tally-label");
     incorrectTallyLabel.innerHTML = "incorrect";
 
     let skipTally = createElement("p", "skip-tally-num");
     skipTally.innerHTML = 0;
+    skipTally.classList.add("tally-nums");
     let skipTallyLabel = createElement("p", "skip-tally-label");
     skipTallyLabel.innerHTML = "skipped";
 

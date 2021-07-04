@@ -223,7 +223,6 @@ body {
     border: solid green;
     height: 15%;
     text-align: center;
-    font-size: 25px;
 }
 
 #game-area-right-2 {
@@ -231,6 +230,11 @@ body {
     text-align: center;
     font-size: 25px;
     height: 85%;
+}
+
+.tally-nums {
+    margin-top: 20%;
+    font-size: 30px;
 }
 
 /* buttons */
@@ -248,13 +252,24 @@ body {
 }
 
 /* tallies  */
-#game-progress,
-#correct-tally-num,
-#correct-tally-label,
-#incorrect-tally-num,
-#incorrect-tally-label,
-#skip-tally-num,
-#skip-tally-label {}
+
+#correct-tally-num {
+    color: green;
+}
+
+#incorrect-tally-num {
+    color: red;
+}
+
+#skip-tally-num {
+    color: grey;
+}
+
+#correct-tally-label, 
+#incorrect-tally-label, 
+#skip-tally-label{ 
+    font-size: 20px;
+}
 
 /* Generate Questions Styling */
 #mc-question {}
