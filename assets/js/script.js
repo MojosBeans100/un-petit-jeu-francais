@@ -513,22 +513,15 @@ function showAnswers() {
         }
     }
 
-    // if user picks more than 10 questions, allow divs to overflow to allow for larger answer lists 
-    if (gameLength > 10) {
-        mainDiv.style.overflow = "auto";
-        showAnswersDiv.overflow = "auto";
-    }
-
     // remove previous screen (either game div or end game div)
     if (document.body.contains(document.getElementById("game-area-div"))) {
         document.getElementById("game-area-div").remove();
     } else {
         document.getElementById("end-game-div").remove();
     }
-    
 
     // button to link to next screen
-    let showAnswersBtn = createElement("button", "show-answers-button");
+    let showAnswersBtn = createElement("button", "show-answers-btn");
     showAnswersBtn.innerHTML = "OK";
     showAnswersBtn.classList.add("buttons");
     showAnswersDiv.appendChild(showAnswersBtn);
@@ -557,12 +550,12 @@ function endGame() {
         congratsMessage.innerHTML = "Félicitations!";
         motivationMessage.innerHTML = "Wow, great score!  Why don't you try a harder level?";
 
-    // if OK score (40% - 80%)
+        // if OK score (40% - 80%)
     } else if (finalCorrect / questionsAnswered < 0.8 && finalCorrect / questionsAnswered >= 0.4) {
         congratsMessage.innerHTML = "Great!";
         motivationMessage.innerHTML = "Well done!  Keep practicing!";
 
-    // if BAD score ( <= 40%)
+        // if BAD score ( <= 40%)
     } else {
         congratsMessage.innerHTML = "Oh dear..";
         motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested learning resource pages";
@@ -572,11 +565,11 @@ function endGame() {
     document.getElementById("show-answers-div").remove();
 
     // add back to answers button
-    let backToAnswersBtn = createElement("button","back-to-answers-btn");
+    let backToAnswersBtn = createElement("button", "back-to-answers-btn");
     backToAnswersBtn.innerHTML = "Back to answers";
     backToAnswersBtn.classList.add("buttons");
     endGameDiv.appendChild(backToAnswersBtn);
-    backToAnswersBtn.addEventListener("click",showAnswers);
+    backToAnswersBtn.addEventListener("click", showAnswers);
 
     // add Play Again button to link back to gameOptions function
     let playAgainBtn = createElement("button", "play-again-btn");
@@ -609,31 +602,31 @@ function difficultyPopUp() {
     document.getElementsByClassName("fade-div")[0].classList.remove("fade-div");
 
     // create the prompt HTML
-    let difficultyPopUpTitle = createElement("h1","difficulty-pop-up-title");
+    let difficultyPopUpTitle = createElement("h1", "difficulty-pop-up-title");
     difficultyPopUpTitle.innerHTML = "See below for information on difficulty options";
     difficultyPopUpDiv.appendChild(difficultyPopUpTitle);
 
-    let easyPopUp = createElement("h2","easy-pop-up");
+    let easyPopUp = createElement("h2", "easy-pop-up");
     easyPopUp.innerHTML = "Easy";
     difficultyPopUpDiv.appendChild(easyPopUp);
 
-    let easyList = createElement("p","easy-list");
+    let easyList = createElement("p", "easy-list");
     difficultyPopUpDiv.appendChild(easyList);
     easyList.innerHTML = "Easier vocabulary <br> Ability to skip <br> Translate French to English";
 
-    let mediumPopUp = createElement("h2","med-pop-up");
+    let mediumPopUp = createElement("h2", "med-pop-up");
     mediumPopUp.innerHTML = "Medium";
     difficultyPopUpDiv.appendChild(mediumPopUp);
 
-    let mediumList = createElement("p","medium-list");
+    let mediumList = createElement("p", "medium-list");
     difficultyPopUpDiv.appendChild(mediumList);
     mediumList.innerHTML = "Intermediate vocabulary <br> Ability to skip <br> Translate English to French";
 
-    let hardPopUp = createElement("h2","hard-pop-up");
+    let hardPopUp = createElement("h2", "hard-pop-up");
     hardPopUp.innerHTML = "Hard";
     difficultyPopUpDiv.appendChild(hardPopUp);
 
-    let hardList = createElement("p","hard-list");
+    let hardList = createElement("p", "hard-list");
     difficultyPopUpDiv.appendChild(hardList);
     hardList.innerHTML = "Difficult vocabulary <br> No skip option <br> Translate English to French";
 
@@ -647,8 +640,8 @@ function difficultyPopUp() {
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
         difficultyPopUpDiv.remove();
     })
-    
-    
+
+
 
 }
 

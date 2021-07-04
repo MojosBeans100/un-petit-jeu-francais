@@ -48,6 +48,7 @@ body {
     margin: auto;
     top: 15%;
     position: relative;
+    overflow: auto;
     /* background-image: url("../images/WoodSignBlank.jpg");
     background-position: center;
     background-repeat: no-repeat; */
@@ -220,24 +221,30 @@ body {
 
 #show-answers-title {
     text-align: center;
-    font-size: 2vw;
+    font-size: 30px;
     margin-top: 5%;
 }
 
 #answers-list {
     list-style-type: none;
     line-height: 30px;
+    border: solid yellow;
+    padding-left: 0;
 }
 
 #user-answers-list {
     list-style-type: none;
     margin-left: 8%;
     line-height: 30px;
+    border: solid blue;
+    padding-left: 0;
 }
 
 #true-answers-list {
     list-style-type: none;
     line-height: 30px;
+    border: solid red;
+    padding-left: 0;
 }
 
 .white-text {
@@ -253,7 +260,7 @@ body {
     text-decoration: line-through;
 }
 
-#show-answers-button {
+#show-answers-btn {
     width: 25%;
     height: 50px;
     margin-left: calc(50% - 12.5%);
@@ -336,6 +343,18 @@ body {
     /* GAME OPTIONS SCREEN  1000 */
     /* PLAY GAME SCREEN  1000 */
     /* SHOW ANSWERS SCREEN  1000 */
+
+    #show-answers-title{
+        font-size: 25px;
+    }
+
+    #show-answers-title {
+        margin-top: 10%;
+    }
+
+    #show-answers-btn {
+        margin-top: 10%;
+    }
     /* END GAME SCREEN  1000 */
 
 
@@ -356,9 +375,25 @@ body {
         margin-top: 20%;
     }
 
+
     /* GAME OPTIONS SCREEN  800 */
     /* PLAY GAME SCREEN  800 */
     /* SHOW ANSWERS SCREEN  800 */
+
+    #show-answers-div li {
+        font-size: 12px;
+    }
+
+    #user-answers-list {
+        margin-left: 0;
+    }
+
+    #show-answers-btn {
+        width: 40%;
+        margin-left: calc(50% - 20%);
+        font-size: 15px;
+    }
+
     /* END GAME SCREEN  800 */
 
 }
@@ -369,14 +404,47 @@ body {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
 
-    /* GENERAL 800 */
-    /* INTRO SCREEN  800 */
-    /* INPUT NAME SCREEN 800  */
-    /* GAME OPTIONS SCREEN  800 */
-    /* PLAY GAME SCREEN  800 */
-    /* SHOW ANSWERS SCREEN  800 */
-    /* END GAME SCREEN  800 */
+    /* GENERAL 700 */
+    /* INTRO SCREEN  700 */
+    /* INPUT NAME SCREEN 700  */
+    /* GAME OPTIONS SCREEN  700 */
+    /* PLAY GAME SCREEN  700 */
+    /* SHOW ANSWERS SCREEN  700 */
+
+    #show-answers-title {
+        margin-top: 15%;
+    }
+    
+    #true-answers-list {
+        margin-left: 0;
+    }
+
+    #show-answers-div li {
+        font-size: 9px;
+    }
+
+    /* END GAME SCREEN  700 */
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    /* GENERAL 500 */
+    /* INTRO SCREEN  500 */
+    /* INPUT NAME SCREEN 500  */
+    /* GAME OPTIONS SCREEN  500 */
+    /* PLAY GAME SCREEN  500 */
+    /* SHOW ANSWERS SCREEN  500 */
+
+    #show-answers-title {
+        margin-top: 15%;
+    }
+    
+    #true-answers-list {
+        margin-left: 0;
+    }
+    /* END GAME SCREEN  500 */
 
 }
