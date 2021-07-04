@@ -558,7 +558,7 @@ function endGame() {
         // if BAD score ( <= 40%)
     } else {
         congratsMessage.innerHTML = "Oh dear..";
-        motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested learning resource pages";
+        motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested <a href='#'>learning resource pages</a>";
     }
 
     // remove previous screen
@@ -566,7 +566,7 @@ function endGame() {
 
     // add back to answers button
     let backToAnswersBtn = createElement("button", "back-to-answers-btn");
-    backToAnswersBtn.innerHTML = "Back to answers";
+    backToAnswersBtn.innerHTML = "<i class='fas fa-arrow-left'></i> Back";
     backToAnswersBtn.classList.add("buttons");
     endGameDiv.appendChild(backToAnswersBtn);
     backToAnswersBtn.addEventListener("click", showAnswers);
@@ -580,7 +580,7 @@ function endGame() {
 
     // add Home Button to link to intro screen
     let returnHomeBtn = createElement("button", "return-home-btn");
-    returnHomeBtn.innerHTML = "Return home";
+    returnHomeBtn.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAA/UlEQVQ4jc2TsWoCURBF71jYJqi9IWUgpNDOQgRby/0GIcnfJL/gRwRsTJF0+YIUEStBREgRLMxJM5BXuL5htfDCwOzumTszj7dSQEAbaEfYkIAJMDmV2QDYeQxyfO0kXRNZDgBM0sYfL82MozoC1/zrKsdHVr4rySsb9iR9e/RycOQMPyStnb0ws25giFKzwq/Lp8cOKA7V5FbuOjP3qEnqHDPhO/ALtICm529VzUZ+VVa+euE5wKiK4ZJyLcvq9p4hcCOpcaBfE7iNTmbANJlmBjwAj8Br8v4lanifFD35v5w2e06+j3NmfeDH4QVQ38PUgS9ntsAwNOnZ6A+o4xjcG5vEyAAAAABJRU5ErkJggg=="> Home';
     returnHomeBtn.classList.add("buttons");
     returnHomeBtn.addEventListener("click", function () {
         endGameDiv.remove();
