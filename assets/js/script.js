@@ -426,7 +426,7 @@ function checkAnswer() {
 
     // get score
     finalCorrect = parseInt((document.getElementById("correct-tally-num").innerText));
-    
+
     // end game if questions answered = game length
     if (questionsAnswered === parseInt(gameLength)) {
         showAnswers();
@@ -453,6 +453,9 @@ function skipQuestion() {
     // Increase the skip tally
     let oldSkipTally = parseInt(document.getElementById("skip-tally-num").innerText);
     document.getElementById("skip-tally-num").innerText = ++oldSkipTally;
+
+    // Get the correct answers when Skip is pressed too
+    finalCorrect = parseInt((document.getElementById("correct-tally-num").innerText));
 
     // End game if questions have all been answered
     if (questionsAnswered === parseInt(gameLength)) {
@@ -508,6 +511,12 @@ function showAnswers() {
             answerC.classList.remove("white-text");
             answerC.classList.add("correct-words");
         }
+    }
+
+    // if user picks more than 10 questions, allow divs to overflow to allow for larger answer lists 
+    if (gameLength > 10) {
+        mainDiv.style.overflow = "auto";
+        showAnswersDiv.overflow = "auto";
     }
 
     // remove previous screen (either game div or end game div)
