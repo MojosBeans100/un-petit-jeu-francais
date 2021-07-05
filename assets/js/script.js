@@ -643,7 +643,7 @@ function difficultyPopUp() {
     let difficultyPopUpBtn = createElement("button", "difficulty-pop-up-btn");
     difficultyPopUpBtn.innerHTML = "Ok, got it";
     difficultyPopUpDiv.appendChild(difficultyPopUpBtn);
-    difficultyPopUpDiv.classList.add("buttons");
+    difficultyPopUpBtn.classList.add("buttons");
     difficultyPopUpBtn.addEventListener("click", function () {
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
