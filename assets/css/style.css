@@ -411,9 +411,7 @@ body {
     position: absolute; 
     top: 0;
     padding: 0;
-    left: 0;
-    /* z-index: -1; */
-    
+    left: 0;  
 }
 
 .fade-out-div {
@@ -451,18 +449,26 @@ body {
 #lose-progress-div {
     background-color: rgb(255, 255, 255, 1);
     width: 40%;
-    height: 60%;
+    height: 40%;
     position: absolute;
     overflow: auto;
-    top: 20%;
+    top: 30%;
     left: 30%;
     z-index: 9;
     text-align: center;
+    border: solid black;
 }
 
-#lose-progress-prompt {}
+#lose-progress-prompt {
+    margin-top: 15%;
+    font-size: 20px;
+}
 
-#yes-lose-progress-btn {}
+#yes-lose-progress-btn {
+    margin: 30px;
+}
+
+#no-continue-game-btn {}
 
 /* Difficulty pop up */
 #difficulty-pop-up-div {
