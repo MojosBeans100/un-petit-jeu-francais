@@ -604,7 +604,7 @@ function difficultyPopUp() {
 
     // create the pop up screen
     let difficultyPopUpDiv = createElement("div", "difficulty-pop-up-div");
-    mainDiv.appendChild(difficultyPopUpDiv);
+    document.getElementsByTagName("body")[0].appendChild(difficultyPopUpDiv);
 
     // get the transparent div and add some colour to it to fade out the rest of the screen
     document.getElementsByClassName("fade-div")[0].classList.add("fade-out-div");
@@ -649,16 +649,13 @@ function difficultyPopUp() {
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
         difficultyPopUpDiv.remove();
     })
-
-
-
 }
 
 function chooseAnswerPopUp() {
 
     // create the pop up screen
     let chooseAnswerPopUpDiv = createElement("div", "choose-answer-div");
-    mainDiv.appendChild(chooseAnswerPopUpDiv);
+    document.getElementsByTagName("body")[0].appendChild(chooseAnswerPopUpDiv);
 
     // get the transparent div and add some colour to it to fade out the rest of the screen
     document.getElementsByClassName("fade-div")[0].classList.add("fade-out-div");
@@ -686,7 +683,7 @@ function loseProgressPopUp() {
 
     // create the pop up screen
     let loseProgressPopUpDiv = createElement("div", "lose-progress-div");
-    mainDiv.appendChild(loseProgressPopUpDiv);
+    document.getElementsByTagName("body")[0].appendChild(loseProgressPopUpDiv);
 
     // get the transparent div and add some colour to it to fade out the rest of the screen
     document.getElementsByClassName("fade-div")[0].classList.add("fade-out-div");

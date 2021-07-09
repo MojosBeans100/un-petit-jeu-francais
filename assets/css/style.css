@@ -14,6 +14,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow:hidden;
 }
 
 @font-face {
@@ -50,6 +51,7 @@ body {
     top: 15%;
     position: relative;
     overflow: auto;
+    z-index: 5;
     /* background-image: url("../images/WoodSignBlank.jpg");
     background-position: center;
     background-repeat: no-repeat; */
@@ -130,6 +132,7 @@ body {
     text-align: center;
     position: relative;
     top: 5%;
+    z-index: 8;
 }
 
 #game-options-welcome-name {
@@ -389,20 +392,55 @@ body {
 
 /* Pop Ups */
 .fade-div {
-    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    padding: 0;
+    left: 0;
+    /* z-index: -1; */
+    
 }
 
 .fade-out-div {
-    opacity: 0.7;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    padding: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 /* Choose answer pop up */
-#choose-answer-div {}
+#choose-answer-div {
+    background-color: rgb(255, 255, 255, 1);
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    overflow: auto;
+    top: 40%;
+    left: 40%;
+    z-index: 9;
+    text-align: center;
+}
 
 #choose-answer-btn {}
 
 /* Lose progress pop up */
-#lose-progress-div {}
+#lose-progress-div {
+    background-color: rgb(255, 255, 255, 1);
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    overflow: auto;
+    top: 20%;
+    left: 30%;
+    z-index: 9;
+    text-align: center;
+}
 
 #lose-progress-prompt {}
 
@@ -410,12 +448,15 @@ body {
 
 /* Difficulty pop up */
 #difficulty-pop-up-div {
-    width: 80%;
-    height: 65%;
-    border: solid orange;
+    background-color: rgb(255, 255, 255, 1);
+    width: 40%;
+    height: 60%;
     position: absolute;
-    top: 17.5%;
-    left: 10%;
+    overflow: auto;
+    top: 20%;
+    left: 30%;
+    z-index: 9;
+    text-align: center;
 }
 
 #difficulty-pop-up-title {}
