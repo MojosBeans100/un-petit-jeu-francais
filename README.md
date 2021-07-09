@@ -60,23 +60,20 @@ The website owner's goals are to present quick, fun, dynamic French test for use
 
 ### As a business owner:
 
-* I would like to clearly exhibit what separates my gym from other gyms by showing off our professional and sophisticated gym space
-* I would like to draw in new members by offering a competitive membership rate and attractive contract terms
-* I would like users to know exactly what facilities they will have access to if they visit the gym
-* I would like users to feel like they can easily get in contact about any queries
+* I would like to present a short quiz to those interested in learning the French language
+* I would like users to be able to easily play the game without having to load a separate system or sign up to the website
+* 
 
 ### As a new customer:
 
-* I would like to find out if this gym is a suitable location for me to attend everyday on my way home from work
-* I would like to find out what classes they have and how frequently
-* I would like to know how much it would cost for a membership and any terms related to my contract
-* I would like to know how to get in contact with the gym
+*  I would like to find a website which is basic, easy to load, intuitive and enjoyable to use
+* I would like to be able to choose different difficulty options and lengths of the game
+* I would like to know which answers I got right and wrong
 
 ### As a returning customer:
 
-* I would like to book onto one of the upcoming classes this week
-* I want to get in contact about a problem with my membership
-* I want to find their social media links so I can join their Instagram stories
+* I would like to be able to use the quiz once a week to maintain my level in French
+
 
 ## Structure of the website
 
@@ -107,21 +104,16 @@ The website is designed to be responsive on all devices; viewing the website on 
 
 ### Fonts
 
-The website largely uses IBM Plex Sans, with some headers as Roboto, and sans-serif as a back-up font. 
+The website largely uses IBM Plex Sans, with the main front page header in a custom French-looking font called Peignot, and sans-serif as a back-up font. 
 
 ### Colours
 
-The colour scheme for each page is kept consistent and chosen to complement the background image, but does vary throughout the website to keep the user engaged. Because of this variation, other features such as the navigation bar are kept consistent, to ensure the user they are on the same website.  The main colours used are:
-
-* Homepage: black, greys, whites 
-* Facilities: light creams and greens: rgb(34, 71, 27) 
-* Classes: pastel, natural pinks and creams: rgb(77, 31, 3), rgb(41, 41, 43), rgb(158, 158, 158)
-* Membership: steely blues, greys and black: rgb(56, 56, 56), rgb(158, 158, 158), rgb(58, 57, 57)
-* About Us: black and white, some grey: rgb(65, 70, 94), rgb(224, 216, 210)
+The colour scheme is kept to blacks and whites during the actual game, in order to be non-distracting to the user. 
+The front page of the website is designed to look like a French road/street sign.
 
 ### Images
 
-Most images are from Pexels (see Credits)
+The only image used in the website is the background image of Paris, and is credited in the [Credits section](#credits). 
 
 [Back to Table of contents](#table-of-contents)
 
