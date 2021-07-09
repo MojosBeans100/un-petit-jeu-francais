@@ -249,18 +249,18 @@ function createGameArea() {
     // Create buttons
     let homeButton = createElement("button", "game-home-btn");
     homeButton.classList.add("buttons");
-    homeButton.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAA/UlEQVQ4jc2TsWoCURBF71jYJqi9IWUgpNDOQgRby/0GIcnfJL/gRwRsTJF0+YIUEStBREgRLMxJM5BXuL5htfDCwOzumTszj7dSQEAbaEfYkIAJMDmV2QDYeQxyfO0kXRNZDgBM0sYfL82MozoC1/zrKsdHVr4rySsb9iR9e/RycOQMPyStnb0ws25giFKzwq/Lp8cOKA7V5FbuOjP3qEnqHDPhO/ALtICm529VzUZ+VVa+euE5wKiK4ZJyLcvq9p4hcCOpcaBfE7iNTmbANJlmBjwAj8Br8v4lanifFD35v5w2e06+j3NmfeDH4QVQ38PUgS9ntsAwNOnZ6A+o4xjcG5vEyAAAAABJRU5ErkJggg=="> Home';
+    homeButton.innerHTML = 'Home';
     homeButton.addEventListener("click", function () {
         loseProgressPopUp();
     });
 
     let nextQuestionButton = createElement("button", "next-question-btn");
-    nextQuestionButton.innerHTML = "Next question";
+    nextQuestionButton.innerHTML = "Next";
     nextQuestionButton.classList.add("buttons");
     nextQuestionButton.addEventListener("click", checkAnswer);
 
     let skipButton = createElement("button", "skip-question-btn");
-    skipButton.innerHTML = "Skip question";
+    skipButton.innerHTML = "Skip";
     skipButton.classList.add("buttons");
     skipButton.addEventListener("click", skipQuestion);
 
