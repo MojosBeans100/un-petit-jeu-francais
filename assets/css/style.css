@@ -185,6 +185,8 @@ body {
     border: solid orange;
 }
 
+
+
 #game-area-left-1 {
     border: solid pink;
     text-align: center;
@@ -209,6 +211,7 @@ body {
 #mc-radios-list {
     border: solid yellow;
     width: 100%;
+    overflow: hidden;
     list-style-type: none;
 }
 
@@ -240,6 +243,11 @@ body {
     border: solid green;
     height: 15%;
     text-align: center;
+}
+
+#game-progress {
+    font-size: 20px;
+    margin-top: 10%;
 }
 
 #game-area-right-2 {
@@ -427,6 +435,10 @@ body {
     text-align: center;
 }
 
+#choose-answer-prompt{
+    margin-top: 15%;
+}
+
 #choose-answer-btn {}
 
 /* Lose progress pop up */
@@ -457,6 +469,7 @@ body {
     left: 30%;
     z-index: 9;
     text-align: center;
+    border: solid black 1px;
 }
 
 #difficulty-pop-up-title {}
@@ -479,11 +492,41 @@ body {
 
 @media only screen and (max-width: 1400px) {
 
+    /* GENERAL 1400 */
+    /* INTRO SCREEN  1400 */
+    /* INPUT NAME SCREEN 1400  */
+    /* GAME OPTIONS SCREEN  1400 */
+
     #game-options-difficulty-text,
     #game-options-length-text,
     #game-options-text {
         font-size: 25px
     }
+
+    /* PLAY GAME SCREEN  1400 */
+
+    #question-text{
+        font-size: 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #game-progress{
+        font-size: 18px;
+    }
+
+    #correct-tally-label, 
+    #incorrect-tally-label, 
+    #skip-tally-label{ 
+    font-size: 18px;
+    }
+
+    /* SHOW ANSWERS SCREEN  1400 */
+    /* END GAME SCREEN  1400 */
+
+   
+
+
 }
 
 @media only screen and (max-width: 1000px) {
