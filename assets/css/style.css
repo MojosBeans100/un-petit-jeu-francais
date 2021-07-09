@@ -185,12 +185,17 @@ body {
     border: solid orange;
 }
 
-
-
 #game-area-left-1 {
     border: solid pink;
     text-align: center;
     height: 15%;
+    display:inline-block;
+    width: 100%;
+}
+
+#question-text{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #question-span {
@@ -217,12 +222,13 @@ body {
 
 #game-area-left-2 input {
     margin-top: 5%;
-    margin-left: 10%;
+    position: relative;
+    left: 10%;
 }
 
 #game-area-left-2 label {
     font-size: 25px;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 #game-area-left-3 {
@@ -505,12 +511,6 @@ body {
 
     /* PLAY GAME SCREEN  1400 */
 
-    #question-text{
-        font-size: 25px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
     #game-progress{
         font-size: 18px;
     }
@@ -524,10 +524,18 @@ body {
     /* SHOW ANSWERS SCREEN  1400 */
     /* END GAME SCREEN  1400 */
 
-   
+}
 
+@media only screen and (max-width: 1200px){
+
+    #main-div{
+        width: 80%;
+        height: 70%;
+    }
 
 }
+
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -593,6 +601,11 @@ body {
 
 @media only screen and (max-width: 900px) {
 
+    /* GENERAL 900 */
+    /* INTRO SCREEN  900 */
+    /* INPUT NAME SCREEN 900  */
+    /* GAME OPTIONS SCREEN  900 */
+    
     #game-options-text {
         font-size: 20px;
     }
@@ -615,6 +628,15 @@ body {
         margin-right: 15px;
     }
 
+    /* PLAY GAME SCREEN  900 */
+
+    #question-text {
+        font-size: 25px;
+    }
+
+    /* SHOW ANSWERS SCREEN  900 */
+    /* END GAME SCREEN  900 */
+
 
 }
 
@@ -636,6 +658,10 @@ body {
 
     /* GAME OPTIONS SCREEN  800 */
     /* PLAY GAME SCREEN  800 */
+
+    
+    
+
     /* SHOW ANSWERS SCREEN  800 */
 
     #show-answers-div li {
@@ -690,6 +716,9 @@ body {
     }
 
     /* PLAY GAME SCREEN  700 */
+
+    
+
     /* SHOW ANSWERS SCREEN  700 */
 
     #show-answers-title {
@@ -725,6 +754,17 @@ body {
     }
 
     /* PLAY GAME SCREEN  600 */
+ 
+    #game-area-left-2 input {
+        margin-top: 8%;
+        left: 3%;
+    }
+    
+    #game-area-left-2 label {
+        font-size: 20px;
+        margin-left: 10%;
+    }
+
     /* SHOW ANSWERS SCREEN  600 */
     /* END GAME SCREEN  600 */
 
@@ -737,6 +777,11 @@ body {
     /* INPUT NAME SCREEN 500  */
     /* GAME OPTIONS SCREEN  500 */
     /* PLAY GAME SCREEN  500 */
+
+    #question-text {
+        font-size: 20px;
+    }
+
     /* SHOW ANSWERS SCREEN  500 */
 
     #show-answers-title {
