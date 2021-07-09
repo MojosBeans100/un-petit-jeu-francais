@@ -40,20 +40,21 @@ The website details information about a fitness centre which offers all standard
 
 ## Website owner goals
 
-The website owner's goals are to present a modern, sophisticated and stylish fitness center to gym-goers looking for a different experience to the chain gyms which have a cheaper vibe, and to draw in clientale to subcribe to the gym membership.
+The website owner's goals are to present quick, fun, dynamic French test for users to practice their vocabulary and receive feedback on their level in French.  There is enough game content for the quiz to not be repetitive.  It is designed to be easily accessible, requiring no sign-up, form or email input to play. 
 
 ## User goals
 
 ### New user goals:
 
-* to discover what facilities the fitness center offers
-* to sign up to a membership
-* to find out information about location and how to contact the fitness center
+* to determine if they can remember any French they learned in school
+* to discover what their level in French is
+* to have fun while improving their language skills
 
 ### Returning user goals
 
-* to sign up to gym classes
-* to get in contact about their membership or other queries related to the gym
+* to determine if their level in French has improved since last time
+* to determine if they can beat their previous score
+* to continue to practice their language skills
 
 ## User stories
 
