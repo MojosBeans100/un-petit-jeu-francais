@@ -70,6 +70,10 @@ body {
     /* opacity: 0.9; */
 }
 
+#main-div-game {
+    background-color: white;
+}
+
 /* Main screens */
 #intro-screen-div,
 #end-game-div {

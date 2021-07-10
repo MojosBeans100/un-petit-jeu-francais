@@ -84,6 +84,11 @@ function introScreen() {
 // Input name screen
 function inputName() {
 
+    // Remove sign image and replace with plain white background
+    mainDiv.style.backgroundImage = 'none';
+    mainDiv.style.backgroundColor = "white";
+
+
     // Remove introScreen HTML
     let introScreenDiv = document.getElementById("intro-screen-div");
     introScreenDiv.remove();
