@@ -182,6 +182,12 @@ The progress section allows the user to see:
 ### Buttons
 There are three buttons on this page, to allow the user to either move onto the next question, or skip the question (not allowed in 'Hard' game play), or return home. 
 
+The 'Next' button is emphasized, as it is designed to be the chosen button.  It is also either furthest to the right, for the user to associate with forwards progress in the quiz, or at the top of button selection in smaller screen sizes.  If this button is pressed without the user choosing an answer, a warning message is displayed to prompt the user to either pick an answer or skip the question.
+![Choose-answers](assets/images/RM-choose-answers.JPG)
+
+The Home button sits to the left, for the user to associate with regressing back.  There is also a warning message when this button is clicked, prompting the user that they will lose all quiz progress.  They then have the option to lose progress (again, on the left to emphasize regression), or return to the quiz (on the right to imply progress). 
+![Lose-Progress](assets/images/RM-lose-progress.JPG)
+
 ### Warning Messages
 
 ## Feedback
