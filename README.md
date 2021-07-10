@@ -182,70 +182,27 @@ The progress section allows the user to see:
 ### Buttons
 There are three buttons on this page, to allow the user to either move onto the next question, or skip the question (not allowed in 'Hard' game play), or return home. 
 
-The 'Next' button is emphasized, as it is designed to be the chosen button.  It is also either furthest to the right, for the user to associate with forwards progress in the quiz, or at the top of button selection in smaller screen sizes.  If this button is pressed without the user choosing an answer, a warning message is displayed to prompt the user to either pick an answer or skip the question.
+The 'Next' button is emphasized with *****, as it is designed to be the chosen button.  It is also either furthest to the right, for the user to associate with forwards progress in the quiz, or at the top of button selection in smaller screen sizes.  If this button is pressed without the user choosing an answer, a warning message is displayed to prompt the user to either pick an answer or skip the question.
 ![Choose-answers](assets/images/RM-choose-answers.JPG)
 
-The Home button sits to the left, for the user to associate with regressing back.  There is also a warning message when this button is clicked, prompting the user that they will lose all quiz progress.  They then have the option to lose progress (again, on the left to emphasize regression), or return to the quiz (on the right to imply progress). 
+The Home button sits to the left, for the user to associate with regressing back.  There is also a warning message when this button is clicked, prompting the user that they will lose all quiz progress and return home.  They then have the option to lose progress (again, on the left to emphasize regression), or return to the quiz (on the right to imply progress). 
 ![Lose-Progress](assets/images/RM-lose-progress.JPG)
 
-### Warning Messages
+## Feedback Page
+The user is given immediate feedback on their results, displaying the correct and incorrect answers.  
+If the answer was incorrect, it is displayed in red strikethrough font, and the actual answer is displayed beside it in green font with a tick icon. 
 
-## Feedback
+This screen is important for the user to be able to gain positive feedback if they were successful, or learn from their mistakes.  
+![Feedback](assets/images/RM-feedback.JPG)
 
-## Homepage
+## Game End Page
+The game end page displays a feedback message, dependant on how they performed in the quiz. 
+Their final score is displayed out of the number of questions answered ie 4 / 10 and an additional message beneath it recommends next steps.
 
-### Incentives List
-The incentive list (see above picture) on the front page draws attention to four main points which separate this gym from others.   The list is dynamic, with check-marks appearing next to each bullet point in a short animation to enhance user experience. 
-
-## Facilities
-
-### Information Boxes
-
-![Facilities Info](assets/images/readmeFacilities.jpg)
-
-These five information boxes detail specifically what you should expect to have use of when you join the gym. The styling is very basic, with white background and black text, to contrast the busy background image.
-
-## Classes
-
-## Timetable
-
-![Timetable](assets/images/readmeTimetable.jpg)
-
-The timetable on the Classes page is basic and kept to only 4 columns.  It clearly displays which days and times classes run, how long the classes are, the activity itself and how many people the user will be in the class with.  
-
-Importantly, users need to know how to book themselves onto the classes, so the top header on this page explains that the only way to book is over the phone.  The footer on this page is kept fixed on the bottom of the screen to keep the phone number in plain site for the user, so they are not required to navigate to another page to find the number. 
-
-### Gallery
-
-![Classes Gallery](assets/images/readmeGallery.jpg)
-
-The gallery is an attractive feature to display what the classes run at the gym are like, and to give the user an idea of what to expect if they joined one. It is a masonry layout to give flexibility to additional images as they are added, and creates an interesting user experience.
-
-## Membership
-
-### Contract and Pricing Info
-
-There is another list of incentives to join this gym and pricing info. 
-
-### Form
-
-![Form](assets/images/readmeForm.jpg)
-
-The second part of the membership page is a membership form, with a plain grey background to match the colour scheme of the above background image.  This is the only page with two different backgrounds - as this is the only page with something the user has to *do* (fill in the form) as opposed to just *read*. 
-
-The form styling is kept intuitive and short, with only basic personal information.  The process is also kept clear at the top of the form, as it clearly implies that if the user fills in the form, a member of the gym staff will get back to the user personally to get more info and confirm the membership. 
-
-It is hoped this emphasises again that this gym stands out from other big, cheap, chain gyms which have an automatic sign up and accept anyone and everyone.  The extra step with a personal contact from gym staff implies to the user that they are an important client and all clients are considered individually. 
-
-## About Us
-
-![Contact](assets/images/readmeContact.jpg)
-
-### Contact Information
-This section reveals to the user all ways to get in contact with the gym - email, phone, and social media.  The social media icons increase in size with mouse hover, to emphasise that they are links, and they open in a separate browser.
-
-### Map
-The map gives the user a location without having to copy the address and open Google Maps separately.  
+There are three buttons also displayed, allowing the user to either:
+* return to their answers on the previous page 
+* play the quiz again, which directs them to the game options page
+* or return home to the intro screen
 
 ## Features Left to Implement
 
@@ -265,6 +222,9 @@ as a structure language
 
 ### CSS
 as a style language
+
+### Javascript
+as a coding language <<<<<>>>>>
 
 ### Font Awesome
 as a resource for icons, such as social media links and logo
@@ -295,9 +255,8 @@ The code was passed through the official HTML *W3C validator* with no errors ret
 ### CSS Testing
 The code was passed through the official CSS *Jigsaw validator* with no errors returned. 
 
-There were 4 warnings about background colour matching border color, but as this did not cause any major issues within the code, and was a deliberate styling, the issues were overlooked.
-
-![CSS Warnings](assets/images/CSSWarning.jpg)
+### Javascript Testing
+The code was passed through the official Javascript *Jshint validator* with no errors returned. 
 
 ## Compatibility testing
 
