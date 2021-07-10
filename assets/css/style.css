@@ -130,8 +130,8 @@ body {
     width: 200px;
     margin-left: calc(50% - 100px);
     height: 50px;
-    padding: 0;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /* Input Name Screen Styling */
@@ -399,10 +399,10 @@ body {
 }
 
 #show-answers-btn {
-    width: 25%;
+    width: 15%;
     height: 50px;
     margin-left: calc(50% - 12.5%);
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 /* End Game */
@@ -583,6 +583,24 @@ body {
     /* GENERAL 1000 */
     /* INTRO SCREEN  1000 */
 
+    #intro-screen-div {
+        overflow: auto;
+    }
+
+    #intro-screen-welcome {
+        font-size: 5vw;
+    }
+
+    #intro-screen-game-title {
+        font-size: 15vw;
+    }
+
+    #intro-screen-transl {
+        font-size: 5vw;
+    }
+
+    /* INPUT NAME SCREEN 1000  */
+
     #input-name-text {
         margin-top: 20%;
         font-size: 25px;
@@ -594,7 +612,6 @@ body {
         margin-top: 10%;
     }
 
-    /* INPUT NAME SCREEN 1000  */
     /* GAME OPTIONS SCREEN  1000 */
 
     #game-options-text {
@@ -685,6 +702,16 @@ body {
 
     /* GENERAL 800 */
     /* INTRO SCREEN  800 */
+
+    #intro-screen-welcome {
+        margin-top: 15%;
+    }
+
+    #intro-screen-game-title {
+        font-size: 15vw;
+        line-height: 100px;
+    }
+
     /* INPUT NAME SCREEN 800  */
 
     #input-name-text {
@@ -734,6 +761,19 @@ body {
 
     /* GENERAL 700 */
     /* INTRO SCREEN  700 */
+
+    #intro-screen-welcome {
+        margin-top: 20%;
+    }
+
+    #intro-screen-btn {
+        width: 200px;
+        margin-left: calc(50% - 100px);
+        height: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
     /* INPUT NAME SCREEN 700  */
     /* GAME OPTIONS SCREEN  700 */
 
@@ -823,9 +863,8 @@ body {
         margin: auto;
     }
 
-
     #game-area-left-2 input {
-        margin-top: 8%;
+        margin-top: 2%;
         left: 3%;
     }
 
@@ -849,6 +888,15 @@ body {
 
     #question-text {
         font-size: 20px;
+    }
+
+    #game-area-left-2 input {
+        left: 0;
+    }
+
+    #game-area-left-2 label {
+        font-size: 18px;
+        margin-left: 5%;
     }
 
     /* SHOW ANSWERS SCREEN  500 */
