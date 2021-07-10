@@ -10,16 +10,23 @@ html {
 }
 
 body {
-    background-image: url("/assets/images/main-image.jpg");
+    /* background-image: url("/assets/images/main-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     overflow: hidden;
 }
 
 @font-face {
     font-family: 'customFont';
     src: url('../fonts/Peignot.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'customFont2';
+    src: url('../fonts/Cafe-Francoise_D.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -47,18 +54,20 @@ body {
 #main-div {
     width: 60%;
     height: 70%;
-    border: solid black;
-    background-color: white;
+    /* border: solid black; */
+    /* background-color: white; */
     box-shadow: 5px 10px 8px 10px #888888;
     margin: auto;
     top: 15%;
     position: relative;
     overflow: auto;
     z-index: 5;
-    /* background-image: url("../images/WoodSignBlank.jpg");
+    background-image: url("../images/wooden-sign.JPG");
     background-position: center;
-    background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     /* background-size: cover; */
+    /* opacity: 0.9; */
 }
 
 /* Main screens */
@@ -71,23 +80,35 @@ body {
 
 /* Intro Screen Styling */
 #intro-screen-div {
-    text-align: center;
+    /* text-align: center; */
 }
 
 #intro-screen-title {
-    margin-top: 10%;
+    /* margin-top: 10%;
+    font-size: 3.5vw; */
+}
+
+#intro-screen-welcome {
+    font-family: customFont2;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    text-align: left;
+    position: relative;
+    left: 10%;
+    /* top: 20%; */
     font-size: 3.5vw;
 }
 
-#un-petit-jeu-span {
+#intro-screen-game-title {
     font-size: 5vw;
     font-family: 'Niconne', cursive;
     letter-spacing: 3px;
-    color: rgb(192, 0, 0);
+    color: rgba(192, 0, 0, 0.788);
     text-shadow: -1px 1px 2px #000,
         1px 1px 2px #000,
         1px -1px 0 #000,
         -1px -1px 0 #000;
+    text-align: center;
 }
 
 #intro-screen-game-des {
