@@ -97,10 +97,11 @@ body {
     left: 10%;
     /* top: 20%; */
     font-size: 3.5vw;
+    margin-bottom: 0;
 }
 
 #intro-screen-game-title {
-    font-size: 5vw;
+    font-size: 10vw;
     font-family: 'Niconne', cursive;
     letter-spacing: 3px;
     color: rgba(192, 0, 0, 0.788);
@@ -109,6 +110,13 @@ body {
         1px -1px 0 #000,
         -1px -1px 0 #000;
     text-align: center;
+    margin-top: 0;
+    border: solid yellow;
+    line-height: 130px;
+}
+
+#intro-screen-transl{
+    
 }
 
 #intro-screen-game-des {
