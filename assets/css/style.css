@@ -363,6 +363,12 @@ body {
     margin-top: 5%;
 }
 
+#answers-list-header,
+#user-answers-header,
+#true-answers-header {
+    font-size: 17px;
+}
+
 #answers-list {
     list-style-type: none;
     line-height: 30px;
@@ -576,8 +582,6 @@ body {
 
 }
 
-
-
 @media only screen and (max-width: 1000px) {
 
     /* GENERAL 1000 */
@@ -670,11 +674,11 @@ body {
 
     #game-options-difficulty-text,
     #game-options-length-text {
-        font-size: 15px
+        /* font-size: 15px */
     }
 
     #game-difficulty-form label {
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
     #game-options-btn {
@@ -726,14 +730,10 @@ body {
 
     /* GAME OPTIONS SCREEN  800 */
     /* PLAY GAME SCREEN  800 */
-
-
-
-
     /* SHOW ANSWERS SCREEN  800 */
 
     #show-answers-div li {
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
     #user-answers-list {
@@ -741,8 +741,8 @@ body {
     }
 
     #show-answers-btn {
-        width: 40%;
-        margin-left: calc(50% - 20%);
+        width: 30%;
+        margin-left: calc(50% - 15%);
         font-size: 15px;
     }
 
@@ -782,7 +782,7 @@ body {
     }
 
     #game-options-text {
-        font-size: 15px;
+        /* font-size: 15px; */
     }
 
     #game-options-difficulty-text,
@@ -791,7 +791,7 @@ body {
     }
 
     #game-difficulty-form label {
-        font-size: 10px;
+        /* font-size: 10px; */
     }
 
     #game-options-btn {
@@ -818,7 +818,7 @@ body {
     }
 
     #show-answers-div li {
-        font-size: 9px;
+        font-size: 15px;
     }
 
     /* END GAME SCREEN  700 */
