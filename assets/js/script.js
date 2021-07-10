@@ -88,6 +88,8 @@ function inputName() {
     mainDiv.style.backgroundImage = 'none';
     mainDiv.style.backgroundColor = "white";
 
+    // Remove wall background and replace with Paris background
+    document.body.style.backgroundImage = "url('../assets/images/main-image.jpg')";
 
     // Remove introScreen HTML
     let introScreenDiv = document.getElementById("intro-screen-div");
