@@ -10,11 +10,11 @@ html {
 }
 
 body {
-    /* background-image: url("/assets/images/main-image.jpg");
+    background-image: url("/assets/images/pexels-daria-shevtsova-1578248.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    overflow: hidden;
+    background-size: cover;
+    overflow: hidden; 
 }
 
 @font-face {
@@ -53,8 +53,8 @@ body {
 
 #main-div {
     width: 60%;
-    height: 70%;
-    /* border: solid black; */
+    height: 75%;
+    border: solid 1px rgb(128, 128, 128);
     /* background-color: white; */
     box-shadow: 5px 10px 8px 10px #888888;
     margin: auto;
@@ -80,53 +80,55 @@ body {
 
 /* Intro Screen Styling */
 #intro-screen-div {
-    /* text-align: center; */
-}
-
-#intro-screen-title {
-    /* margin-top: 10%;
-    font-size: 3.5vw; */
+    overflow: hidden;
 }
 
 #intro-screen-welcome {
     font-family: customFont2;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
     word-spacing: 20px;
     text-align: left;
     position: relative;
-    left: 10%;
-    /* top: 20%; */
+    left: 6%;
+    margin-top: 8%;
     font-size: 3.5vw;
     margin-bottom: 0;
 }
 
 #intro-screen-game-title {
     font-size: 10vw;
-    font-family: 'Niconne', cursive;
-    letter-spacing: 3px;
-    color: rgba(192, 0, 0, 0.788);
+    font-family: customFont;
+    letter-spacing: 4px;
+    color: rgba(228, 41, 41, 0.966);
     text-shadow: -1px 1px 2px #000,
         1px 1px 2px #000,
         1px -1px 0 #000,
         -1px -1px 0 #000;
     text-align: center;
     margin-top: 0;
-    border: solid yellow;
-    line-height: 130px;
+    margin-bottom: 0;
+    line-height: 140px;
 }
 
 #intro-screen-transl{
-    
+    text-align: right;
+    font-family: 'Niconne', cursive;
+    margin-top: 0;
+    position: relative;
+    right: 30%;
+    font-size: 3vw;
 }
 
 #intro-screen-game-des {
     margin-top: 5%;
     font-size: 2vw;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 #intro-screen-btn {
-    margin-top: 5%;
     width: 200px;
+    margin-left: calc(50% - 100px);
     height: 50px;
     padding: 0;
     text-align: center;

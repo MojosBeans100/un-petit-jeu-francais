@@ -64,8 +64,8 @@ function introScreen() {
     let introScreenGameTransl = createElement("h1", "intro-screen-transl");
     introScreenDiv.appendChild(introScreenGameTransl);
 
-    let introScreenGameDescr = createElement("h2", "intro-screen-game-des");
-    introScreenDiv.appendChild(introScreenGameDescr);
+    // let introScreenGameDescr = createElement("h2", "intro-screen-game-des");
+    // introScreenDiv.appendChild(introScreenGameDescr);
 
     let introScreenBtn = createElement("button", "intro-screen-btn");
     introScreenDiv.appendChild(introScreenBtn);
@@ -76,7 +76,7 @@ function introScreen() {
     introScreenWelcome.innerHTML = "Welcome to";
     introScreenGameTitle.innerHTML = "Un Petit Jeu Francais!";
     introScreenGameTransl.innerHTML = "(a little French quiz..)"
-    introScreenGameDescr.innerHTML = "This website allows you to play a short,<br> fun quiz to practice your level in French!";
+    // introScreenGameDescr.innerHTML = "This website allows you to play a short,<br> fun quiz to practice your level in French!";
     introScreenBtn.innerHTML = "Play quiz";
 
 }
