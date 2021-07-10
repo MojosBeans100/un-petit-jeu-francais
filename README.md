@@ -153,10 +153,10 @@ The user can determine the level of difficulty best suited to them by clicking t
 
 ![Difficulty-Pop-Up](assets/images/RM-difficulty-pop-up.JPG)
 
-The difficulty options are based on 
+The difficulty options are based on:
 * the difficulty of the vocabulary - for example, in 'Easy' game play, the user will expect to find a lot of French words which are very similar in English - eg panel/panneau
 * the translation direction - it is easier to see the English word and choose the French answer from a list of French words, therefore in 'Easy' game play this is how the game is set up.  In 'Medium' and 'Hard' game play, this translation is reversed, noticeably increasing the complexity of the quiz
-* the option to 'skip' a question - in 'Easy' and 'Medium' game play this feature is allowed, so that if the user is struggling to translate the word, they can skip the question.  This increases the 'skip' tally, not the 'incorrect' tally.  In 'Hard' game play, this feature is disabled, encouraging the user to give it a go.
+* the option to 'skip' a question - in 'Easy' and 'Medium' game play this feature is allowed, so that if the user is struggling to translate the word, they can skip the question.  This increases the 'skip' tally, not the 'incorrect' tally.  In 'Hard' game play, this feature is disabled, compelling the user to give it a go and risk an incorrect answer.
 
 ## Game Area Page
 
@@ -173,9 +173,11 @@ The question is displayed at the top of the left area, with the 'question word' 
 The user can use the radio buttons to choose their translated answer, based on the question above.  There are either 4, 5, or 6 options depending on their chosen game difficulty. 
 
 ### Progress and Tallies
-![Homepage](assets/images/readmeHomepage.JPG)
+The score tallies display on the right of the page, incrementing as appropriate after each question.  The 'correct' tally displays in green, while 'incorrect' displays in red and 'skip' is grey.
 
-There is a high resolution background image from Pexels on each page.  The navigation bar, footer, and content sit in front of this picture. The colour scheme is always natural and attractive, as opposed to loud and gaudy.
+The progress section allows the user to see:
+* how many questions they have answered
+* a reminder of how many questions they chose to answer ie the game length
 
 ### Buttons
 There are three buttons on this page, to allow the user to either move onto the next question, or skip the question (not allowed in 'Hard' game play), or return home. 
