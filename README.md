@@ -145,13 +145,18 @@ If the user chooses not to input a name, they can still advance to the next scre
 
 ### Game Options Page
 ![Game-Options](assets/images/RM-game-options.JPG)
-The game options screen displays a welcome message with the user's name (or a generic name if they choose not to input theirs), and some game options to allow for different levels of game.
+The game options screen displays a welcome message with the user's name (or a generic name if they choose not to input theirs), and some game options to allow for different levels of game in the form of radio buttons.
 
-There are three difficulty options (easy, medium, hard), and four game length options. The game length options simply increase the number of questions the user will answer (10, 20, 30 or 40 questions).  
+There are three difficulty options (easy, medium, hard), and four game length options. The game length options simply increase the number of questions the user will answer (10, 20, 30 or 40 questions). The default options are 'Easy' and 10 questions.  
 
 The user can determine the level of difficulty best suited to them by clicking the information icon, displaying a pop-up screen with the following information:
 
 ![Difficulty-Pop-Up](assets/images/RM-difficulty-pop-up.JPG)
+
+The difficulty options are based on 
+* the difficulty of the vocabulary - for example, in 'Easy' game play, the user will expect to find a lot of French words which are very similar in English - eg panel/panneau
+* the translation direction - it is easier to see the English word and choose the French answer from a list of French words, therefore in 'Easy' game play this is how the game is set up.  In 'Medium' and 'Hard' game play, this translation is reversed, noticeably increasing the complexity of the quiz
+* the option to 'skip' a question - in 'Easy' and 'Medium' game play this feature is allowed, so that if the user is struggling to translate the word, they can skip the question.  This increases the 'skip' tally, not the 'incorrect' tally.  In 'Hard' game play, this feature is disabled, encouraging the user to give it a go.
 
 ## Game Area Page
 
@@ -165,14 +170,7 @@ The right area of this section is informative only, displaying the game progress
 The question is displayed at the top of the left area, with the 'question word' in orange for emphasis, and a emphatic gap between this word and the others in the sentence to further draw attention to the word.  The font is always large and clear.
 
 ### Multiple Choice
-![Footer](assets/images/readmeFooter.JPG)
-The footer displays all important top level information about the gym.  It largely consists of contact information.
-
-Furthest to the left, similar to the navigation bar, sits the Dunkeld Fitness Center and logo, which can hyperlink back to the Homepage when clicked.  
-
-The footer is responsive to different screen sizes.  In particular, for pages which only need to take up 1 screen height - Homepage, About Us - the footer is fixed and always in view.  For pages with more content - Facilities, Membership, Classes - the footer sits at the bottom.  When the screen width is decreased, the footer format changes to a list style as opposed to four columns of information, which results in the footer being much taller than at bigger screen sizes.  To avoid the footer filling almost the entire screen and smaller screen sizes, the footer stops being fixed and always viewable, and sits at the very bottom of the page.
-
-Lastly, the footer background colour changes with each page, to match the colour theme of the page and is thus more pleasing to the user. 
+The user can use the radio buttons to choose their translated answer, based on the question above.  There are either 4, 5, or 6 options depending on their chosen game difficulty. 
 
 ### Progress and Tallies
 ![Homepage](assets/images/readmeHomepage.JPG)
