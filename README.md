@@ -62,11 +62,12 @@ The website owner's goals are to present quick, fun, dynamic French test for use
 
 * I would like to present a short quiz to those interested in learning the French language
 * I would like users to be able to easily play the game without having to load a separate system or sign up to the website
-* 
+* I would like users to feel like they can return periodically to improve their language skills
+* I would like users to know where to find suitable learning material
 
 ### As a new customer:
 
-*  I would like to find a website which is basic, easy to load, intuitive and enjoyable to use
+* I would like to find a website which is basic, easy to load, intuitive and enjoyable to use
 * I would like to be able to choose different difficulty options and lengths of the game
 * I would like to know which answers I got right and wrong
 
@@ -77,28 +78,32 @@ The website owner's goals are to present quick, fun, dynamic French test for use
 
 ## Structure of the website
 
-The structure of the website is straightforward and intuitive.  There are 5 main pages, each with a full background picture, navigation bar at the top for easy access, and a footer with top level information about the gym at the bottom.
+The structure of the website is straightforward and intuitive.  There are three main pages: one which is the main game area, the second which is a library of language learning resources, and lastly a basic contact page. 
 
-The website is designed to be responsive on all devices; viewing the website on different screen sizes should not affect the user experience.  There is some animation on the front page and hover effects on some links to increase user interaction. 
+In the main game area, as the user navigates through the game the screens change - for example to choose game options, the actual quiz area, and feedback pages. 
+
+The website is designed to be responsive on all devices; viewing the website on different screen sizes should not affect the user experience.  
 
 ## Wireframes
 
 [Wireframes](https://wireframe.cc/) was used to visualise website ideas and maintain an idea of layout and styling.  See all pages concepts below.
 
-### Homepage Design
+### Intro Screen Design
 ![Homepage Design](assets/images/WireframesHomepage.JPG)
 
-### Facilities Design 
+### Name Input Design 
 ![Facilities Design](assets/images/WireframesFacilities.JPG)
 
-### Classes Design
+### Game Options Design
 ![Classes Design](assets/images/WireframesClasses.JPG)
 
-### Membership Design
+### Game Area Design
 ![Membership Design](assets/images/WireframesMembership.JPG)
 
-### Contact Us Design
+### Show Answers Design
 ![Contact Us Design](assets/images/WireFramesContact.JPG)
+
+### End Game Design
 
 ## Surface
 
@@ -108,8 +113,9 @@ The website largely uses IBM Plex Sans, with the main front page header in a cus
 
 ### Colours
 
-The colour scheme is kept to blacks and whites during the actual game, in order to be non-distracting to the user. 
-The front page of the website is designed to look like a French road/street sign.
+The colour scheme is kept to blacks and whites during the actual game, in order to be non-distracting to the user.  There is a pleasant background image of Paris.
+
+The front page of the website is designed to look like a French road/street sign, with further emphasis on the French look with red, white and blue colors to replicate the French flag.
 
 ### Images
 
@@ -121,18 +127,29 @@ The only image used in the website is the background image of Paris, and is cred
 
 The website has the following features:
 
-## All pages
+## Intro and Outro
+### Intro Screen Page
+![Intro-Screen](assets/images/RM-Front-Page.JPG)
+The game intro screen is designed to replicate a French street sign.  There are several types of font, with the main font in large red type as it is the title of the game.  The fonts were chosen to be "French-y", like one might find on a French sign or wine box.
 
-### Navigation Bar
-![Navigation Bar](assets/images/readmeNav.JPG)
+There is a loose translation of the game title - Un Petit Jeu Francais/A Little French Quiz - beneath the red font, to not exclude users who are entirely new to the language. 
 
-The navigation is fixed to the top of the page, allowing the user to return to it at any time to navigate to another page.  All pages are displayed in the navigation bar.  
+There is only one way forwards with this page, as demonstrated by one single button at the bottom of the page encouraging the user to click o and play the quiz. 
 
-The active page has the page title underlined to remind the user where they are within the website, and there is a hover function to allow the user to see when the mouse point is above the hyperlink.  The nav bar is responsive and will change to a column layout at a certain screen width. 
+## Game Options
 
-Lastly, for emphasis and to remind the user how to return to the front page, the Homepage title sits furthest to the left, as in first in the navigation bar, and has the branded logo for the gym. 
+## Game Area Page
 
-### Footer
+### Sections
+The game area is split into two sections; on the left, the questions and multiple choice answers and buttons.  This is an active area which with the user can interact.
+
+The right area of this section is informative only, displaying the game progress and score tallies.
+
+### Question 
+![Question](assets/images/Question.JPG)
+The question is displayed at the top of the left area, with the 'question word' in orange for emphasis, and a emphatic gap between this word and the others in the sentence to further draw attention to the word.  The font is always large and clear.
+
+### Multiple Choice
 ![Footer](assets/images/readmeFooter.JPG)
 The footer displays all important top level information about the gym.  It largely consists of contact information.
 
@@ -142,11 +159,17 @@ The footer is responsive to different screen sizes.  In particular, for pages wh
 
 Lastly, the footer background colour changes with each page, to match the colour theme of the page and is thus more pleasing to the user. 
 
-### Background Image
+### Progress and Tallies
 ![Homepage](assets/images/readmeHomepage.JPG)
 
 There is a high resolution background image from Pexels on each page.  The navigation bar, footer, and content sit in front of this picture. The colour scheme is always natural and attractive, as opposed to loud and gaudy.
 
+### Buttons
+There are three buttons on this page, to allow the user to either move onto the next question, or skip the question (not allowed in 'Hard' game play), or return home. 
+
+### Warning Messages
+
+## Feedback
 
 ## Homepage
 
