@@ -134,9 +134,24 @@ The game intro screen is designed to replicate a French street sign.  There are 
 
 There is a loose translation of the game title - Un Petit Jeu Francais/A Little French Quiz - beneath the red font, to not exclude users who are entirely new to the language. 
 
-There is only one way forwards with this page, as demonstrated by one single button at the bottom of the page encouraging the user to click o and play the quiz. 
+There is only one way forwards with this page, as demonstrated by one single button at the bottom of the page encouraging the user to click on and play the quiz. 
 
 ## Game Options
+### Name Input Page
+![Name-Input](assets/images/RM-name-input.JPG)
+This screen is basic and one-dimensional, encouraging the user to input their name and advance forwards with the OK button.  The language is colloquial - "let's start with.." - to ease the user and put across the tone of the fun, non-serious game they are about to play.
+
+If the user chooses not to input a name, they can still advance to the next screen.
+
+### Game Options Page
+![Game-Options](assets/images/RM-game-options.JPG)
+The game options screen displays a welcome message with the user's name (or a generic name if they choose not to input theirs), and some game options to allow for different levels of game.
+
+There are three difficulty options (easy, medium, hard), and four game length options. The game length options simply increase the number of questions the user will answer (10, 20, 30 or 40 questions).  
+
+The user can determine the level of difficulty best suited to them by clicking the information icon, displaying a pop-up screen with the following information:
+
+![Difficulty-Pop-Up](assets/images/RM-difficulty-pop-up.JPG)
 
 ## Game Area Page
 
