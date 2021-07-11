@@ -520,11 +520,10 @@ function showAnswers() {
     let trueAnswersList = createElement("ul", "true-answers-list");
     showAnswersListsDiv.appendChild(trueAnswersList);
 
-    if (finalCorrect !== parseInt(gameLength)) {
-        let trueAnswersHeader = createElement("h2", "true-answers-header");
-        trueAnswersList.appendChild(trueAnswersHeader);
-        trueAnswersHeader.innerHTML = "The correct answer";
-    }    
+    let trueAnswersHeader = createElement("h2", "true-answers-header");
+    trueAnswersList.appendChild(trueAnswersHeader);
+    trueAnswersHeader.innerHTML = "The correct answer";
+
 
     // create list items and append to above unordered lists
     for (i = 0; i < gameLength; i++) {
@@ -545,9 +544,9 @@ function showAnswers() {
         // if answer is correct, font color is green, otherwise red and correct answer appears beside
         if (trueQuestions[i] === userAnswers[i]) {
             answerB.classList.add("correct-words");
+            answerC.classList.add("correct-words");
         } else {
             answerB.classList.add("incorrect-words");
-            answerC.classList.remove("white-text");
             answerC.classList.add("correct-words");
         }
     }

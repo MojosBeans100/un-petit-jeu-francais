@@ -58,7 +58,7 @@ The website owner's goals are to present quick, fun, dynamic French test for use
 
 ## User stories
 
-### As a business owner:
+### As a website owner:
 
 * I would like to present a short quiz to those interested in learning the French language
 * I would like users to be able to easily play the game without having to load a separate system or sign up to the website
@@ -266,19 +266,19 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
 
 ## User stories testing  
 
-### As a business owner:
+### As a website owner:
 
-* I would like to clearly exhibit what separates my gym from other gyms by showing off our professional and sophisticated gym space
-    > There is a large high-resolution picture of one of the gym rooms on the Homepage, which gives a lasting first impression of the ambiance and vibe of the gym
+* I would like to present a short quiz to those interested in learning the French language
+    > 
 
-* I would like to draw in new members by offering a competitive membership rate and attractive contract terms
-    > The Homepage describes a low competitive contract rate, and the membership page reinstates this by listing the contract terms and specific pricing.  The user has to navigate to another page to find the specific price, taking in more information about the gym 
+* I would like users to be able to easily play the game without having to load a seperate system or sign up to the website
+    > 
 
-* I would like users to know exactly what facilities they will have access to if they visit the gym
-    > The Facilities page clearly lists all gym spaces and equipment
+* I would like users to feel like they can return periodically to improve their language skills
+    > 
 
-* I would like users to feel like they can easily get in contact about any queries
-    > There is contact information in the footer, which is displayed on each page, and there is a separate contact page which reiterates all this information
+* I would like users to know where to find suitable learning material
+    >
 
 ### As a new user:
 
