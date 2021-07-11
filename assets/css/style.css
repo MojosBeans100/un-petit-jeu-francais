@@ -134,6 +134,18 @@ body {
     /* opacity: 0.9; */
 }
 
+#resources-main-div {
+    width: 60%;
+    height: 75%;
+    border: solid 1px rgb(128, 128, 128);
+    background-color: white;
+    box-shadow: 5px 10px 8px 10px #888888;
+    top: 15%;
+    left: 5%;
+    position: relative;
+    overflow: auto;
+}
+
 /* Main screens */
 #intro-screen-div,
 #end-game-div {
