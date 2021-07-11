@@ -497,7 +497,7 @@ function showAnswers() {
     mainDiv.appendChild(showAnswersDiv);
 
     let showAnswersTitle = createElement("h1", "show-answers-title");
-    showAnswersTitle.innerHTML = "Here's how you did:";
+    showAnswersTitle.innerHTML = "Well done! <br> Here's how you did:";
     showAnswersDiv.appendChild(showAnswersTitle);
 
     let showAnswersListsDiv = createElement("div", "show-answers-lists-div");
@@ -522,7 +522,7 @@ function showAnswers() {
 
     let trueAnswersHeader = createElement("h2", "true-answers-header");
     trueAnswersList.appendChild(trueAnswersHeader);
-    trueAnswersHeader.innerHTML = "The correct answer";
+    trueAnswersHeader.innerHTML = "Correct answer";
 
 
     // create list items and append to above unordered lists

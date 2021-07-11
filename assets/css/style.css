@@ -359,20 +359,19 @@ body {
 
 #show-answers-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 5%;
 }
 
 #answers-list-header,
 #user-answers-header,
 #true-answers-header {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 #answers-list {
     list-style-type: none;
     line-height: 30px;
-    border: solid yellow;
     padding-left: 0;
 }
 
@@ -380,20 +379,16 @@ body {
     list-style-type: none;
     margin-left: 8%;
     line-height: 30px;
-    border: solid blue;
     padding-left: 0;
+    text-align: center;
 }
 
 #true-answers-list {
     list-style-type: none;
     line-height: 30px;
-    border: solid red;
+    margin-left: 2%;
     padding-left: 0;
 }
-
-/* .white-text {
-    color: white;
-} */
 
 .correct-words {
     color: green;
@@ -407,7 +402,7 @@ body {
 #show-answers-btn {
     width: 15%;
     height: 50px;
-    margin-left: calc(50% - 12.5%);
+    margin-left: calc(50% - 7.5%);
     margin-top: 5%;
 }
 
@@ -543,6 +538,25 @@ body {
 
 /* ---------------------      MEDIA QUERIES      ----------------- */
 
+@media only screen and (max-width: 1560px) {
+    /* GENERAL 1560 */
+    /* INTRO SCREEN  1560 */
+    /* INPUT NAME SCREEN 1560  */
+    /* GAME OPTIONS SCREEN  1560 */
+    /* PLAY GAME SCREEN  1560 */
+    /* SHOW ANSWERS SCREEN  1560 */
+
+    #show-answers-title{
+        font-size: 30px;
+    }
+
+    #show-answers-btn {
+        margin-top: 2%;
+    }
+
+    /* END GAME SCREEN  1560 */
+}
+
 @media only screen and (max-width: 1400px) {
 
     /* GENERAL 1400 */
@@ -630,9 +644,6 @@ body {
     #game-difficulty-form label {
         font-size: 15px;
     }
-
-
-
     /* PLAY GAME SCREEN  1000 */
     /* SHOW ANSWERS SCREEN  1000 */
 
@@ -640,12 +651,8 @@ body {
         font-size: 25px;
     }
 
-    #show-answers-title {
-        margin-top: 10%;
-    }
-
     #show-answers-btn {
-        margin-top: 10%;
+        width: 20%;
     }
 
     /* END GAME SCREEN  1000 */
@@ -737,7 +744,7 @@ body {
     }
 
     #user-answers-list {
-        margin-left: 0;
+        margin-left: 5%;
     }
 
     #show-answers-btn {
@@ -809,13 +816,13 @@ body {
 
     /* SHOW ANSWERS SCREEN  700 */
 
-    #show-answers-title {
+    /* #show-answers-title {
         margin-top: 15%;
-    }
+    } */
 
-    #true-answers-list {
+    /* #true-answers-list {
         margin-left: 0;
-    }
+    } */
 
     #show-answers-div li {
         font-size: 15px;
@@ -874,6 +881,13 @@ body {
     }
 
     /* SHOW ANSWERS SCREEN  600 */
+
+    #answers-list-header,
+    #user-answers-header,
+    #true-answers-header{
+        font-size: 12px;
+    }
+    
     /* END GAME SCREEN  600 */
 
 }
@@ -902,11 +916,20 @@ body {
     /* SHOW ANSWERS SCREEN  500 */
 
     #show-answers-title {
-        margin-top: 15%;
+        margin-top: 10%;
+        font-size: 20px;
     }
 
     #true-answers-list {
         margin-left: 0;
+    }
+
+    #show-answers-div li {
+        font-size: 13px;
+    }
+
+    #answers-list {
+        margin-left: 5%;
     }
 
     /* END GAME SCREEN  500 */
@@ -950,6 +973,16 @@ body {
 
     /* GAME OPTIONS SCREEN  400 */
     /* PLAY GAME SCREEN  400 */
+    /* SHOW ANSWERS SCREEN  500 */
+
+    #main-div {
+        width: 90%;
+    }
+
+    #answers-list {
+        margin-left: 2%;
+    }
+
     /* END GAME SCREEN  400 */
 
 }
