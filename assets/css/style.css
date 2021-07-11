@@ -35,6 +35,9 @@ body {
 .dropdown {
     float: left;
     overflow: hidden;
+    width: 15%;
+    border: solid yellow;
+    text-align: center;
 }
 
 .dropdown .dropbtn {
@@ -48,9 +51,7 @@ body {
     color: red;
     background-color: inherit;
     font-family: customFont;
-    /* Important for vertical align on mobile phones */
     margin: 0;
-    /* Important for vertical align on mobile phones */
 }
 
 .navbar a:hover,
@@ -58,7 +59,6 @@ body {
     color: white;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -70,17 +70,15 @@ body {
     font-family: customFont2;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
@@ -122,8 +120,8 @@ body {
     border: solid 1px rgb(128, 128, 128);
     /* background-color: white; */
     box-shadow: 5px 10px 8px 10px #888888;
-    margin: auto;
     top: 15%;
+    left: 5%;
     position: relative;
     overflow: auto;
     z-index: 5;
