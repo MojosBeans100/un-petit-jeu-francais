@@ -184,7 +184,6 @@ body {
 
 #game-difficulty-form {
     margin-top: 5%;
-    border: solid yellow;
 }
 
 #game-difficulty-form input {
@@ -207,6 +206,7 @@ body {
 
 #game-options-btn {
     margin-top: 4%;
+    margin-bottom: 5%;
 }
 
 /* Open Game Area Styling */
@@ -655,11 +655,7 @@ body {
 
     #game-options-difficulty-text,
     #game-options-length-text {
-        font-size: 20px
-    }
-
-    #game-difficulty-form label {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     /* PLAY GAME SCREEN  1000 */
@@ -823,11 +819,11 @@ body {
 
     #game-options-difficulty-text,
     #game-options-length-text {
-        font-size: 12px
+        /* font-size: 12px */
     }
 
     #game-difficulty-form label {
-        /* font-size: 10px; */
+        font-size: 15px;
     }
 
     #game-options-btn {
@@ -949,6 +945,21 @@ body {
     /* INTRO SCREEN  500 */
     /* INPUT NAME SCREEN 500  */
     /* GAME OPTIONS SCREEN  500 */
+
+    #game-options-difficulty-text,
+    #game-options-length-text {
+        font-size: 14px;
+    }
+
+    #game-difficulty-form input {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    #game-difficulty-form label {
+        margin-right: 15px;
+    }
+
     /* PLAY GAME SCREEN  500 */
 
     #question-text {

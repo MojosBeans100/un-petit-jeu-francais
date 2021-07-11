@@ -129,12 +129,9 @@ function gameOptions() {
 
         // get the user's name if it is the first game
     } else {
-        if (userName === "") {
-            userName = "French Learner";
-        } else{
         userName = document.getElementById("input-name-input").value;
         document.getElementById("input-name-div").remove();
-    }}
+    }
 
     // Create gameOptions HTML elements and append to relevant divs
     let gameOptionsDiv = createElement("div", "game-options-div");
@@ -421,6 +418,7 @@ function checkAnswer() {
     // get scores
     let oldCorrectTally = parseInt((document.getElementById("correct-tally-num").innerText));
     let oldIncorrectTally = parseInt((document.getElementById("incorrect-tally-num").innerText));
+
     let pickedAnswer;
 
     // Check status of radio buttons

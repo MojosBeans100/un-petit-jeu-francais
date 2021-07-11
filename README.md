@@ -98,7 +98,7 @@ The website is designed to be responsive on all devices; viewing the website on 
 ![Game Area Design](assets/images/WF-game-area.JPG)
 
 ### Show Answers Design
-![Show Answers Design](assets/images/WF-show-answers.JPG)
+![Show Answers Design](assets/images/WF-answers.JPG)
 
 ### End Game Design
 ![End Game Design](assets/images/WF-end-game.JPG)
