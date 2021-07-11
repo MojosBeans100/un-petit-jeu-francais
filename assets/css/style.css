@@ -238,21 +238,28 @@ body {
 
 #game-area-left-2 {
     border: solid red;
-    height: 70%;
+    height: 60%;
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
 }
 
-#mc-form-left {width: 60%;
-float: left;
-margin-left: 10%;
+#mc-form-left {
+    width: 60%;
+    float: left;
+    margin-left: 10%;
 }
-#mc-form-right {width: 25%;
-float: right;}
+
+#mc-form-right {
+    width: 25%;
+    float: right;
+}
+
 #mc-radios-list {
     list-style-type: none;
     line-height: 60px;
 }
+
 #mc-labels-list {
     list-style-type: none;
     line-height: 60px;
@@ -561,7 +568,7 @@ float: right;}
     /* PLAY GAME SCREEN  1560 */
     /* SHOW ANSWERS SCREEN  1560 */
 
-    #show-answers-title{
+    #show-answers-title {
         font-size: 30px;
     }
 
@@ -659,6 +666,7 @@ float: right;}
     #game-difficulty-form label {
         font-size: 15px;
     }
+
     /* PLAY GAME SCREEN  1000 */
     /* SHOW ANSWERS SCREEN  1000 */
 
@@ -899,10 +907,10 @@ float: right;}
 
     #answers-list-header,
     #user-answers-header,
-    #true-answers-header{
+    #true-answers-header {
         font-size: 12px;
     }
-    
+
     /* END GAME SCREEN  600 */
 
 }

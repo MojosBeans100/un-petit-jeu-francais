@@ -414,7 +414,7 @@ function generateQuestion() {
 function checkAnswer() {
 
     // get length of radio buttons form - changes dependent on quiz difficulty
-    let numOfRadios = document.getElementById("mc-form").length;
+    let numOfRadios = document.getElementById("mc-form-right").length;
 
     // get scores
     let oldCorrectTally = parseInt((document.getElementById("correct-tally-num").innerText));
@@ -440,9 +440,10 @@ function checkAnswer() {
 
             // increment progress tally, remove old question and answers, and regenerate question
             questionsAnswered++;
-            document.getElementsByTagName("p")[0].remove();
             document.getElementsByTagName("h1")[0].remove();
-            document.getElementsByTagName("form")[0].remove();
+            document.getElementById("mc-form-left").remove();
+            document.getElementById("mc-form-right").remove();
+            document.getElementsByTagName("p")[0].remove();
             generateQuestion();
             break;
 
@@ -477,7 +478,8 @@ function skipQuestion() {
 
     // Remove current question and multiple choice form
     document.getElementsByTagName("h1")[0].remove();
-    document.getElementsByTagName("form")[0].remove();
+    document.getElementById("mc-form-left").remove();
+    document.getElementById("mc-form-right").remove();
     document.getElementsByTagName("p")[0].remove();
 
     // Generate another question
