@@ -844,6 +844,15 @@ body {
         line-height: 40px;
     }
 
+
+    #game-area-right-2 {
+        font-size: 20px;
+    }
+
+    .tally-nums {
+        font-size: 25px;
+    }
+
     /* SHOW ANSWERS SCREEN  700 */
 
     /* #show-answers-title {
@@ -939,6 +948,15 @@ body {
 
     #game-area-left-2 {
         font-size: 15px;
+    }
+
+    #game-area-right-2 {
+        font-size: 18px;
+    }
+
+    .tally-nums {
+        font-size: 22px;
+        margin-top: 30%;
     }
 
     /* SHOW ANSWERS SCREEN  500 */
