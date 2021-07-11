@@ -339,11 +339,12 @@ this repository ([Dunkeld Fitness Centre](https://github.com/MojosBeans100/Dunke
 
 # Credits
 ## Content
-All website content was written by the author.  
+All website content was written by the author, except the nav bar styling, 
+https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp.  
 
 The ReadMe format was inspired by the template from Code Institute [Code Institute ReadMe](https://github.com/Code-Institute-Solutions/readme-template) as well as [Annie's Portfolio Website](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md).
 
-The gallery layout on the Classes page was inspired by that of the Love Running Project from Code Institute [Love Running Gallery](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/06b2421978a4470d844b06c7bf2c50a2/).
+
 
 Some other gym and fitness websites which inspired the author for content and style:
 * [Dunkeld House Hotel](https://www.dunkeldhousehotel.co.uk/)
