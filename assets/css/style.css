@@ -184,6 +184,7 @@ body {
 
 #game-difficulty-form {
     margin-top: 5%;
+    border: solid yellow;
 }
 
 #game-difficulty-form input {
@@ -886,12 +887,12 @@ body {
     /* GAME OPTIONS SCREEN  600 */
 
     #game-difficulty-form input {
-        margin-left: 25%;
-        margin-right: 20px;
+        /* margin-left: 25%;
+        margin-right: 20px; */
     }
 
     #game-difficulty-form label {
-        margin-right: 150px;
+        /* margin-right: 170px; */
     }
 
     /* PLAY GAME SCREEN  600 */

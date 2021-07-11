@@ -129,9 +129,12 @@ function gameOptions() {
 
         // get the user's name if it is the first game
     } else {
+        if (userName === "") {
+            userName = "French Learner";
+        } else{
         userName = document.getElementById("input-name-input").value;
         document.getElementById("input-name-div").remove();
-    }
+    }}
 
     // Create gameOptions HTML elements and append to relevant divs
     let gameOptionsDiv = createElement("div", "game-options-div");

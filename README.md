@@ -89,21 +89,19 @@ The website is designed to be responsive on all devices; viewing the website on 
 [Wireframes](https://wireframe.cc/) was used to visualise website ideas and maintain an idea of layout and styling.  See all pages concepts below.
 
 ### Intro Screen Design
-![Homepage Design](assets/images/WireframesHomepage.JPG)
-
-### Name Input Design 
-![Facilities Design](assets/images/WireframesFacilities.JPG)
+![Intro Design](assets/images/WF-intro.JPG)
 
 ### Game Options Design
-![Classes Design](assets/images/WireframesClasses.JPG)
+![Game Options Design](assets/images/WF-game-options.JPG)
 
 ### Game Area Design
-![Membership Design](assets/images/WireframesMembership.JPG)
+![Game Area Design](assets/images/WF-game-area.JPG)
 
 ### Show Answers Design
-![Contact Us Design](assets/images/WireFramesContact.JPG)
+![Show Answers Design](assets/images/WF-show-answers.JPG)
 
 ### End Game Design
+![End Game Design](assets/images/WF-end-game.JPG)
 
 ## Surface
 
@@ -161,12 +159,13 @@ The difficulty options are based on:
 ## Game Area Page
 
 ### Sections
-The game area is split into two sections; on the left, the questions and multiple choice answers and buttons.  This is an active area which with the user can interact.
+The game area is split into two sections; on the left, the questions and multiple choice answers and buttons.  This is an active area with which the user can interact.
 
 The right area of this section is informative only, displaying the game progress and score tallies.
 
 ### Question 
 ![Question](assets/images/Question.JPG)
+
 The question is displayed at the top of the left area, with the 'question word' in orange for emphasis, and a emphatic gap between this word and the others in the sentence to further draw attention to the word.  The font is always large and clear.
 
 ### Multiple Choice
@@ -206,10 +205,13 @@ There are three buttons also displayed, allowing the user to either:
 
 ## Features Left to Implement
 
-* Personal Training Page
-* Information about classes
-* FAQs
-* Contact form
+* Timer function
+> A timer function was considered, which would countdown a number of seconds until moving onto the next question (if user had not selected an answer in this time, the incorrect tally would be incremented).  The timer length would be dependant on game difficulty, for example 15 secs for 'Easy', 10 secs for 'Medium' and 5 secs for 'Hard'.  
+
+In fact it was decided that this was not a necessary function and may take away from the fun, easy going aspect of the game, but it could be added as an option on the Game Options screen. 
+
+* Active feedback
+> 
 
 [Back to Table of contents](#table-of-contents)
 
@@ -224,7 +226,7 @@ as a structure language
 as a style language
 
 ### Javascript
-as a coding language <<<<<>>>>>
+to implement Front-End interactivity
 
 ### Font Awesome
 as a resource for icons, such as social media links and logo
@@ -275,36 +277,17 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
     > 
 
 * I would like users to feel like they can return periodically to improve their language skills
-    > 
+    > The language arrays are large enough that it is unlikely the user will find the game repetitive
 
 * I would like users to know where to find suitable learning material
-    >
+    > There is a learning resources page
 
 ### As a new user:
 
-* I would like to find out if this gym is a suitable location for me to attend everyday on my way home from work
-    > The location of the gym is clear from the Homepage which names the town in the large centered title, there is a footer on each page which displays the address, and the About Us page displays this information as well as a Google Map of the gym location.
-
-* I would like to find out what classes they have and how frequently they run
-    > From the Classes page, I can clearly see that classes run 3 days per week, and that there is a choice of 4 classes.
-
-* I would like to know how much it would cost for a membership and any terms related to my contract, and join the gym
-    > On the Membership page, I can see there are only 2 options for a membership, and there is a list of contract terms. Beneath this is a basic form I can fill in to request a membership.
-
-* I would like to know how to get in contact with the gym
-    > There is contact information in the footer at the bottom of each page, as well as contact information in the About Us page. 
 
 ### As a returning user: 
 
-* I would like to book onto one of the upcoming classes this week
-    > When I'm on the Classes page, the footer which displays the telephone number is fixed in view. It clearly states at the top of the page that classes are to be booked over the phone.
-
-* I want to get in contact about a problem with my membership
-    > All contact information is clear in the footer and About Us page. 
-
-* I want to find their social media links so I can join their Instagram stories
-    > On the About Us page, there is a link to the gym's social media pages, which open in a separate tab.
-
+ 
 ## Limitations of Project
 
 ### Membership Form
