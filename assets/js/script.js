@@ -377,16 +377,23 @@ function generateQuestion() {
     document.getElementById("game-area-left-1").appendChild(questionText);
 
     // Create form for the multiple choice radio buttons
-    let mcForm = createElement("form", "mc-form");
-    document.getElementById("game-area-left-2").appendChild(mcForm);
+    let mcFormLeft = createElement("form", "mc-form-left");
+    document.getElementById("game-area-left-2").appendChild(mcFormLeft);
+
+    let mcFormRight = createElement("form", "mc-form-right");
+    document.getElementById("game-area-left-2").appendChild(mcFormRight);
 
     let mcRadioList = createElement("ul", "mc-radios-list");
-    mcForm.appendChild(mcRadioList);
+    mcFormRight.appendChild(mcRadioList);
+
+    let mcLabelsList = createElement("ul", "mc-labels-list");
+    mcFormLeft.appendChild(mcLabelsList);
 
     // Create the multiple choice radio buttons & labels
     for (let i = 0; i < mcRandomNums.length; i++) {
 
         var mcRadiosLi = document.createElement("li");
+        var mcLabelsLi = document.createElement("li");
 
         var mcRadios = document.createElement("input");
         mcRadios.type = "radio";
@@ -396,8 +403,9 @@ function generateQuestion() {
         mcLabels.innerHTML = mcQuestions[i];
 
         mcRadioList.appendChild(mcRadiosLi);
+        mcLabelsList.appendChild(mcLabelsLi);
+        mcLabelsLi.appendChild(mcLabels);
         mcRadiosLi.appendChild(mcRadios);
-        mcRadiosLi.appendChild(mcLabels);
     }
 
 }
