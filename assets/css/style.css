@@ -146,6 +146,23 @@ body {
     overflow: auto;
 }
 
+#resources-main-div h1,
+#resources-main-div h2,
+#resources-main-div h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#resources-main-div ul {
+    list-style-type: square;
+    margin-left: 25%;
+    width: 50%;
+}
+
+#resources-main-div ul li {
+    padding: 5px 0px;
+}
+
 /* Main screens */
 #intro-screen-div,
 #end-game-div {
