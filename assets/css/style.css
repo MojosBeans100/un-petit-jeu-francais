@@ -51,6 +51,10 @@ body {
     font-weight: bold;
 }
 
+.buttons :disabled {
+    font-style: italic;
+}
+
 #main-div {
     width: 60%;
     height: 75%;
@@ -223,14 +227,10 @@ body {
     border: solid pink;
     text-align: center;
     height: 15%;
-    display: inline-block;
     width: 100%;
 }
 
-#question-text {
-    display: inline-block;
-    vertical-align: middle;
-}
+#question-text {}
 
 #question-span {
     color: orange;
@@ -238,60 +238,46 @@ body {
 
 #game-area-left-2 {
     border: solid red;
-    height: 60%;
+    height: 65%;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 #mc-form-left {
     width: 60%;
     float: left;
     margin-left: 10%;
+    border: solid purple;
 }
 
 #mc-form-right {
     width: 25%;
     float: right;
+    border: solid black;
 }
 
 #mc-radios-list {
     list-style-type: none;
     line-height: 60px;
+    padding-left: 0;
 }
 
 #mc-labels-list {
     list-style-type: none;
     line-height: 60px;
+    padding-left: 0;
 }
-
-/* #mc-form {
-    width: 100%;
-}
-
-#mc-radios-list {
-    border: solid yellow;
-    width: 100%;
-    overflow: hidden;
-    list-style-type: none;
-}
-
-#game-area-left-2 input {
-    margin-top: 5%;
-    position: relative;
-    /* left: 10%; 
-}
-
-#game-area-left-2 label {
-    font-size: 25px;
-    margin-left: 5%;
-} */
 
 #game-area-left-3 {
     border: solid blue;
-    height: 15%;
+    margin: auto;
+    height: 20%;
+    width: 80%;
+    vertical-align: middle;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 #game-area-right {
@@ -326,10 +312,9 @@ body {
 
 /* buttons */
 #game-home-btn,
-#skip-question-btn,
-#next-question-btn {
-    height: 60%;
-    font-size: 15px;
+#skip-question-btn {
+    height: 40%;
+    font-size: 20px;
     letter-spacing: 2px;
     width: 25%;
     padding: 0;
@@ -337,6 +322,12 @@ body {
 
 #next-question-btn {
     font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 25%;
+    padding: 0;
+    height: 50%;
+    text-transform: uppercase;
 }
 
 /* tallies  */
@@ -724,6 +715,12 @@ body {
 
     #question-text {
         font-size: 25px;
+        vertical-align: middle;
+    }
+
+    #game-area-left-3 {
+        width: 95%;
+        font-size: 18px;
     }
 
     /* SHOW ANSWERS SCREEN  900 */
@@ -760,6 +757,11 @@ body {
 
     /* GAME OPTIONS SCREEN  800 */
     /* PLAY GAME SCREEN  800 */
+
+    #game-area-left-2 {
+        font-size: 20px;
+    }
+
     /* SHOW ANSWERS SCREEN  800 */
 
     #show-answers-div li {
@@ -834,7 +836,12 @@ body {
     #game-home-btn,
     #skip-question-btn,
     #next-question-btn {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    #mc-radios-list,
+    #mc-labels-list {
+        line-height: 40px;
     }
 
     /* SHOW ANSWERS SCREEN  700 */
@@ -893,14 +900,17 @@ body {
         margin: auto;
     }
 
-    #game-area-left-2 input {
-        margin-top: 2%;
-        left: 3%;
+    #mc-form-left {
+        margin-left: 2%;
+        width: 80%;
     }
 
-    #game-area-left-2 label {
-        font-size: 20px;
-        margin-left: 10%;
+    #game-area-left-2 ul {
+        text-indent: 0;
+    }
+
+    #mc-form-right {
+
     }
 
     /* SHOW ANSWERS SCREEN  600 */
@@ -927,13 +937,8 @@ body {
         font-size: 20px;
     }
 
-    #game-area-left-2 input {
-        left: 0;
-    }
-
-    #game-area-left-2 label {
-        font-size: 18px;
-        margin-left: 5%;
+    #game-area-left-2 {
+        font-size: 15px;
     }
 
     /* SHOW ANSWERS SCREEN  500 */

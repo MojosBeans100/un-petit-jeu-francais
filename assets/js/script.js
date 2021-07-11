@@ -407,7 +407,6 @@ function generateQuestion() {
         mcLabelsLi.appendChild(mcLabels);
         mcRadiosLi.appendChild(mcRadios);
     }
-
 }
 
 // Check answer
@@ -419,7 +418,6 @@ function checkAnswer() {
     // get scores
     let oldCorrectTally = parseInt((document.getElementById("correct-tally-num").innerText));
     let oldIncorrectTally = parseInt((document.getElementById("incorrect-tally-num").innerText));
-
     let pickedAnswer;
 
     // Check status of radio buttons
