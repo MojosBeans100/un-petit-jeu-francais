@@ -113,7 +113,9 @@ The website largely uses IBM Plex Sans, with the main front page header in a cus
 
 The colour scheme is kept to blacks and whites during the actual game, in order to be non-distracting to the user.  There is a pleasant background image of Paris.
 
-The front page of the website is designed to look like a French road/street sign, with further emphasis on the French look with red, white and blue colors to replicate the French flag.
+The front page of the website is designed to look like a French road/street sign, with further emphasis on the French look with red, white and blue colors to replicate the French flag.  See below the inspiration for the front page:
+
+![French Sign Inspiration](assets/images/sign-inspo.JPG)
 
 ### Images
 
