@@ -605,7 +605,7 @@ function endGame() {
         // if BAD score ( <= 40%)
     } else {
         congratsMessage.innerHTML = "Oh dear..";
-        motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested <a href='#'>learning resource pages</a>";
+        motivationMessage.innerHTML = "There's room for improvement... feel free to try again or check out our suggested <a href='resources.html'>learning resource pages</a>";
     }
 
     // remove previous screen
