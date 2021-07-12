@@ -40,7 +40,9 @@ The website details information about a fitness centre which offers all standard
 
 ## Website owner goals
 
-The website owner's goals are to present quick, fun, dynamic French test for users to practice their vocabulary and receive feedback on their level in French.  There is enough game content for the quiz to not be repetitive.  It is designed to be easily accessible, requiring no sign-up, form or email input to play. 
+The website owner's goals are to present quick, fun, dynamic French test for users to practice their vocabulary and receive feedback on their level in French.  There is enough game content for the quiz to not be repetitive.  
+
+It is designed to be easily accessible, requiring no sign-up, form or email input to play.    It is not the goal of this particular site to provide learning material, rather a fun game to test the user's vocabulary. 
 
 ## User goals
 
@@ -282,7 +284,7 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
     > The language arrays are large enough that it is unlikely the user will find the game repetitive
 
 * I would like users to know where to find suitable learning material
-    > There is a learning resources page
+    > There is a learning resources page in the nav menu which links to other learning material. 
 
 ### As a new user:
 
@@ -292,28 +294,9 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
  
 ## Limitations of Project
 
-### Membership Form
-The membership form does not do anything or lead to anywhere, aside from clearing itself of information after submission. 
-
-### Social Media Links
-The social media links simply link to the general site eg Facebook, as opposed to a specific page. 
-
-### T&Cs
-The terms and conditions link on the membership form does not link to a document. 
-
 [Back to Table of contents](#table-of-contents)
 
 ## Unfixed Bugs
-
-### Footer
-
-The footer caused problems on some pages staying at the bottom of the page.  Some pages are only 1 screen size - for example Homepage and About Us.  Whereas the others have more content and therefore require scrolling.  In larger screen sizes it was desirable for the footer to remain fixed in position, but when reduced to smaller sizes and the footer changes to a taller column layout, it is preferred that the footer is hidden at the bottom and requires scrolling, so as not to take up the whole page.  
-
-This idea in practice took some fiddling, and ultimately on a few pages, a fixed height "spacer" div was placed to keep the footer where it needed to be.  
-
-### Gallery Layout
-
-The gallery layout was adjusted for media queries, however since the position of images changed during browser resizing, there were gaps of varied heights revealing the white background of the gallery.  While in some screen sizes this could look tidier, it may add a sense of the 'social media' aspect of the gallery and imply that gaps are there because images are regularly uploaded to the site as they are taken.  Therefore this 'bug' is left unfixed. 
 
 ### CSS Warning
 
@@ -339,24 +322,30 @@ this repository ([Dunkeld Fitness Centre](https://github.com/MojosBeans100/Dunke
 
 # Credits
 ## Content
-All website content was written by the author, except the nav bar styling, 
-https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp.  
+All website content was written by the author.  The drop-down nav bar styling in the style.css should be credited to [W3 Schools](https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp).  
 
 The ReadMe format was inspired by the template from Code Institute [Code Institute ReadMe](https://github.com/Code-Institute-Solutions/readme-template) as well as [Annie's Portfolio Website](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md).
 
-
-
-Some other gym and fitness websites which inspired the author for content and style:
-* [Dunkeld House Hotel](https://www.dunkeldhousehotel.co.uk/)
-* [Pure Gym](https://www.puregym.com/)
-* [The Gym](https://www.thegymgroup.com/)
+Some other French language websites which inspired the author for content and style:
+* [Test Your Language](https://testyourlanguage.com/french-quiz)
+* [My Languages](http://mylanguages.org/french_quiz.php)
+* [ESL Languages](https://www.esl-languages.com/en/online-language-tests/french-test)
 
 ## Media 
-Most media images were sourced from [Pexels](https://www.pexels.com/) website.
+All media images were sourced from [Pexels](https://www.pexels.com/) website.
 
 Credits to: 
 
-* <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+* @daria-shevtsova  - background image
+* @laura-stanley    - background image
+* [www.flaticon.com](https://www.freepik.com)   - beret icon in logo
+* [Eiffel Tower icon by Icons8](https://icons8.com/icon/102642/eiffel-tower)    - Eiffel Tower icon
+* [French Flag Icon](https://www.countryflags.com/france-flag-icon/)    - French flag icon
+* [French Language Array](http://frequencylists.blogspot.com/2015/12/the-2000-most-frequently-used-french.html)  - for list of French/English words
+* [French Verbs Array](https://www.talkinfrench.com/wp-content/uploads/2013/09/200-most-common-verbs.pdf)   - another list of French/English words
+* [French Sign](https://www.ecosia.org/images?q=french%20sign#id=C217CF0CBD9870696B5A1E040B0225A2C7C41711)  - background image for intro screen
+* [Sharkstock Fonts](https://www.1001fonts.com/cafe-francoise-font.html)     - for custom font
+* [George Williams](https://www.1001fonts.com/peignot-font.html)    - for custom font
 
 
 [Back to Table of contents](#table-of-contents)
