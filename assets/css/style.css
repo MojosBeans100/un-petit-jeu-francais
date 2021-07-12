@@ -292,14 +292,12 @@ a:active {
     width: 70%;
     height: 100%;
     float: left;
-    border: solid blue;
 }
 
 #game-area-left-1 {
     text-align: center;
     height: 15%;
     width: 100%;
-    border: solid yellow;
 }
 
 #question-span {
@@ -312,7 +310,6 @@ a:active {
     justify-content: space-between;
     font-size: 23px;
     overflow: auto;
-    border: solid pink;
 }
 
 #mc-form-left {
@@ -346,7 +343,6 @@ a:active {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    border: solid black;
 }
 
 #game-area-right {
@@ -359,7 +355,6 @@ a:active {
 #game-area-right-1 {
     height: 15%;
     text-align: center;
-    border: solid green;
 }
 
 #game-progress {
@@ -373,7 +368,6 @@ a:active {
     text-align: center;
     font-size: 25px;
     height: 85%;
-    border: solid red;
 }
 
 .tally-nums {
@@ -646,7 +640,6 @@ a:active {
     /* GAME OPTIONS SCREEN  1560 */
     /* PLAY GAME SCREEN  1560 */
     /* SHOW ANSWERS SCREEN  1560 */
-
     #show-answers-title {
         font-size: 30px;
     }
@@ -664,7 +657,6 @@ a:active {
     /* INTRO SCREEN  1400 */
     /* INPUT NAME SCREEN 1400  */
     /* GAME OPTIONS SCREEN  1400 */
-
     #game-options-difficulty-text,
     #game-options-length-text,
     #game-options-text {
@@ -672,7 +664,6 @@ a:active {
     }
 
     /* PLAY GAME SCREEN  1400 */
-
     #game-progress {
         font-size: 18px;
         margin-top: 15%;
@@ -728,14 +719,12 @@ a:active {
 @media only screen and (max-width: 1000px) {
 
     /* GENERAL 1000 */
-
     #nav-div a {
         font-size: 25px;
         margin-top: 3%;
     }
 
     /* INTRO SCREEN  1000 */
-
     #intro-screen-welcome {
         font-size: 5vw;
     }
@@ -749,7 +738,6 @@ a:active {
     }
 
     /* INPUT NAME SCREEN 1000  */
-
     #input-name-text {
         margin-top: 20%;
         font-size: 25px;
@@ -762,7 +750,6 @@ a:active {
     }
 
     /* GAME OPTIONS SCREEN  1000 */
-
     #game-options-text {
         font-size: 25px;
     }
@@ -774,7 +761,6 @@ a:active {
 
     /* PLAY GAME SCREEN  1000 */
     /* SHOW ANSWERS SCREEN  1000 */
-
     #show-answers-title {
         font-size: 25px;
     }
@@ -784,7 +770,6 @@ a:active {
     }
 
     /* END GAME SCREEN  1000 */
-
     #back-to-answers-btn {
         margin-top: 5%;
     }
@@ -806,7 +791,6 @@ a:active {
     }
 
     /* RESOURCES 1000  */
-
     #resources-main-div h1 {
         font-size: 25px;
     }
@@ -1371,13 +1355,3 @@ a:active {
     /* END GAME SCREEN  400 */
 
 }
-
-/* @media only screen and (max-height: 800px) {
-    #main-div {
-        height: auto;
-    }
-
-    #intro-screen-title {
-        line-height: 20px;
-    }
-} */

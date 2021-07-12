@@ -1,7 +1,7 @@
 # Un Petit Jeu Francais
 Second Milestone Project: a site to provide a mini quiz in French
 
-![Mock Up](assets/images/readmeResponsive.JPG)
+![Mock Up](assets/images/RM-responsive.JPG)
 
 The website provides a short, interactive quiz for user's who would like to practice or test their French level. 
 
@@ -209,7 +209,7 @@ The Home button sits to the left, for the user to associate with regressing back
 The user is given immediate feedback on their results, displaying the correct and incorrect answers.  
 If the answer was incorrect, it is displayed in red strikethrough font, and the actual answer is displayed beside it in green font with a tick icon. 
 
-This screen is important for the user to be able to gain positive feedback if they were successful, or learn from their mistakes.  
+This screen is important for the user to be able to gain positive feedback if they were successful, or learn from their mistakes.  The final score is displayed numerically on the next page. 
 ![Feedback](assets/images/RM-feedback.JPG)
 
 ## Game End Page
@@ -229,15 +229,19 @@ The information sits inside the centered div and the user can scroll through the
 ## Features Left to Implement
 
 * Timer function
-> A timer function was considered, which would countdown a number of seconds until moving onto the next question (if user had not selected an answer in this time, the incorrect tally would be incremented).  The timer length would be dependant on game difficulty, for example 15 secs for 'Easy', 10 secs for 'Medium' and 5 secs for 'Hard'.  
-
-In fact it was decided that this was not a necessary function and may take away from the fun, easy-going aspect of the game, but it could be added as an option on the Game Options screen. 
+> A timer function was considered, which would countdown a number of seconds until moving onto the next question (if user had not selected an answer in this time, the incorrect tally would be incremented).  The timer length would be dependant on game difficulty, for example 15 secs for 'Easy', 10 secs for 'Medium' and 5 secs for 'Hard'.   In fact it was decided that this was not a necessary function and may take away from the fun, easy-going aspect of the game, but it could be added as an option on the Game Options screen. 
 
 * Active feedback
 > Active feedback, such as pop-up congratulatory messages in speech bubbles was considered if the user scored 3 in a row, or words of encouragement if user scored 3 incorrect in a row. 
 
 * Sound effects
 > Sounds effects, such as a 'click' when selecting the radio button answer; or pressing a button; or a 'ding' on a correct answer, could be added. A Lo-Fi Parisian Coffee Cafe soundtrack was considerd to play during the game play.  This could be added as an optional check ie Sound On/Sound Off at the start of the game.   For example, see Youtube video - [French Music](https://www.youtube.com/watch?v=LpZ9Xv7oR9o)
+
+* Answers highlighted in orange
+> It would be a beneficial UX feature to highlight the user's answer in orange when the corresponding radio button is checked.  This would draw attention to their selection, and the same color orange as the 'question' word would associate the two in the user's mind. 
+
+* Enter key event listeners
+> 
 
 [Back to Table of contents](#table-of-contents)
 
