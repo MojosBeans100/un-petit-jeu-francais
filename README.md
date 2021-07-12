@@ -356,26 +356,7 @@ Most media images were sourced from [Pexels](https://www.pexels.com/) website.
 
 Credits to: 
 
-* Marriot Gym [Main Image](https://www.marriott.com.au/hotels/hotel-information/fitness-center/hydlk-itc-kohenur-a-luxury-collection-hotel-hyderabad/)
-* @goumbik
-* @monstera
-* @victorfreitas
-* @cottonbro
-* @elly-fairytale
-* @yan-krukov
-* @cliff-booth
-* @anastasia0shuraeva
-* @max-vakhtbovych
-* @andrea-piacquadio
-* @karolina-grabowska
-* @lukas
-* @william-choquette
-* @leon-ardho
-* @li-sun
-* @roman-davayposmotrim
-* @gustavo-fring
-* @pixabay
-* @eternal-happiness
+* <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 
 [Back to Table of contents](#table-of-contents)
