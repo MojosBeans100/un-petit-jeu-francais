@@ -658,6 +658,7 @@ function endGame() {
     returnHomeBtn.classList.add("buttons");
     returnHomeBtn.addEventListener("click", function () {
         endGameDiv.remove();
+        window.location.reload(false);
         introScreen();
         clearAll();
     });
