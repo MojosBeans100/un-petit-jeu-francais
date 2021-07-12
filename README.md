@@ -142,25 +142,28 @@ The logo carries the same styling as the title on this page, and has a fun beret
 
 ## Intro
 ### Intro Screen Page
-![Intro-Screen](assets/images/RM-front-page.JPG)
 The game intro screen is designed to replicate a French street sign.  There are several types of font, with the main font in large red type as it is the title of the game.  The fonts were chosen to be "French-y", like one might find on a French sign or wine box.
 
 There is a loose translation of the game title - Un Petit Jeu Francais/A Little French Quiz - beneath the red font, to not exclude users who are entirely new to the language. 
 
 There is only one way forwards with this page, as demonstrated by one single button at the bottom of the page encouraging the user to click on and play the quiz. 
 
+![Intro-Screen](assets/images/RM-front-page.JPG)
+
 ## Game Options
 ### Name Input Page
-![Name-Input](assets/images/RM-name-input.JPG)
 This screen is basic and one-dimensional, encouraging the user to input their name and advance forwards with the OK button.  The language is colloquial - "let's start with.." - to ease the user and put across the tone of the fun, non-serious game they are about to play.
 
 If the user chooses not to input a name, they can still advance to the next screen.
 
+![Name-Input](assets/images/RM-name-input.JPG)
+
 ### Game Options Page
-![Game-Options](assets/images/RM-game-options.JPG)
 The game options screen displays a welcome message with the user's name (or a generic name if they choose not to input theirs), and some game options to allow for different levels of game in the form of radio buttons.
 
 There are three difficulty options (easy, medium, hard), and four game length options. The game length options simply increase the number of questions the user will answer (10, 20, 30 or 40 questions). The default options are 'Easy' and 10 questions.  
+
+![Game-Options](assets/images/RM-game-options.JPG)
 
 The user can determine the level of difficulty best suited to them by clicking the information icon, displaying a pop-up screen with the following information:
 
@@ -179,14 +182,11 @@ The game area is split into two sections; on the left, the questions and multipl
 The right area of this section is informative only, displaying the game progress and score tallies.
 
 ### Question 
-![Question](assets/images/Question.JPG)
-
 The question is displayed at the top of the left area, with the 'question word' in orange for emphasis, and a emphatic gap between this word and the others in the sentence to further draw attention to the word.  The font is always large and clear.
 
+![Question](assets/images/Question.JPG)
+
 ### Multiple Choice
-
-![Multiple Choice](assets/images/RM-game-area.JPG)
-
 The user can use the radio buttons to choose their translated answer, based on the question above.  There are either 4, 5, or 6 options depending on their chosen game difficulty. 
 
 ### Progress and Tallies
@@ -195,6 +195,7 @@ The score tallies display on the right of the page, incrementing as appropriate 
 The progress section allows the user to see:
 * how many questions they have answered
 * a reminder of how many questions they chose to answer ie the game length
+![Multiple Choice](assets/images/RM-game-area.JPG)
 
 ### Buttons
 There are three buttons on this page, to allow the user to either move onto the next question, or skip the question (not allowed in 'Hard' game play), or return home.  The buttons have a hover effect, and a 'depressed' look when clicked. 
@@ -220,6 +221,7 @@ There are three buttons also displayed, allowing the user to either:
 * return to their answers on the previous page 
 * play the quiz again, which directs them to the game options page
 * or return home to the intro screen
+![Game End](assets/images/RM-end-game.JPG)
 
 ## Resources Page
 The Resources page provides a short summary of learning material for the user to use to improve their language skills.  This page is necessary because the quiz itself does not necessarily serve this purpose, rather is a 'testing' tool as opposed to a 'learning' tool.
