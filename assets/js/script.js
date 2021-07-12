@@ -398,6 +398,7 @@ function generateQuestion() {
         var mcRadios = document.createElement("input");
         mcRadios.type = "radio";
         mcRadios.name = "mcRadios";
+        mcRadios.classList.add("radio-styling");
 
         var mcLabels = document.createElement("label");
         mcLabels.innerHTML = mcQuestions[i];

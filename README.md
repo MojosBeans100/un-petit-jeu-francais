@@ -111,9 +111,11 @@ The website is designed to be responsive on all devices; viewing the website on 
 
 The website largely uses IBM Plex Sans, with the main front page header in a custom French-looking font called Peignot, and sans-serif as a back-up font. 
 
+Only basic, non-custom fonts are used in the main area to avoid distraction from the game. 
+
 ### Colours
 
-The colour scheme is kept to blacks and whites during the actual game, in order to be non-distracting to the user.  There is a pleasant background image of Paris.
+The colour scheme is kept to blacks and whites during the actual game, with a bit of red and blue to continue the French theme, in order to be non-distracting to the user.  There is a pleasant background image of Paris.
 
 The front page of the website is designed to look like a French road/street sign, with further emphasis on the French look with red, white and blue colors to replicate the French flag.  See below the inspiration for the front page:
 
