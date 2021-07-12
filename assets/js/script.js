@@ -73,7 +73,7 @@ function introScreen() {
     // Create the text for the elements
     introScreenWelcome.innerHTML = "Welcome to";
     introScreenGameTitle.innerHTML = "Un Petit Jeu Francais!";
-    introScreenGameTransl.innerHTML = "(a little French quiz..)"
+    introScreenGameTransl.innerHTML = "(a little French quiz..)";
     introScreenBtn.innerHTML = "Play quiz";
 }
 
@@ -718,7 +718,7 @@ function difficultyPopUp() {
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
         difficultyPopUpDiv.remove();
-    })
+    });
 }
 
 // Choose answer pop up
@@ -750,7 +750,7 @@ function chooseAnswerPopUp() {
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
         chooseAnswerPopUpDiv.remove();
-    })
+    });
 }
 
 // Lose progress pop up
@@ -785,7 +785,7 @@ function loseProgressPopUp() {
         document.getElementById("game-area-div").remove();
         introScreen();
         clearAll();
-    })
+    });
 
     let noContinueGameBtn = createElement("button", "no-continue-game-btn");
     noContinueGameBtn.innerHTML = "No, keep playing";
@@ -795,5 +795,5 @@ function loseProgressPopUp() {
         loseProgressPopUpDiv.remove();
         document.getElementsByClassName("fade-out-div")[0].classList.add("fade-div");
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
-    })
+    });
 }

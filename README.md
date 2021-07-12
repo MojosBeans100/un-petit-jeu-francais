@@ -242,9 +242,6 @@ The information sits inside the centered div and the user can scroll through the
 * Answers highlighted in orange
 > It would be a beneficial UX feature to highlight the user's answer in orange when the corresponding radio button is checked.  This would draw attention to their selection, and the same color orange as the 'question' word would associate the two in the user's mind. 
 
-* Enter key event listeners
-> 
-
 [Back to Table of contents](#table-of-contents)
 
 # Technologies Used
@@ -328,6 +325,7 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
 ### As a returning user: 
 
 * I would like to be able to use the quiz once a week to maintain my level in French
+    > I can see the merit in using this short quiz periodically to improve my level in French.  The website is easy to use and I know there is enough content to not get bored. 
 
 ## Limitations of Project
 
