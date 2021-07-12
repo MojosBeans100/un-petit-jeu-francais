@@ -113,7 +113,7 @@ function inputName() {
 
     // Create the text for the elements
     inputNameText.innerHTML = "First, let's start with your name";
-    inputNameBtn.innerHTML = "Ok";
+    inputNameBtn.innerHTML = "OK";
 
 }
 

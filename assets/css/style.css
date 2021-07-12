@@ -116,7 +116,7 @@ body {
     padding: 16px 30px;
     display: table-cell;
     vertical-align: middle;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     border: solid 1px black;
 }
 
@@ -239,6 +239,7 @@ body {
     height: 50px;
     text-align: center;
     margin-bottom: 80px;
+    font-size: 18px;
 }
 
 /* Input Name Screen Styling */
@@ -585,6 +586,7 @@ body {
     z-index: 9;
     text-align: center;
     font-size: 30px;
+    border: solid black;
 }
 
 #choose-answer-prompt {
@@ -823,6 +825,11 @@ body {
         margin-top: 20%;
     }
 
+    #lose-progress-div {
+        width: 60%;
+        height: 50%;
+        left: 20%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1126,6 +1133,16 @@ body {
     }
 
     /* END GAME SCREEN  600 */
+    /* POP UPS  600 */
+
+    #yes-lose-progress-btn,
+    #no-continue-game-btn {
+        font-size: 15px;
+        width: 60%;
+    }
+    
+    #no-continue-game-btn {}
+
 
 }
 
