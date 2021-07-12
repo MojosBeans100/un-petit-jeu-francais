@@ -998,7 +998,7 @@ a:active {
     }
 
     .tally-nums {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     /* SHOW ANSWERS SCREEN  700 */
@@ -1138,20 +1138,16 @@ a:active {
         width: 80%;
         left: 10%;
     }
-
-
 }
 
 @media only screen and (max-width: 500px) {
 
     /* GENERAL 500 */
-
     #nav-div a {
         margin-top: 5%;
     }
 
     /* INTRO SCREEN  500 */
-
     #intro-screen-game-title {
         line-height: 50px;
         margin-top: 10%;
@@ -1159,13 +1155,11 @@ a:active {
     }
 
     /* INPUT NAME SCREEN 500  */
-
     #input-name-input {
         font-size: 20px;
     }
 
     /* GAME OPTIONS SCREEN  500 */
-
     #game-options-difficulty-text,
     #game-options-length-text {
         font-size: 14px;
@@ -1181,7 +1175,6 @@ a:active {
     }
 
     /* PLAY GAME SCREEN  500 */
-
     #question-text {
         font-size: 20px;
     }
@@ -1200,7 +1193,6 @@ a:active {
     }
 
     /* SHOW ANSWERS SCREEN  500 */
-
     #show-answers-title {
         margin-top: 10%;
         font-size: 20px;
@@ -1219,7 +1211,6 @@ a:active {
     }
 
     /* END GAME SCREEN  500 */
-
     #end-score-message {
         font-size: 20px;
     }
@@ -1234,6 +1225,10 @@ a:active {
     }
 
     /*   POP UPS  500   */
+    #choose-answer-div {
+        width: 80%;
+        left: 10%;
+    }
 
     #choose-answer-btn {
         font-size: 16px;
@@ -1264,8 +1259,17 @@ a:active {
         letter-spacing: 2px;
     }
 
-    /* RESOURCES 500  */
+    #lose-progress-div {
+        width: 80%;
+        left: 10%;
+    }
 
+    #yes-lose-progress-btn,
+    #no-continue-game-btn {
+        font-size: 15px;
+    }
+    
+    /* RESOURCES 500  */
     #resources-main-div {
         margin-top: 7%;
     }
@@ -1306,7 +1310,7 @@ a:active {
 
     #intro-screen-welcome {
         font-size: 7vw;
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
     #intro-screen-game-title {
