@@ -442,7 +442,7 @@ function checkAnswer() {
             document.getElementsByTagName("h1")[0].remove();
             document.getElementById("mc-form-left").remove();
             document.getElementById("mc-form-right").remove();
-            document.getElementsByTagName("p")[0].remove();
+            document.getElementsByTagName("p")[1].remove();
             generateQuestion();
             break;
 
@@ -476,10 +476,10 @@ function skipQuestion() {
     userAnswers.push("skipped");
 
     // Remove current question and multiple choice form
-    document.getElementsByTagName("h1")[0].remove();
     document.getElementById("mc-form-left").remove();
     document.getElementById("mc-form-right").remove();
-    document.getElementsByTagName("p")[0].remove();
+    document.getElementsByTagName("p")[1].remove();
+    document.getElementsByTagName("h1")[0].remove();
 
     // Generate another question
     generateQuestion();
