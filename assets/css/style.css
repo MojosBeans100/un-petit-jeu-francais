@@ -915,6 +915,25 @@ body {
         height: 50%;
         left: 20%;
     }
+
+    /* RESOURCES 1000  */
+
+    #resources-main-div h1 {
+        font-size: 25px;
+    }
+
+    #resources-main-div h2 {
+        font-size: 20px;
+    }
+
+    #resources-main-div li {
+        font-size: 16px;
+    }
+
+    #resources-main-div ul {
+        width: 80%;
+        margin-left: 5%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -961,6 +980,10 @@ body {
     /* SHOW ANSWERS SCREEN  900 */
     /* END GAME SCREEN  900 */
 
+    /* RESOURCES  900 */
+    #resources-main-div {
+        left: 10%;
+    }
 
 }
 
@@ -1132,6 +1155,25 @@ body {
         width: 70%;
     }
 
+     /* RESOURCES 700  */
+
+     #resources-main-div h1 {
+        font-size: 20px;
+    }
+
+    #resources-main-div h2 {
+        font-size: 18px;
+    }
+
+    #resources-main-div li {
+        font-size: 14px;
+    }
+
+    /* #resources-main-div ul {
+        width: 80%;
+        margin-left: 5%;
+    } */
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1227,6 +1269,11 @@ body {
 
     #no-continue-game-btn {}
 
+     /* RESOURCES  600 */
+     #resources-main-div {
+        left: 15%;
+    }
+
 
 }
 
@@ -1317,6 +1364,24 @@ body {
         font-size: 16px;
         width: 70%;
     }
+
+     /* RESOURCES 500  */
+
+     #resources-main-div h1 {
+        font-size: 17px;
+    }
+
+    #resources-main-div h2 {
+        font-size: 15px;
+    }
+
+    #resources-main-div li {
+        font-size: 12px;
+    }
+
+    #resources-main-div ul {
+        margin-left: 0%;
+    } 
 
 
 }
