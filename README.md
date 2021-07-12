@@ -135,12 +135,14 @@ The website has the following features:
 The nav menu is incorporated into the website logo, and sits top left of each page.  Hovering over the logo presents three drop down options, one for each page.  There are hovering effects for these too.
 
 The logo carries the same styling as the title on this page, and has a fun beret icon.
-![Logo](assets/images/RM-logo2)
-![Logo](assets/images/RM-logo1)
+
+![Logo](assets/images/RM-logo2.JPG)
+
+![Logo](assets/images/RM-logo1.JPG)
 
 ## Intro and Outro
 ### Intro Screen Page
-![Intro-Screen](assets/images/RM-Front-Page.JPG)
+![Intro-Screen](assets/images/RM-front-page.JPG)
 The game intro screen is designed to replicate a French street sign.  There are several types of font, with the main font in large red type as it is the title of the game.  The fonts were chosen to be "French-y", like one might find on a French sign or wine box.
 
 There is a loose translation of the game title - Un Petit Jeu Francais/A Little French Quiz - beneath the red font, to not exclude users who are entirely new to the language. 

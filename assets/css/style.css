@@ -700,7 +700,7 @@ body {
 #difficulty-pop-up-btn {}
 
 #resources-body {
-    background-image: url("/assets/images/pexels-laura-stanley-2519210.jpg");
+    background-image: url("../images/pexels-laura-stanley-2519210.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -708,7 +708,7 @@ body {
 }
 
 #contact-body {
-    background-image: url("/assets/images/pexels-thorsten-technoman-338515.jpg");
+    background-image: url("../images/pexels-thorsten-technoman-338515.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -744,7 +744,6 @@ body {
     height: 300px;
     margin-left: 25%;
     border: solid black 1px;
-
 }
 
 

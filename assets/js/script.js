@@ -3,7 +3,6 @@
 // Global variables
 // define the main div as a global variable as this will be used in lots of functions - saves having to "get" it each time
 let mainDiv = document.getElementById("main-div");
-
 let gameDifficulty;
 let numOfQuestions;
 let gameLength;
