@@ -34,7 +34,7 @@ body {
 /*     THIS CONTENT IS FROM https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp and shall be credited as such in the ReadMe     */
 .dropdown {
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 15%;
     text-align: center;
 }
@@ -714,6 +714,8 @@ body {
     #main-div {
         width: 80%;
         height: 70%;
+        left: -5%;
+        top: 20%;
     }
 
     #difficulty-pop-up-div {
@@ -728,6 +730,10 @@ body {
         left: 20%;
     }
 
+    .dropdown .dropbtn {
+        font-size: 40px;
+        line-height: 30px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -863,6 +869,15 @@ body {
     #intro-screen-game-title {
         font-size: 15vw;
         line-height: 100px;
+    }
+
+    #intro-screen-btn {
+        width: 160px;
+        margin-left: calc(50% - 75px);
+        height: 50px;
+        font-size: 15px;
+        margin-bottom: 80px;
+        letter-spacing: 2px;
     }
 
     /* INPUT NAME SCREEN 800  */
