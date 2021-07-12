@@ -17,6 +17,65 @@ body {
     overflow: hidden;
 }
 
+#nav-div {
+    width: 100%;
+    margin: auto;
+    height: 12%;
+    background-color:rgb(206, 206, 206);
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#nav-div p {
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 25px;
+    /* padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 0; */
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: customFont;
+    margin: 0;
+    text-shadow: -1px 1px 1px #000,
+        1px 1px 1px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+a {
+    text-decoration: none;
+    font-family: customFont2;
+    margin-top: 2%;
+    font-size: 30px;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+#main-div {
+    width: 60%;
+    height: 75%;
+    border: solid 1px rgb(128, 128, 128);
+    /* background-color: white; */
+    box-shadow: 5px 10px 8px 10px #888888;
+    top: 5%;
+    left: 20%;
+    position: relative;
+    overflow: auto;
+    z-index: 5;
+    background-image: url("../images/wooden-sign.JPG");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* opacity: 0.9; */
+}
+
 @font-face {
     font-family: 'customFont';
     src: url('../fonts/Peignot.ttf');
@@ -129,24 +188,7 @@ body {
     font-style: italic;
 }
 
-#main-div {
-    width: 60%;
-    height: 75%;
-    border: solid 1px rgb(128, 128, 128);
-    /* background-color: white; */
-    box-shadow: 5px 10px 8px 10px #888888;
-    top: 15%;
-    left: 5%;
-    position: relative;
-    overflow: auto;
-    z-index: 5;
-    background-image: url("../images/wooden-sign.JPG");
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    /* opacity: 0.9; */
-}
+
 
 #resources-main-div,
 #contact-main-div {
