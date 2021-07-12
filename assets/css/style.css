@@ -120,7 +120,12 @@ a:active {
 
 .buttons:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+
+.buttons:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 #resources-main-div,
