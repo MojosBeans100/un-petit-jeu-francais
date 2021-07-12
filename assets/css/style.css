@@ -352,6 +352,10 @@ a:active {
     padding-left: 0;
 }
 
+.radio-styling input[type="radio"]:checked + label {
+    color: orange;
+}
+
 /* .radio-styling {
     -webkit-appearance: none;
     -moz-appearance: none;
