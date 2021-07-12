@@ -1,7 +1,22 @@
+/* ---------------- Fonts --------------  */
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
-/* General styling  */
+@font-face {
+    font-family: 'customFont';
+    src: url('../fonts/Peignot.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'customFont2';
+    src: url('../fonts/Cafe-Francoise_D.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----------- General styling ---------- */
+        /* body, nav, buttons etc */
 body,
 html {
     height: 100vh;
@@ -37,9 +52,6 @@ a:active {
     font-size: 40px;
     font-weight: bolder;
     line-height: 25px;
-    /* padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 0; */
     border: none;
     outline: none;
     color: white;
@@ -68,7 +80,6 @@ a:active {
     width: 60%;
     height: 75%;
     border: solid 1px rgb(128, 128, 128);
-    /* background-color: white; */
     box-shadow: 5px 10px 8px 10px #888888;
     top: 17%;
     left: 20%;
@@ -79,22 +90,6 @@ a:active {
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    /* opacity: 0.9; */
-}
-
-@font-face {
-    font-family: 'customFont';
-    src: url('../fonts/Peignot.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'customFont2';
-    src: url('../fonts/Cafe-Francoise_D.ttf');
-    font-weight: normal;
-    font-style: normal;
 }
 
 .beret {
@@ -120,7 +115,6 @@ a:active {
 
 .buttons:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    /* font-weight: bold; */
 }
 
 .buttons:active {
@@ -128,6 +122,7 @@ a:active {
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
+/*  ----------- Resources/About Us page ------------ */
 #resources-main-div,
 #contact-main-div {
     width: 60%;
@@ -169,10 +164,6 @@ a:active {
 }
 
 /* Intro Screen Styling */
-#intro-screen-div {
-    overflow: hidden;
-}
-
 #intro-screen-welcome {
     font-family: customFont2;
     letter-spacing: 8px;
@@ -226,9 +217,6 @@ a:active {
 }
 
 /* Input Name Screen Styling */
-
-#input-name-div {}
-
 #input-name-text {
     margin-top: 20%;
     text-align: center;
@@ -252,7 +240,6 @@ a:active {
 }
 
 /* Game Options Screen Styling */
-
 #game-options-div {
     text-align: center;
     position: relative;
@@ -297,7 +284,6 @@ a:active {
 }
 
 /* Open Game Area Styling */
-
 #game-area-div {
     width: 100%;
     height: 100%;
@@ -308,15 +294,15 @@ a:active {
     width: 70%;
     height: 100%;
     float: left;
+    border: solid blue;
 }
 
 #game-area-left-1 {
     text-align: center;
     height: 15%;
     width: 100%;
+    border: solid yellow;
 }
-
-#question-text {}
 
 #question-span {
     color: orange;
@@ -327,6 +313,8 @@ a:active {
     display: flex;
     justify-content: space-between;
     font-size: 23px;
+    overflow: auto;
+    border: solid pink;
 }
 
 #mc-form-left {
@@ -352,63 +340,15 @@ a:active {
     padding-left: 0;
 }
 
-.radio-styling input[type="radio"]:checked + label {
-    color: orange;
-}
-
-/* .radio-styling {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    position: relative;
-    top: 13.33333px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    transition: all 0.15s ease-out 0s;
-    background: #cbd1d8;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 0.5rem;
-    outline: none;
-    position: relative;
-    z-index: 1000;
-}
-
-.radio-styling.radio {
-    border-radius: 50%;
-}
-
-.radio-styling.radio::after {
-    border-radius: 50%;
-}
-
-.radio-styling:checked::before {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    content: '✔';
-    /* display: inline-block; 
-    font-size: 26.66667px;
-    text-align: center;
-    line-height: 40px;
-} */
-
 #game-area-left-3 {
     margin: auto;
-    height: 20%;
+    height: 15%;
     width: 80%;
     vertical-align: middle;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    border: solid black;
 }
 
 #game-area-right {
@@ -421,6 +361,7 @@ a:active {
 #game-area-right-1 {
     height: 15%;
     text-align: center;
+    border: solid green;
 }
 
 #game-progress {
@@ -433,6 +374,7 @@ a:active {
     text-align: center;
     font-size: 25px;
     height: 85%;
+    border: solid red;
 }
 
 .tally-nums {
@@ -443,7 +385,7 @@ a:active {
 /* buttons */
 #game-home-btn,
 #skip-question-btn {
-    height: 40%;
+    height: 50px;
     font-size: 20px;
     letter-spacing: 2px;
     width: 25%;
@@ -456,7 +398,7 @@ a:active {
     letter-spacing: 2px;
     width: 25%;
     padding: 0;
-    height: 50%;
+    height: 60px;
     text-transform: uppercase;
 }
 
@@ -480,15 +422,8 @@ a:active {
     font-size: 20px;
 }
 
-/* Generate Questions Styling */
-#mc-question {}
-
-#mc-answer {}
-
-#mc-form {}
 
 /* Show Answers */
-
 #show-answers-div {
     width: 100%;
     height: 100%;
@@ -832,10 +767,6 @@ a:active {
     }
 
     /* INTRO SCREEN  1000 */
-
-    #intro-screen-div {
-        overflow: auto;
-    }
 
     #intro-screen-welcome {
         font-size: 5vw;

@@ -18,12 +18,11 @@ The website provides a short, interactive quiz for user's who would like to prac
     - [Wireframes](#wireframes)
     - [Surface](#surface)
 - [Features](#features)
-    - [All Page](#all-pages)
-    - [Homepage](#homepage)
-    - [Facilities](#facilities)
-    - [Classes](#classes)
-    - [Membership](#membership)
-    - [About Us](#about-us)
+    - [Nav Menu](#nav-menu)
+    - [Intro](#intro)
+    - [Game Options](#game-options)
+    - [Game Area](#game-area)
+    - [Feedback](#feedback-page)
     - [Features Left to Implement](#features-left-to-implement)
 - [Technology](#technologies-used)
 - [Testing](#testing)
@@ -80,7 +79,7 @@ It is designed to be easily accessible, requiring no sign-up, form or email inpu
 
 ## Structure of the website
 
-The structure of the website is straightforward and intuitive.  There are three main pages: one which is the main game area, the second which is a library of language learning resources, and lastly a basic contact page. 
+The structure of the website is straightforward and intuitive.  There are three main pages: one which is the main game area, the second which is a library of language learning resources, and lastly a basic 'about us'page. 
 
 In the main game area, as the user navigates through the game the screens change - for example to choose game options, the actual quiz area, and feedback pages. 
 
@@ -91,6 +90,7 @@ The website is designed to be responsive on all devices; viewing the website on 
 [Wireframes](https://wireframe.cc/) was used to visualise website ideas and maintain an idea of layout and styling.  See all pages concepts below.
 
 ### Intro Screen Design
+The Resources and About Us page have a very similar layout - simply with different text inside the main centered div.
 ![Intro Design](assets/images/WF-intro.JPG)
 
 ### Game Options Design
@@ -123,7 +123,7 @@ The front page of the website is designed to look like a French road/street sign
 
 ### Images
 
-The only image used in the website is the background image of Paris, and is credited in the [Credits section](#credits). 
+The only images used in the website are the background images of Paris, and are credited in the [Credits section](#credits). 
 
 [Back to Table of contents](#table-of-contents)
 
@@ -132,7 +132,7 @@ The only image used in the website is the background image of Paris, and is cred
 The website has the following features:
 
 ## Nav Menu
-The nav menu is incorporated into the website logo, and sits top left of each page.  Hovering over the logo presents three drop down options, one for each page.  There are hovering effects for these too.
+The nav menu is set as a bar at the top of each page for intuitive navigation.  The main website logo sits furthest to the left, and can be used to return to the main screen, along with the Play Game nav option. 
 
 The logo carries the same styling as the title on this page, and has a fun beret icon.
 
@@ -140,7 +140,7 @@ The logo carries the same styling as the title on this page, and has a fun beret
 
 ![Logo](assets/images/RM-logo1.JPG)
 
-## Intro and Outro
+## Intro
 ### Intro Screen Page
 ![Intro-Screen](assets/images/RM-front-page.JPG)
 The game intro screen is designed to replicate a French street sign.  There are several types of font, with the main font in large red type as it is the title of the game.  The fonts were chosen to be "French-y", like one might find on a French sign or wine box.
@@ -171,7 +171,7 @@ The difficulty options are based on:
 * the translation direction - it is easier to see the English word and choose the French answer from a list of French words, therefore in 'Easy' game play this is how the game is set up.  In 'Medium' and 'Hard' game play, this translation is reversed, noticeably increasing the complexity of the quiz
 * the option to 'skip' a question - in 'Easy' and 'Medium' game play this feature is allowed, so that if the user is struggling to translate the word, they can skip the question.  This increases the 'skip' tally, not the 'incorrect' tally.  In 'Hard' game play, this feature is disabled, compelling the user to give it a go and risk an incorrect answer.
 
-## Game Area Page
+## Game Area 
 
 ### Sections
 The game area is split into two sections; on the left, the questions and multiple choice answers and buttons.  This is an active area with which the user can interact.
@@ -184,6 +184,9 @@ The right area of this section is informative only, displaying the game progress
 The question is displayed at the top of the left area, with the 'question word' in orange for emphasis, and a emphatic gap between this word and the others in the sentence to further draw attention to the word.  The font is always large and clear.
 
 ### Multiple Choice
+
+![Multiple Choice](assets/images/RM-game-area.JPG)
+
 The user can use the radio buttons to choose their translated answer, based on the question above.  There are either 4, 5, or 6 options depending on their chosen game difficulty. 
 
 ### Progress and Tallies
@@ -194,9 +197,9 @@ The progress section allows the user to see:
 * a reminder of how many questions they chose to answer ie the game length
 
 ### Buttons
-There are three buttons on this page, to allow the user to either move onto the next question, or skip the question (not allowed in 'Hard' game play), or return home. 
+There are three buttons on this page, to allow the user to either move onto the next question, or skip the question (not allowed in 'Hard' game play), or return home.  The buttons have a hover effect, and a 'depressed' look when clicked. 
 
-The 'Next' button is emphasized with *****, as it is designed to be the chosen button.  It is also either furthest to the right, for the user to associate with forwards progress in the quiz, or at the top of button selection in smaller screen sizes.  If this button is pressed without the user choosing an answer, a warning message is displayed to prompt the user to either pick an answer or skip the question.
+The 'Next' button is emphasized with a larger size, as it is designed to be the chosen button.  It is also either furthest to the right, for the user to associate with forwards progress in the quiz, or at the top of button selection in smaller screen sizes.  If this button is pressed without the user choosing an answer, a warning message is displayed to prompt the user to either pick an answer or skip the question.
 ![Choose-answers](assets/images/RM-choose-answers.JPG)
 
 The Home button sits to the left, for the user to associate with regressing back.  There is also a warning message when this button is clicked, prompting the user that they will lose all quiz progress and return home.  They then have the option to lose progress (again, on the left to emphasize regression), or return to the quiz (on the right to imply progress). 
@@ -218,15 +221,23 @@ There are three buttons also displayed, allowing the user to either:
 * play the quiz again, which directs them to the game options page
 * or return home to the intro screen
 
+## Resources Page
+The Resources page provides a short summary of learning material for the user to use to improve their language skills.  This page is necessary because the quiz itself does not necessarily serve this purpose, rather is a 'testing' tool as opposed to a 'learning' tool.
+
+The information sits inside the centered div and the user can scroll through the recommended material. 
+
 ## Features Left to Implement
 
 * Timer function
 > A timer function was considered, which would countdown a number of seconds until moving onto the next question (if user had not selected an answer in this time, the incorrect tally would be incremented).  The timer length would be dependant on game difficulty, for example 15 secs for 'Easy', 10 secs for 'Medium' and 5 secs for 'Hard'.  
 
-In fact it was decided that this was not a necessary function and may take away from the fun, easy going aspect of the game, but it could be added as an option on the Game Options screen. 
+In fact it was decided that this was not a necessary function and may take away from the fun, easy-going aspect of the game, but it could be added as an option on the Game Options screen. 
 
 * Active feedback
-> 
+> Active feedback, such as pop-up congratulatory messages in speech bubbles was considered if the user scored 3 in a row, or words of encouragement if user scored 3 incorrect in a row. 
+
+* Sound effects
+> Sounds effects, such as a 'click' when selecting the radio button answer; or pressing a button; or a 'ding' on a correct answer, could be added. A Lo-Fi Parisian Coffee Cafe soundtrack was considerd to play during the game play.  This could be added as an optional check ie Sound On/Sound Off at the start of the game.   For example, see Youtube video - [French Music](https://www.youtube.com/watch?v=LpZ9Xv7oR9o)
 
 [Back to Table of contents](#table-of-contents)
 
