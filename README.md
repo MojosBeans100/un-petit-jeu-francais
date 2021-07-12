@@ -336,13 +336,9 @@ It is important for the game to not become repetitive after a few goes, therefor
 
 Many language arrays can be found online, however because it was a goal of the website owner to provide different difficulty levels, a process to assign difficulty to each word was carried out.  In reality, this could not effectively be completed on an array of 250,000 words (for example), therefore a smaller array was chosen.
 
+While the game was tested many times during developement, and there were no significant issues found within the language arrays, with such a large array of words it is possible there is a bug.
+
 [Back to Table of contents](#table-of-contents)
-
-## Unfixed Bugs
-
-### CSS Warning
-
-There were 4 CSS warnings, outlined in section [CSS Testing](#css-testing).
 
 # Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -364,7 +360,7 @@ this repository ([Dunkeld Fitness Centre](https://github.com/MojosBeans100/Dunke
 
 # Credits
 ## Content
-All website content was written by the author.  The drop-down nav bar styling in the style.css should be credited to [W3 Schools](https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp).  
+All website content was written by the author. 
 
 The ReadMe format was inspired by the template from Code Institute [Code Institute ReadMe](https://github.com/Code-Institute-Solutions/readme-template) as well as [Annie's Portfolio Website](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md).
 

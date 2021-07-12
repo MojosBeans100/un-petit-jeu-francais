@@ -35,6 +35,7 @@ function createElement(elementType, id) {
     return newElement;
 }
 
+// Clear all variables for a new game function
 function clearAll() {
     questionsAnswered = 0;
     trueAnswers = [];
@@ -45,6 +46,10 @@ function clearAll() {
 document.addEventListener("DOMContentLoaded", introScreen);
 
 // Intro screen function
+/**
+ * This function pulls up the main introduction screen, displaying
+ * an attractive French looking sign and welcoming the user to move forwards and play
+ */
 function introScreen() {
 
     // Create introScreen HTML elements and append to relevant divs
@@ -60,9 +65,6 @@ function introScreen() {
     let introScreenGameTransl = createElement("h1", "intro-screen-transl");
     introScreenDiv.appendChild(introScreenGameTransl);
 
-    // let introScreenGameDescr = createElement("h2", "intro-screen-game-des");
-    // introScreenDiv.appendChild(introScreenGameDescr);
-
     let introScreenBtn = createElement("button", "intro-screen-btn");
     introScreenDiv.appendChild(introScreenBtn);
     introScreenBtn.addEventListener("click", inputName);
@@ -72,12 +74,14 @@ function introScreen() {
     introScreenWelcome.innerHTML = "Welcome to";
     introScreenGameTitle.innerHTML = "Un Petit Jeu Francais!";
     introScreenGameTransl.innerHTML = "(a little French quiz..)"
-    // introScreenGameDescr.innerHTML = "This website allows you to play a short,<br> fun quiz to practice your level in French!";
     introScreenBtn.innerHTML = "Play quiz";
-
 }
 
 // Input name screen
+/**
+ * This function pulls up another screen in which the user can input their
+ * name and move to the next screen
+ */
 function inputName() {
 
     // Remove sign image and replace with plain white background
@@ -109,10 +113,14 @@ function inputName() {
     // Create the text for the elements
     inputNameText.innerHTML = "First, let's start with your name";
     inputNameBtn.innerHTML = "OK";
-
 }
 
 // Choose game options screen
+/**
+ * This function pulls up a screen whereby the user can pick some game 
+ * options, such as length and difficulty
+ * The game difference dependent on difficulties is also available from an info icon
+ */
 function gameOptions() {
 
     // Get the user's name input value if the game is being replayed
@@ -122,7 +130,7 @@ function gameOptions() {
         document.getElementById("end-game-div").remove();
         clearAll();
 
-        // get the user's name if it is the first game
+    // get the user's name if it is the first game
     } else {
         userName = document.getElementById("input-name-input").value;
         document.getElementById("input-name-div").remove();
@@ -164,7 +172,6 @@ function gameOptions() {
         // Append radios and labels to form
         gameOptionsForm.appendChild(diffRadio);
         gameOptionsForm.appendChild(diffLabel);
-
         gameDifficultyOptionsID.push(diffRadio.id);
     }
 
@@ -209,10 +216,13 @@ function gameOptions() {
     gameOptionsDifficultyText.innerHTML = 'Please choose a game difficulty <a onclick="difficultyPopUp()"><i class="fa fa-question-circle"></i></a>';
     gameOptionsLengthText.innerHTML = "Now choose how many questions you'd like to answer";
     gameOptionsBtn.innerHTML = "Play game!";
-
 }
 
 // Open game area screen
+/**
+ * The function creates the HTML for main game area, setting up the
+ * question, tallies, scores, buttons, multiple choice form
+ */
 function createGameArea() {
 
     // Get user's chosen difficulty
@@ -305,11 +315,16 @@ function createGameArea() {
     gameAreaRight2.appendChild(skipTally);
     gameAreaRight2.appendChild(skipTallyLabel);
 
+    // call up generate question function
     generateQuestion();
-
 }
 
 // Generate question
+/**
+ * This function creates random numbers and indexes a selection of French and English words
+ * from their respective arrays.  It also chooses one of these to be the question/answer
+ * and appends all words to their relevant places in the game area
+ */
 function generateQuestion() {
 
     let questionLanguage;
@@ -406,6 +421,11 @@ function generateQuestion() {
 }
 
 // Check answer
+/**
+ * This function gets the user's answer from the radio button form 
+ * and checks it against the known true answer, then increments
+ * the relevant score tally and regenerates another question
+ */
 function checkAnswer() {
 
     // get length of radio buttons form - changes dependent on quiz difficulty
@@ -463,12 +483,17 @@ function checkAnswer() {
 }
 
 // Skip question
+/**
+ * This function allows the user to skip the question if they do not
+ * know the answer.  It will clear the game area and generate a new question,
+ * and increment the skip tally
+ */
 function skipQuestion() {
 
     // Increase questions answered tally
     questionsAnswered++;
 
-    // 
+    // Add skipped answers to array too
     userAnswers.push("skipped");
 
     // Remove current question and multiple choice form
@@ -491,10 +516,13 @@ function skipQuestion() {
     if (questionsAnswered === parseInt(gameLength)) {
         showAnswers();
     }
-
 }
 
 // Show answers screen
+/**
+ * This function creates HTML to show the user their answers
+ * against the correct answers
+ */
 function showAnswers() {
 
     // create HTML for this function - title and lists
@@ -528,7 +556,6 @@ function showAnswers() {
     let trueAnswersHeader = createElement("h2", "true-answers-header");
     trueAnswersList.appendChild(trueAnswersHeader);
     trueAnswersHeader.innerHTML = "Correct answer";
-
 
     // create list items and append to above unordered lists
     for (i = 0; i < gameLength; i++) {
@@ -572,6 +599,10 @@ function showAnswers() {
 }
 
 // End game screen
+/**
+ * This function creates HTML for a screen to end the game, 
+ * displaying the user's final score and some options to navigate home
+ */
 function endGame() {
 
     // create endGame HTML & append
@@ -633,6 +664,11 @@ function endGame() {
     endGameDiv.appendChild(returnHomeBtn);
 }
 
+// Difficulty pop up
+/**
+ * This function creates a pop up screen which fades out the background and 
+ * displays information about difficulty levels
+ */
 function difficultyPopUp() {
 
     // create the pop up screen
@@ -684,6 +720,11 @@ function difficultyPopUp() {
     })
 }
 
+// Choose answer pop up
+/**
+ * This function creates a pop up screen to prompt the user
+ * if they have selected Next but not selected an answer from the radio buttons
+ */
 function chooseAnswerPopUp() {
 
     // create the pop up screen
@@ -709,9 +750,13 @@ function chooseAnswerPopUp() {
         document.getElementsByClassName("fade-out-div")[0].classList.remove("fade-out-div");
         chooseAnswerPopUpDiv.remove();
     })
-
 }
 
+// Lose progress pop up
+/**
+ * This function creates a pop up screen to prompt the user that
+ * if they click Home, they will lose all game progress
+ */
 function loseProgressPopUp() {
 
     // create the pop up screen

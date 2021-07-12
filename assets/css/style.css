@@ -16,7 +16,7 @@
 }
 
 /* ----------- General styling ---------- */
-        /* body, nav, buttons etc */
+/* body, nav, buttons etc */
 body,
 html {
     height: 100vh;
@@ -396,7 +396,6 @@ a:active {
 }
 
 /* tallies  */
-
 #correct-tally-num {
     color: green;
 }
@@ -567,8 +566,6 @@ a:active {
     margin: 30px;
 }
 
-#no-continue-game-btn {}
-
 /* Difficulty pop up */
 #difficulty-pop-up-div {
     background-color: rgb(255, 255, 255, 1);
@@ -630,10 +627,10 @@ a:active {
     border: solid black 1px;
 }
 
-
 /* ---------------------      MEDIA QUERIES      ----------------- */
 
 @media only screen and (max-width: 1560px) {
+
     /* GENERAL 1560 */
     /* INTRO SCREEN  1560 */
     /* INPUT NAME SCREEN 1560  */
@@ -677,11 +674,11 @@ a:active {
 
     /* SHOW ANSWERS SCREEN  1400 */
     /* END GAME SCREEN  1400 */
-
 }
 
 @media only screen and (max-width: 1200px) {
 
+    /* GENERAL 1200 */
     #main-div {
         width: 80%;
         height: 70%;
@@ -694,9 +691,17 @@ a:active {
         height: 30px;
     }
 
+    /* INTRO SCREEN  1200 */
     #intro-screen-game-title {
         line-height: 100px;
     }
+
+    /* INPUT NAME SCREEN 1200  */
+    /* GAME OPTIONS SCREEN  1200 */
+    /* PLAY GAME SCREEN  1200 */
+    /* SHOW ANSWERS SCREEN  1200 */
+    /* END GAME SCREEN  1200 */
+    /* POP UPS 1200 */
 
     #difficulty-pop-up-div {
         width: 60%;
@@ -708,11 +713,6 @@ a:active {
         height: 50%;
         top: 25%;
         left: 20%;
-    }
-
-    .dropdown .dropbtn {
-        font-size: 40px;
-        line-height: 30px;
     }
 }
 
@@ -815,18 +815,8 @@ a:active {
     /* INTRO SCREEN  900 */
     /* INPUT NAME SCREEN 900  */
     /* GAME OPTIONS SCREEN  900 */
-
     #game-options-text {
         font-size: 20px;
-    }
-
-    #game-options-difficulty-text,
-    #game-options-length-text {
-        /* font-size: 15px */
-    }
-
-    #game-difficulty-form label {
-        /* font-size: 12px; */
     }
 
     #game-options-btn {
@@ -839,7 +829,6 @@ a:active {
     }
 
     /* PLAY GAME SCREEN  900 */
-
     #question-text {
         font-size: 25px;
         vertical-align: middle;
@@ -852,7 +841,6 @@ a:active {
 
     /* SHOW ANSWERS SCREEN  900 */
     /* END GAME SCREEN  900 */
-
     /* RESOURCES  900 */
 
 }
@@ -861,7 +849,6 @@ a:active {
 
     /* GENERAL 800 */
     /* INTRO SCREEN  800 */
-
     #intro-screen-welcome {
         margin-top: 15%;
     }
@@ -880,7 +867,6 @@ a:active {
     }
 
     /* INPUT NAME SCREEN 800  */
-
     #input-name-text {
         margin-top: 30%;
         font-size: 20px;
@@ -888,13 +874,11 @@ a:active {
 
     /* GAME OPTIONS SCREEN  800 */
     /* PLAY GAME SCREEN  800 */
-
     #game-area-left-2 {
         font-size: 20px;
     }
 
     /* SHOW ANSWERS SCREEN  800 */
-
     #user-answers-list {
         margin-left: 5%;
     }
@@ -906,27 +890,22 @@ a:active {
     }
 
     /* END GAME SCREEN  800 */
-
     #end-game-div button {
         font-size: 13px;
     }
 
     /* POP UPS 800 */
-
-
 }
 
 @media only screen and (max-width: 700px) {
 
     /* GENERAL 700 */
-
     #nav-div a {
         font-size: 20px;
         margin-top: 4%;
     }
 
     /* INTRO SCREEN  700 */
-
     #intro-screen-welcome {
         margin-top: 20%;
     }
@@ -941,18 +920,8 @@ a:active {
 
     /* INPUT NAME SCREEN 700  */
     /* GAME OPTIONS SCREEN  700 */
-
     #game-options-title {
         font-size: 30px;
-    }
-
-    #game-options-text {
-        /* font-size: 15px; */
-    }
-
-    #game-options-difficulty-text,
-    #game-options-length-text {
-        /* font-size: 12px */
     }
 
     #game-difficulty-form label {
@@ -965,7 +934,6 @@ a:active {
     }
 
     /* PLAY GAME SCREEN  700 */
-
     #game-home-btn,
     #skip-question-btn,
     #next-question-btn {
@@ -986,15 +954,11 @@ a:active {
     }
 
     /* SHOW ANSWERS SCREEN  700 */
-    
     #show-answers-div li {
         font-size: 15px;
     }
 
     /* END GAME SCREEN  700 */
-
-
-
     /*     POP UPS  1000     */
     #choose-answer-prompt {
         margin-top: 30%;
@@ -1010,7 +974,6 @@ a:active {
     }
 
     /* RESOURCES 700  */
-
     #resources-main-div h1 {
         font-size: 20px;
     }
@@ -1022,25 +985,17 @@ a:active {
     #resources-main-div li {
         font-size: 14px;
     }
-
-    /* #resources-main-div ul {
-        width: 80%;
-        margin-left: 5%;
-    } */
-
 }
 
 @media only screen and (max-width: 600px) {
 
     /* GENERAL 600 */
-
     #nav-div a {
         font-size: 17px;
         margin-top: 7%;
     }
 
     /* INTRO SCREEN  600 */
-
     #intro-screen-welcome {
         font-size: 6.5vw;
         margin-top: 12%;
@@ -1066,7 +1021,6 @@ a:active {
     /* INPUT NAME SCREEN 600  */
     /* GAME OPTIONS SCREEN  600 */
     /* PLAY GAME SCREEN  600 */
-
     #game-area-left-2 {
         height: 50%;
     }
@@ -1097,7 +1051,6 @@ a:active {
     }
 
     /* SHOW ANSWERS SCREEN  600 */
-
     #answers-list-header,
     #user-answers-header,
     #true-answers-header {
@@ -1106,7 +1059,6 @@ a:active {
 
     /* END GAME SCREEN  600 */
     /* POP UPS  600 */
-
     #yes-lose-progress-btn,
     #no-continue-game-btn {
         font-size: 15px;
@@ -1252,7 +1204,7 @@ a:active {
     #no-continue-game-btn {
         font-size: 15px;
     }
-    
+
     /* RESOURCES 500  */
     #resources-main-div {
         margin-top: 7%;
@@ -1273,14 +1225,11 @@ a:active {
     #resources-main-div ul {
         margin-left: 0%;
     }
-
-
 }
 
 @media only screen and (max-width: 400px) {
 
     /* GENERAL 400 */
-
     #main-div {
         left: 5%;
     }
@@ -1291,14 +1240,13 @@ a:active {
     }
 
     /* INTRO SCREEN  400 */
-
     #intro-screen-welcome {
         font-size: 7vw;
         margin-top: 20%;
     }
 
     #intro-screen-game-title {
-        fonts-size: 17vw;
+        font-size: 17vw;
         margin-top: 10%;
     }
 
@@ -1311,7 +1259,6 @@ a:active {
     }
 
     /* INPUT NAME SCREEN 400  */
-
     #input-name-text {
         font-size: 20px;
     }
@@ -1329,7 +1276,6 @@ a:active {
 
     /* GAME OPTIONS SCREEN  400 */
     /* PLAY GAME SCREEN  400 */
-
     #question-text {
         font-size: 15px;
     }
@@ -1343,7 +1289,6 @@ a:active {
     }
 
     /* SHOW ANSWERS SCREEN  400 */
-
     #main-div {
         width: 90%;
     }
