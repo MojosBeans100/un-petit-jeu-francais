@@ -99,6 +99,12 @@ body {
 
 /*      END OF CONTENT FROM https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp     */
 
+.beret {
+    width: 50px;
+    height: 50px;
+    transform: rotate(340deg);
+}
+
 .buttons {
     background-color: #0300ad;
     color: white;
@@ -718,6 +724,11 @@ body {
         top: 20%;
     }
 
+    .beret {
+        width: 30px;
+        height: 30px;
+    }
+
     #intro-screen-game-title {
         line-height: 100px;
     }
@@ -1037,7 +1048,7 @@ body {
     /* INTRO SCREEN  600 */
 
     #intro-screen-welcome {
-        font-size: 6.5vw; 
+        font-size: 6.5vw;
         margin-top: 12%;
     }
 
@@ -1055,7 +1066,7 @@ body {
         width: 150px;
         margin-left: calc(50% - 75px);
         margin-top: 10%;
-        
+
     }
 
     /* INPUT NAME SCREEN 600  */
@@ -1223,7 +1234,7 @@ body {
     /* INTRO SCREEN  400 */
 
     #intro-screen-welcome {
-        font-size: 7vw; 
+        font-size: 7vw;
         margin-top: 15%;
     }
 
@@ -1236,7 +1247,7 @@ body {
         width: 130px;
         height: 40px;
         margin-left: calc(50% - 65px);
-        margin-top: 10%; 
+        margin-top: 10%;
         font-size: 12px;
     }
 
