@@ -12,39 +12,35 @@
 </head>
 
 <body>
-    <div class="fade-div">
-        <!-- <div class="dropdown">
-            <button onclick="location.href='index.html'" class="dropbtn">
-                <img src="assets/images/beret-black-shape.png" class="beret">
-                Un <br>
-                Petit Jeu <br>
-                Francais
-                <hr id="hr">
-            </button>
-            <div class="dropdown-content">
-                <a href="#">PLAY GAME</a>
-                <a href="resources.html">Resources</a>
-                <a href="contact.html">About Us</a>
-            </div> -->
-        <!-- </div> -->
 
+    <!-- this div is used to fade out the whole screen when 'pop-up' screens appear during the game -->
+    <div class="fade-div">
+
+        <!--  navigation bar at the top with logo and links to other pages -->
         <div id="nav-div">
+
+            <!-- logo with Frenchy text and beret icon -->
             <div>
-            
-            <p><img src="assets/images/beret-black-shape.png" class="beret"> Un <br>
-            Petit Jeu <br>
-            Francais</p>
+                <p><img src="assets/images/beret-black-shape.png" class="beret"> Un <br>
+                    Petit Jeu <br>
+                    Francais</p>
             </div>
-                <a href="#">PLAY GAME</a>
-                <a href="resources.html">Resources</a>
-                <a href="contact.html">About Us</a>
+
+            <!-- links to other pages -->
+            <a href="#" id="active-page">PLAY GAME</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">About Us</a>
             </nav>
         </div>
 
+        <!-- main div where game content will appear - changes to different screens during game
+        HTML content is written in script.js -->
         <div id="main-div">
 
         </div>
     </div>
+
+    <!-- link to javascript -->
     <script src="assets/js/script.js"></script>
 
 </body>

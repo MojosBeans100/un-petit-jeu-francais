@@ -18,12 +18,19 @@ body {
 }
 
 #nav-div {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     margin: auto;
-    height: 12%;
+    height: 100px;
     background-color:rgb(206, 206, 206);
     display:flex;
     justify-content: space-evenly;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 #nav-div p {
@@ -45,7 +52,7 @@ body {
         -1px -1px 0 #000;
 }
 
-a {
+#nav-div a {
     text-decoration: none;
     font-family: customFont2;
     margin-top: 2%;
@@ -53,7 +60,7 @@ a {
     color: black;
 }
 
-a:hover {
+#nav-div a:hover {
     color: red;
 }
 
@@ -159,8 +166,8 @@ a:hover {
 /*      END OF CONTENT FROM https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp     */
 
 .beret {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transform: rotate(340deg);
 }
 
@@ -198,7 +205,7 @@ a:hover {
     background-color: white;
     box-shadow: 5px 10px 8px 10px #888888;
     top: 15%;
-    left: 5%;
+    left: 20%;
     position: relative;
     overflow: auto;
 }
@@ -883,6 +890,12 @@ a:hover {
 @media only screen and (max-width: 1000px) {
 
     /* GENERAL 1000 */
+
+    #nav-div a {
+        font-size: 25px;
+        margin-top: 3%;
+    }
+
     /* INTRO SCREEN  1000 */
 
     #intro-screen-div {
@@ -1023,10 +1036,7 @@ a:hover {
     /* END GAME SCREEN  900 */
 
     /* RESOURCES  900 */
-    #resources-main-div {
-        left: 10%;
-    }
-
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -1100,6 +1110,12 @@ a:hover {
 @media only screen and (max-width: 700px) {
 
     /* GENERAL 700 */
+
+    #nav-div a {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+
     /* INTRO SCREEN  700 */
 
     #intro-screen-welcome {
@@ -1221,6 +1237,12 @@ a:hover {
 @media only screen and (max-width: 600px) {
 
     /* GENERAL 600 */
+
+    #nav-div a{
+        font-size: 17px;
+        margin-top: 7%;
+    }
+
     /* INTRO SCREEN  600 */
 
     #intro-screen-welcome {
@@ -1312,8 +1334,9 @@ a:hover {
     #no-continue-game-btn {}
 
      /* RESOURCES  600 */
-     #resources-main-div {
-        left: 15%;
+    #resources-main-div {
+        width: 80%;
+        left: 10%;
     }
 
 
@@ -1322,6 +1345,11 @@ a:hover {
 @media only screen and (max-width: 500px) {
 
     /* GENERAL 500 */
+
+    #nav-div a {
+        margin-top: 5%;
+    }
+
     /* INTRO SCREEN  500 */
 
     #intro-screen-game-title {
@@ -1409,7 +1437,11 @@ a:hover {
 
      /* RESOURCES 500  */
 
-     #resources-main-div h1 {
+    #resources-main-div {
+        margin-top: 7%;
+    }
+
+    #resources-main-div h1 {
         font-size: 17px;
     }
 
@@ -1437,6 +1469,11 @@ a:hover {
         height: 70%; */
         left: 5%;
         top: 5%;
+    }
+
+    #nav-div a{
+        font-size: 14px;
+        margin-top: 10%;
     }
 
     /* INTRO SCREEN  400 */
