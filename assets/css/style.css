@@ -143,14 +143,61 @@ a:active {
     padding-top: 20px;
 }
 
-#resources-main-div ul {
+#resources-main-div ul,
+#contact-main-div ul {
     list-style-type: square;
     margin-left: 25%;
     width: 50%;
 }
 
-#resources-main-div ul li {
+#resources-main-div ul li,
+#contact-main-div ul li {
     padding: 5px 0px;
+}
+
+#resources-body {
+    background-image: url("../images/pexels-laura-stanley-2519210.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#contact-body {
+    background-image: url("../images/pexels-thorsten-technoman-338515.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#game-title-span,
+#game-span {
+    font-family: customFont;
+    color: red;
+    text-shadow: -1px 1px 1px #000,
+        1px 1px 1px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+#game-span a {
+    text-decoration: none;
+    color: red;
+}
+
+#contact-main-div h1,
+#contact-main-div h2,
+#contact-main-div h3 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+#contact-main-div p {
+    margin-left: 25%;
+    width: 50%;
 }
 
 /* Main screens */
@@ -580,52 +627,6 @@ a:active {
     border: solid black 1px;
 }
 
-#resources-body {
-    background-image: url("../images/pexels-laura-stanley-2519210.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-#contact-body {
-    background-image: url("../images/pexels-thorsten-technoman-338515.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-#game-title-span {
-    font-family: customFont;
-    color: red;
-    text-shadow: -1px 1px 1px #000,
-        1px 1px 1px #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000;
-    letter-spacing: 3px;
-    font-size: 30px;
-}
-
-#contact-main-div h1,
-#contact-main-div h2,
-#contact-main-div h3 {
-    text-align: center;
-    padding-top: 5%;
-}
-
-#contact-main-div p {
-    /* font-size: 20px; */
-    margin-left: 25%;
-    width: 50%;
-}
-
-.contact-images {
-    width: 50%;
-    height: 300px;
-    margin-left: 25%;
-    border: solid black 1px;
-}
 
 /* ---------------------      MEDIA QUERIES      ----------------- */
 

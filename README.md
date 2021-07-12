@@ -346,23 +346,23 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * From the source section drop-down menu, select the Master Branch
 * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 * The live link can be found here 
- > [Dunkeld Fitness Centre](https://mojosbeans100.github.io/DunkeldFitnessCentre/.)
+ > [Un Petit Jeu Francais](https://mojosbeans100.github.io/un-petit-jeu-francais/.)
 
 To run locally:
-* Log in to GitHub and click on repository to download [Dunkeld Fitness Centre](https://github.com/MojosBeans100/DunkeldFitnessCentre)
+* Log in to GitHub and click on repository to download [Un Petit Jeu Francais](https://github.com/MojosBeans100/un-petit-jeu-francais)
 * select `Code` and click Download the ZIP file.
 * after download you can extract the file and use it in your local environment 
 
 Alternatively you can [Clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 or [Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
-this repository ([Dunkeld Fitness Centre](https://github.com/MojosBeans100/DunkeldFitnessCentre)) into your github account.
+this repository ([Un Petit Jeu Francais](https://github.com/MojosBeans100/un-petit-jeu-francais)) into your github account.
 
 
 # Credits
 ## Content
 All website content was written by the author. 
 
-The ReadMe format was inspired by the template from Code Institute [Code Institute ReadMe](https://github.com/Code-Institute-Solutions/readme-template) as well as [Annie's Portfolio Website](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md).
+The ReadMe format was inspired by the template from Code Institute [Code Institute ReadMe](https://github.com/Code-Institute-Solutions/readme-template) as well as [Annie's Portfolio Website](https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md), and the previous Milestone 1 Project ReadMe.
 
 Some other French language websites which inspired the author for content and style:
 * [Test Your Language](https://testyourlanguage.com/french-quiz)
