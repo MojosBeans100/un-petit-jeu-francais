@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url("/assets/images/pexels-daria-shevtsova-1578248.jpg");
+    background-image: url("../images/pexels-daria-shevtsova-1578248.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

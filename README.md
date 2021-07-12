@@ -131,6 +131,13 @@ The only image used in the website is the background image of Paris, and is cred
 
 The website has the following features:
 
+## Nav Menu
+The nav menu is incorporated into the website logo, and sits top left of each page.  Hovering over the logo presents three drop down options, one for each page.  There are hovering effects for these too.
+
+The logo carries the same styling as the title on this page, and has a fun beret icon.
+![Logo](assets/images/RM-logo2)
+![Logo](assets/images/RM-logo1)
+
 ## Intro and Outro
 ### Intro Screen Page
 ![Intro-Screen](assets/images/RM-Front-Page.JPG)
