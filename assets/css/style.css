@@ -136,8 +136,6 @@ a:active {
     overflow: auto;
 }
 
-#contact-main-div {}
-
 #resources-main-div h1,
 #resources-main-div h2,
 #resources-main-div h3 {
@@ -368,6 +366,7 @@ a:active {
     font-size: 20px;
     position: relative;
     top: 10%;
+    font-weight: bolder;
 }
 
 #game-area-right-2 {
@@ -497,26 +496,14 @@ a:active {
 
 #end-game-div button {
     margin: auto;
-    margin-top: 2%;
-    font-size: 15px;
+    margin-top: 5%;
+    font-size: 20px;
     width: 30%;
     height: 12%;
     letter-spacing: 2px;
     display: table-cell;
     vertical-align: middle;
 }
-
-#congrats-message {}
-
-#end-score-message {}
-
-#motivation-message {}
-
-#back-to-answers-btn {}
-
-#play-again-btn {}
-
-#return-home-btn {}
 
 /* Pop Ups */
 .fade-div {
@@ -601,22 +588,6 @@ a:active {
     text-align: center;
     border: solid black 1px;
 }
-
-#difficulty-pop-up-title {}
-
-#easy-pop-up {}
-
-#easy-list {}
-
-#med-pop-up {}
-
-#medium-list {}
-
-#hard-pop-up {}
-
-#hard-list {}
-
-#difficulty-pop-up-btn {}
 
 #resources-body {
     background-image: url("../images/pexels-laura-stanley-2519210.jpg");
@@ -704,16 +675,13 @@ a:active {
 
     #game-progress {
         font-size: 18px;
+        margin-top: 15%;
     }
 
     #correct-tally-label,
     #incorrect-tally-label,
     #skip-tally-label {
         font-size: 18px;
-    }
-
-    #game-progress {
-        margin-top: 15%;
     }
 
     /* SHOW ANSWERS SCREEN  1400 */
@@ -823,7 +791,7 @@ a:active {
 
     #end-game-div button {
         width: 40%;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     /*     POP UPS  1000     */
@@ -934,11 +902,6 @@ a:active {
         font-size: 20px;
     }
 
-    /* #input-name-btn {
-        margin-top: 20%;
-    } */
-
-
     /* GAME OPTIONS SCREEN  800 */
     /* PLAY GAME SCREEN  800 */
 
@@ -947,10 +910,6 @@ a:active {
     }
 
     /* SHOW ANSWERS SCREEN  800 */
-
-    #show-answers-div li {
-        /* font-size: 12px; */
-    }
 
     #user-answers-list {
         margin-left: 5%;
@@ -965,7 +924,7 @@ a:active {
     /* END GAME SCREEN  800 */
 
     #end-game-div button {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     /* POP UPS 800 */
@@ -1042,21 +1001,8 @@ a:active {
         font-size: 25px;
     }
 
-    #game-progress {
-        font-size: 18px;
-        margin-top: 20%;
-    }
-
     /* SHOW ANSWERS SCREEN  700 */
-
-    /* #show-answers-title {
-        margin-top: 15%;
-    } */
-
-    /* #true-answers-list {
-        margin-left: 0;
-    } */
-
+    
     #show-answers-div li {
         font-size: 15px;
     }
@@ -1135,16 +1081,6 @@ a:active {
 
     /* INPUT NAME SCREEN 600  */
     /* GAME OPTIONS SCREEN  600 */
-
-    #game-difficulty-form input {
-        /* margin-left: 25%;
-        margin-right: 20px; */
-    }
-
-    #game-difficulty-form label {
-        /* margin-right: 170px; */
-    }
-
     /* PLAY GAME SCREEN  600 */
 
     #game-area-left-2 {
@@ -1172,10 +1108,6 @@ a:active {
         width: 80%;
     }
 
-    #game-area-left-2 ul {
-        /* text-indent: 0; */
-    }
-
     #game-progress {
         font-size: 15px;
     }
@@ -1197,7 +1129,9 @@ a:active {
         width: 60%;
     }
 
-    #no-continue-game-btn {}
+    #difficulty-pop-up-div h1 {
+        font-size: 30px;
+    }
 
     /* RESOURCES  600 */
     #resources-main-div {
@@ -1299,11 +1233,35 @@ a:active {
         font-size: 10px;
     }
 
-    /*   POP UPS     */
+    /*   POP UPS  500   */
 
     #choose-answer-btn {
         font-size: 16px;
         width: 70%;
+    }
+
+    #difficulty-pop-up-div {
+        width: 80%;
+        left: 10%;
+    }
+
+    #difficulty-pop-up-div h1 {
+        font-size: 25px;
+    }
+
+    #difficulty-pop-up-div h2 {
+        font-size: 20px;
+        margin-top: 2%;
+    }
+
+    #difficulty-pop-up-div p {
+        font-size: 15px;
+    }
+
+    #difficulty-pop-up-div button {
+        font-size: 15px;
+        width: 60%;
+        letter-spacing: 2px;
     }
 
     /* RESOURCES 500  */
@@ -1364,7 +1322,6 @@ a:active {
         font-size: 12px;
     }
 
-
     /* INPUT NAME SCREEN 400  */
 
     #input-name-text {
@@ -1384,7 +1341,20 @@ a:active {
 
     /* GAME OPTIONS SCREEN  400 */
     /* PLAY GAME SCREEN  400 */
-    /* SHOW ANSWERS SCREEN  500 */
+
+    #question-text {
+        font-size: 15px;
+    }
+
+    #game-area-left-2 ul {
+        line-height: 25px;
+    }
+
+    #game-area-right-2 p {
+        font-size: 18px;
+    }
+
+    /* SHOW ANSWERS SCREEN  400 */
 
     #main-div {
         width: 90%;

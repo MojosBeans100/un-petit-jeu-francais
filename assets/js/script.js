@@ -623,7 +623,7 @@ function endGame() {
 
     // add Home Button to link to intro screen
     let returnHomeBtn = createElement("button", "return-home-btn");
-    returnHomeBtn.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAA/UlEQVQ4jc2TsWoCURBF71jYJqi9IWUgpNDOQgRby/0GIcnfJL/gRwRsTJF0+YIUEStBREgRLMxJM5BXuL5htfDCwOzumTszj7dSQEAbaEfYkIAJMDmV2QDYeQxyfO0kXRNZDgBM0sYfL82MozoC1/zrKsdHVr4rySsb9iR9e/RycOQMPyStnb0ws25giFKzwq/Lp8cOKA7V5FbuOjP3qEnqHDPhO/ALtICm529VzUZ+VVa+euE5wKiK4ZJyLcvq9p4hcCOpcaBfE7iNTmbANJlmBjwAj8Br8v4lanifFD35v5w2e06+j3NmfeDH4QVQ38PUgS9ntsAwNOnZ6A+o4xjcG5vEyAAAAABJRU5ErkJggg=="> Home';
+    returnHomeBtn.innerHTML = 'Home';
     returnHomeBtn.classList.add("buttons");
     returnHomeBtn.addEventListener("click", function () {
         endGameDiv.remove();
@@ -631,7 +631,6 @@ function endGame() {
         clearAll();
     });
     endGameDiv.appendChild(returnHomeBtn);
-
 }
 
 function difficultyPopUp() {
