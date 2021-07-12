@@ -1,9 +1,9 @@
-# Dunkeld Fitness Centre
-First Milestone Project: a site to show facilities of a fictional gym
+# Un Petit Jeu Francais
+Second Milestone Project: a site to provide a mini quiz in French
 
 ![Mock Up](assets/images/readmeResponsive.JPG)
 
-The website details information about a fitness centre which offers all standard facilities of a gym, workout classes, and a monthly or annual membership.  
+The website provides a short, interactive quiz for user's who would like to practice or test their French level. 
 
 # Table of Contents
 
@@ -277,24 +277,38 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
 ### As a website owner:
 
 * I would like to present a short quiz to those interested in learning the French language
-    > 
+    > The quiz is presented on the front page of the website, and it is clear from this page (both the game title and translated title beneath) what the game is about. 
 
 * I would like users to be able to easily play the game without having to load a seperate system or sign up to the website
-    > 
+    > The quiz opens up on the front page of the website, giving the user the opportunity to play straight away.
 
 * I would like users to feel like they can return periodically to improve their language skills
-    > The language arrays are large enough that it is unlikely the user will find the game repetitive
+    > The language arrays are large enough that it is unlikely the user will find the game repetitive - the specific length of the arrays is stated in the game information on the About Us page. 
 
 * I would like users to know where to find suitable learning material
     > There is a learning resources page in the nav menu which links to other learning material. 
 
 ### As a new user:
 
+* to determine if they can remember any French they learned in school
+    > There are many common words in this game which I learned at school, as well as some new ones to guess which will further my language development. 
+
+* to discover what their level in French is
+    > I have played the game of various difficulties and based on my feedback and score, I have an understanding of what my level in French is. 
+
+* to have fun while improving their language skills
+    > The game is short, fun, and colourful.
 
 ### As a returning user: 
 
- 
+* I would like to be able to use the quiz once a week to maintain my level in French
+
 ## Limitations of Project
+
+### Language Arrays
+It is important for the game to not become repetitive after a few goes, therefore the language arrays in which the French/English words are located should be long enough to accomodate for a few games.
+
+Many language arrays can be found online, however because it was a goal of the website owner to provide different difficulty levels, a process to assign difficulty to each word was carried out.  In reality, this could not effectively be completed on an array of 250,000 words (for example), therefore a smaller array was chosen.
 
 [Back to Table of contents](#table-of-contents)
 
@@ -340,6 +354,7 @@ Credits to:
 
 * @daria-shevtsova  - background image
 * @laura-stanley    - background image
+* @thorston-technoman    - background image
 * [www.flaticon.com](https://www.freepik.com)   - beret icon in logo
 * [Eiffel Tower icon by Icons8](https://icons8.com/icon/102642/eiffel-tower)    - Eiffel Tower icon
 * [French Flag Icon](https://www.countryflags.com/france-flag-icon/)    - French flag icon

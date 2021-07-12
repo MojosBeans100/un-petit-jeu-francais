@@ -343,7 +343,7 @@ body {
 }
 
 #game-area-left-2 {
-    height: 65%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     font-size: 23px;
@@ -374,37 +374,37 @@ body {
 
 .radio-styling {
     -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  position: relative;
-  top: 13.33333px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  transition: all 0.15s ease-out 0s;
-  background: #cbd1d8;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 0.5rem;
-  outline: none;
-  position: relative;
-  z-index: 1000;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
 }
 
 .radio-styling.radio {
     border-radius: 50%;
-  }
+}
 
 .radio-styling.radio::after {
     border-radius: 50%;
-  }
+}
 
 .radio-styling:checked::before {
     height: 40px;
@@ -712,7 +712,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 #game-title-span {
@@ -724,6 +724,27 @@ body {
         -1px -1px 0 #000;
     letter-spacing: 3px;
     font-size: 30px;
+}
+
+#contact-main-div h1,
+#contact-main-div h2,
+#contact-main-div h3 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+#contact-main-div p {
+    /* font-size: 20px; */
+    margin-left: 25%;
+    width: 50%;
+}
+
+.contact-images {
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+    border: solid black 1px;
+
 }
 
 
@@ -1204,7 +1225,7 @@ body {
         font-size: 15px;
         width: 60%;
     }
-    
+
     #no-continue-game-btn {}
 
 
@@ -1365,3 +1386,4 @@ body {
     /* END GAME SCREEN  400 */
 
 }
+
