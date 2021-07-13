@@ -76,14 +76,13 @@ It is designed to be easily accessible, requiring no sign-up, form or email inpu
 
 * I would like to be able to use the quiz once a week to maintain my level in French
 
-
 ## Structure of the website
 
 The structure of the website is straightforward and intuitive.  There are three main pages: one which is the main game area, the second which is a library of language learning resources, and lastly a basic 'about us'page. 
 
 In the main game area, as the user navigates through the game the screens change - for example to choose game options, the actual quiz area, and feedback pages. 
 
-The website is designed to be responsive on all devices; viewing the website on different screen sizes should not affect the user experience.  
+The website is designed to be responsive on all devices; viewing the website on different screen sizes should not affect the user experience.  The main centered div present on each page is designed to auto-scroll when the content is too large to fit inside. 
 
 ## Wireframes
 
@@ -159,7 +158,7 @@ If the user chooses not to input a name, they can still advance to the next scre
 ![Name-Input](assets/images/RM-name-input.JPG)
 
 ### Game Options Page
-The game options screen displays a welcome message with the user's name (or a generic name if they choose not to input theirs), and some game options to allow for different levels of game in the form of radio buttons.
+The game options screen displays a welcome message with the user's name (or blank if they choose not to input theirs), and some game options to allow for different levels of game in the form of radio buttons.
 
 There are three difficulty options (easy, medium, hard), and four game length options. The game length options simply increase the number of questions the user will answer (10, 20, 30 or 40 questions). The default options are 'Easy' and 10 questions.  
 
@@ -221,12 +220,20 @@ There are three buttons also displayed, allowing the user to either:
 * return to their answers on the previous page 
 * play the quiz again, which directs them to the game options page
 * or return home to the intro screen
+
 ![Game End](assets/images/RM-end-game.JPG)
 
 ## Resources Page
 The Resources page provides a short summary of learning material for the user to use to improve their language skills.  This page is necessary because the quiz itself does not necessarily serve this purpose, rather is a 'testing' tool as opposed to a 'learning' tool.
 
 The information sits inside the centered div and the user can scroll through the recommended material. 
+
+![Resources](assets/images/RM-resources.JPG)
+
+## About Us Page
+The About Us page - named contact.html - gives the user a brief summary of what the website is for. 
+
+![About Us](assets/images/RM-about-us.JPG)
 
 ## Features Left to Implement
 
@@ -317,7 +324,7 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
     > There are many common words in this game which I learned at school, as well as some new ones to guess which will further my language development. 
 
 * to discover what their level in French is
-    > I have played the game of various difficulties and based on my feedback and score, I have an understanding of what my level in French is. 
+    > I have played the game of various difficulties and based on my feedback and score at the end of the quiz, I have an understanding of what my level in French is. 
 
 * to have fun while improving their language skills
     > The game is short, fun, and colourful.
@@ -325,7 +332,7 @@ Finally the code was passed through [Am I Responsive](http://ami.responsivedesig
 ### As a returning user: 
 
 * I would like to be able to use the quiz once a week to maintain my level in French
-    > I can see the merit in using this short quiz periodically to improve my level in French.  The website is easy to use and I know there is enough content to not get bored. 
+    > I can see the merit in using this short quiz periodically to improve my level in French.  The website is easy to use and I know from the About Us page that there is enough content to not get bored. 
 
 ## Limitations of Project
 
@@ -334,7 +341,7 @@ It is important for the game to not become repetitive after a few goes, therefor
 
 Many language arrays can be found online, however because it was a goal of the website owner to provide different difficulty levels, a process to assign difficulty to each word was carried out.  In reality, this could not effectively be completed on an array of 250,000 words (for example), therefore a smaller array was chosen.
 
-While the game was tested many times during developement, and there were no significant issues found within the language arrays, with such a large array of words it is possible there is a bug.
+While the game was tested many times during developement, and there were no significant issues found within the language arrays, with such a large array of words it is possible there is a bug.  It was also found during the testing of game that some of the translations were not the best translation of that word. 
 
 [Back to Table of contents](#table-of-contents)
 
